@@ -19,7 +19,7 @@ function rageEvent() {
         the_void.src = "../images/backgrounds/events/the_void.gif";
         document.body.append(the_void);
         document.title = "the void";
-        changeFavicon("../images/favicon/the_void.png");
+        changeFavicon("../images/favicon/favicat/event/the_void.png");
         const audio = new Audio("../audio/events/audio_the_void/the_void.mp3");
         audio.loop = true;
         audio.play();

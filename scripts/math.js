@@ -24,6 +24,8 @@ function getSnappedAngle(x, y, destX, destY) {
     degrees = (180 - degrees) % 360;
     if (degrees < 0) degrees += 360;
 
+    if (degrees > 330) degrees = 0;
+
     const snappedAngle = nearest(
         degrees,
         [0, 45, 90, 135, 180, 225, 270, 315]
@@ -54,7 +56,6 @@ function nearest(input, set) {
     };
 }
 
-function unixToDays(ms)
-{
+function unixToDays(ms) {
     return ms / 1000 / 60 / 60 / 24;
 }

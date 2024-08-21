@@ -208,6 +208,18 @@ ____END____
 howa
 
 how
+____END____
+dont
+
+do not
+____END____
+idc
+
+i dont care
+____END____
+idk
+
+i dont know
 `;
 
 const VOCAB_DATASET = parseDataset(VOCAB_DATASET_RAW);

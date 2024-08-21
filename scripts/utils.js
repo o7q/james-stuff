@@ -8,5 +8,4 @@ function changeFavicon(favicon)
         document.head.appendChild(link);
     }
     link.href = favicon;
-    
 }

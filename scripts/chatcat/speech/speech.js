@@ -58,10 +58,10 @@ function talk(sentence) {
     let response_emotion = response_data[0];
     let response_speak_anim = response_data[1];
     let response_speak_audio = response_data[2];
-    let response_text = response_data[3] + (getRandomInt(0, 5) == 0 ? " :3" : ""); // random :3
-    let response_action = response_data[4];
+    let response_idle_anim = response_data[3];
+    let response_text = response_data[4] + (getRandomInt(0, 5) == 0 ? " :3" : ""); // random :3
+    let response_action = response_data[5];
 
-    let response_idle_anim = getRandomBaseIdleAnimation();
     let response_speed = 20;
 
     if (DEBUG_LOG) {
@@ -79,11 +79,11 @@ function talk(sentence) {
             break;
         case "increaseHappiness":
             if (RAGE_COUNT <= 0) {
-                HAPPINESS += 0.1;
+                HAPPINESS += 1;
             }
             break;
         case "decreaseHappiness":
-            HAPPINESS -= 0.2;
+            HAPPINESS -= 2;
             break;
         case "disableAudio":
             AUDIO_ENABLED = false;

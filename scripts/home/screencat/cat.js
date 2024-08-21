@@ -9,8 +9,8 @@ class Cat {
         let ref = document.querySelector(".overlay");
         document.body.insertBefore(this.cat, ref);
 
-        this.cat.style.left = '0px';
-        this.cat.style.top = '0px';
+        this.cat.style.left = '200px';
+        this.cat.style.top = '200px';
 
         this.setMood("sly");
         this.setAnimation("idle");
@@ -33,15 +33,17 @@ class Cat {
                 break;
         }
 
-        let eventChance = getRandomInt(0, 15000 / DELTA_TIME);
+        let eventChance = getRandomInt(0, 10000 / DELTA_TIME);
 
         // 0: randomly walk
+
+        const walkPadding = 200;
 
         switch (eventChance) {
             case 0:
                 this.stopEvents();
-                let randX = getRandomInt(0, window.innerWidth);
-                let randY = getRandomInt(0, window.innerHeight);
+                let randX = getRandomInt(0 + walkPadding, window.innerWidth - walkPadding);
+                let randY = getRandomInt(0 + walkPadding, window.innerHeight - walkPadding);
                 let randTime = getRandomInt(3000, 5000);
                 this.moveTo(randX, randY, randTime);
                 break;
@@ -122,7 +124,7 @@ class Cat {
     }
 
     updateTexture() {
-        this.cat.src = `../images/animations/cat/iso/${this.animation}/anim_${this.animation}_${this.mood}/${this.snappedRotation}/12.gif`;
+        this.cat.src = `../images/animations/cat/iso/${this.animation}/anim_${this.animation}_${this.mood}/${this.snappedRotation}/256x256_12.gif`;
     }
 
     getOffsetXY(x, y) {

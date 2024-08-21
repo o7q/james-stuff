@@ -1,9 +1,3 @@
-.catBackground {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .catText {
     position: absolute;
     left: 13vw;
