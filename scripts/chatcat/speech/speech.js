@@ -1,3 +1,5 @@
+let ALLOW_EVENTS = true;
+
 function talk(sentence) {
     const DEBUG_LOG = false;
 
@@ -71,29 +73,66 @@ function talk(sentence) {
         console.log("happiness:", HAPPINESS);
     }
 
-    switch (response_action) {
-        case "deletePage":
-            setTimeout(function () {
-                document.body.innerHTML = "";
-            }, 1000);
-            break;
-        case "increaseHappiness":
-            if (RAGE_COUNT <= 0) {
-                HAPPINESS += 1;
-            }
-            break;
-        case "decreaseHappiness":
-            HAPPINESS -= 2;
-            break;
-        case "disableAudio":
-            AUDIO_ENABLED = false;
-            break;
-        case "enableAudio":
-            AUDIO_ENABLED = true;
-            break;
+    if (ALLOW_EVENTS) {
+        switch (response_action) {
+            case "deletePage":
+                setTimeout(function () {
+                    document.body.innerHTML = "";
+                }, 1000);
+                break;
+            case "doSomethingCool":
+                setTimeout(function () {
+                    ALLOW_EVENTS = false;
+                    playVideo("../videos/cat/chat/events/vid_something_cool/960x540_16.mp4");
+
+                    setTimeout(function () {
+                        stopVideo();
+                        speak(
+                            "Was that cool?",
+                            "speak/anim_speak_sly",
+                            "speak/audio_speak_sly",
+                            "idle/anim_idle_sly",
+                            20
+                        );
+
+                        ALLOW_EVENTS = true;
+                    }, 69000);
+                }, 2000);
+                break;
+            case "increaseLove":
+                if (RAGE_DIALOGUE_INDEX <= 0) {
+                    LOVE += 1;
+                    HAPPINESS += 2;
+                }
+                break;
+            case "decreaseLove":
+                if (RAGE_DIALOGUE_INDEX <= 0) {
+                    LOVE -= 2;
+                }
+                break;
+            case "increaseHappiness":
+                if (RAGE_DIALOGUE_INDEX <= 0) {
+                    HAPPINESS += 1;
+                }
+                break;
+            case "decreaseHappiness":
+                if (HAPPINESS > 0) {
+                    HAPPINESS -= 2;
+                    LOVE -= 4;
+                }
+                break;
+            case "disableAudio":
+                AUDIO_ENABLED = false;
+                break;
+            case "enableAudio":
+                AUDIO_ENABLED = true;
+                break;
+        }
     }
 
-    if (HAPPINESS < 0) {
+    if (HAPPINESS <= 0) {
+        ALLOW_EVENTS = false;
+
         let rage = rageEvent();
 
         response_text = rage.text;
@@ -103,7 +142,25 @@ function talk(sentence) {
         response_speed = rage.speed;
 
         if (rage.abort) {
-            ABORT_SPEAK = true;
+            ALLOW_SPEAKING = false;
+            return;
+        }
+    }
+
+    if (LOVE > 12) {
+        ALLOW_EVENTS = false;
+
+        let love = loveEvent();
+
+        response_text = love.text;
+        response_speak_anim = love.speakAnim;
+        response_speak_audio = love.speakAudio;
+        response_idle_anim = love.idleAnim;
+        response_speed = love.speed;
+
+        if (love.abort) {
+            LOVE = 0;
+            ALLOW_EVENTS = true;
             return;
         }
     }

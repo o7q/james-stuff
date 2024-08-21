@@ -1,4 +1,4 @@
-let ABORT_SPEAK = false;
+let ALLOW_SPEAKING = true;
 
 let textIntervalId;
 function speak(text, speakAnim, speakAudio, idleAnim, speed) {
@@ -17,7 +17,7 @@ function speak(text, speakAnim, speakAudio, idleAnim, speed) {
 
     textIntervalId = setInterval(() => {
         if (i < text.length) {
-            if (ABORT_SPEAK) {
+            if (!ALLOW_SPEAKING) {
                 clearInterval(textIntervalId);
                 textIntervalId = null;
 

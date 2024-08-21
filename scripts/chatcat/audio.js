@@ -2,6 +2,7 @@ let AUDIO_SPEAK_SLY = [];
 let AUDIO_SPEAK_HAPPY = [];
 let AUDIO_SPEAK_SURPRISED = [];
 let AUDIO_SPEAK_THINKING = [];
+let AUDIO_SPEAK_EMBARRASSED = [];
 let AUDIO_SPEAK_SAD = [];
 let AUDIO_SPEAK_UPSET = [];
 let AUDIO_SPEAK_UPSET2 = [];
@@ -19,6 +20,9 @@ function loadAudio() {
 
         AUDIO_SPEAK_SURPRISED.push(new Audio(`../audio/cat/chat/speak/audio_speak_surprised/${i + 1}.mp3`));
         AUDIO_SPEAK_SURPRISED[i].volume = 0.2;
+
+        AUDIO_SPEAK_EMBARRASSED.push(new Audio(`../audio/cat/chat/speak/audio_speak_embarrassed/${i + 1}.mp3`));
+        AUDIO_SPEAK_EMBARRASSED[i].volume = 0.5;
 
         AUDIO_SPEAK_THINKING.push(new Audio(`../audio/cat/chat/speak/audio_speak_thinking/${i + 1}.mp3`));
         AUDIO_SPEAK_THINKING[i].volume = 0.2;
@@ -51,6 +55,9 @@ function playRandomSpeakAudio(speakAudio) {
             break;
         case "speak/audio_speak_thinking":
             AUDIO_SPEAK_THINKING[randomIndex].play();
+            break;
+        case "speak/audio_speak_embarrassed":
+            AUDIO_SPEAK_EMBARRASSED[randomIndex].play();
             break;
         case "speak/audio_speak_sad":
             AUDIO_SPEAK_SAD[randomIndex].play();

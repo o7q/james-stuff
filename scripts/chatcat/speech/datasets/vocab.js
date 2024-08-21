@@ -221,6 +221,18 @@ ____END____
 idk
 
 i dont know
+____END____
+luv
+lov
+luve
+
+love
+____END____
+iluv
+ilov
+ilove
+
+i love
 `;
 
 const VOCAB_DATASET = parseDataset(VOCAB_DATASET_RAW);
