@@ -737,8 +737,15 @@ who is in paris
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Kanye and JAY-Z are in Paris
 ____END____
+say word
+say the word
+say the _ word
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What word?
+____END____
 say the n word
 can you say the n word
+say n word
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What's n word?
 ____END____
@@ -1050,7 +1057,7 @@ do you like me
 
 thinking<!>speak/anim_speak_thinking<!>speak/audio_speak_thinking<!>idle/anim_idle_thinking<!>You're chill.
 thinking<!>speak/anim_speak_thinking<!>speak/audio_speak_thinking<!>idle/anim_idle_thinking<!>You're pretty cool.
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I think your a good person!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I think you are a good person!
 ____END____
 i am depressed
 i am sad
