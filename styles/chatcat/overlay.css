@@ -1,26 +1,12 @@
-.overlay__video {
-    width: 100%;
-    height: 100%;
-
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    object-fit: cover;
-
-    cursor: none;
-
-    image-rendering: pixelated;
-}
 
 .overlay {
     width: 100%;
     height: 100%;
-
+    
     position: absolute;
     left: 0;
     top: 0;
-
+    
     object-fit: cover;
     
     pointer-events: none;
