@@ -1,0 +1,2 @@
+- Finish project and link pages
+- Add return texts
