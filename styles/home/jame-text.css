@@ -1,58 +1,62 @@
-.jame-text {
+.jame-text__text {
+    width: 1000px;
+
     position: absolute;
-    width: 1500px;
     top: 50%;
     left: 50%;
+
     transform: translate(-50%, -50%);
 
-    image-rendering: pixelated;
-
     cursor: pointer;
+
+    image-rendering: pixelated;
 }
 
-.jame-text.first {
+.jame-text__text--first {
     opacity: 1;
 }
 
-.jame-text.second {
+.jame-text__text--second{
     opacity: 0;
 }
 
-.jame-text-container:hover .jame-text.first {
-    transform: translate(-50%, -50%) scale(1.3);
+.jame-text:hover .jame-text__text--first {
+    transform: translate(-50%, -50%) scale(1.2);
     opacity: 0;
 }
 
-.jame-text-container:hover .jame-text.second {
-    transform: translate(-50%, -50%) scale(1.3);
+.jame-text:hover .jame-text__text--second {
+    transform: translate(-50%, -50%) scale(1.2);
     opacity: 1;
 }
 
-.jame-text.first2 {
+.jame-text__text--first--clicked {
     opacity: 1;
 }
 
-.jame-text.second2 {
+.jame-text__text--second--clicked {
     opacity: 0;
 }
 
-.jame-text-container:hover .jame-text.first2 {
+.jame-text:hover .jame-text__text--first--clicked {
     opacity: 0;
 }
 
-.jame-text-container:hover .jame-text.second2 {
+.jame-text:hover .jame-text__text--second--clicked {
     opacity: 1;
 }
 
-.jame-text.transition {
+.jame-text__text--transition {
     transition: transform 4s ease-in-out, opacity 4s ease-in-out;
 }
 
-.jame-text.transition2 {
+.jame-text__text--transition--clicked {
     transition: transform 2s ease-in-out, opacity 1s ease-in-out, top 2s ease-in-out, width 2s ease-in-out;
 }
 
-.jame-text.move {
-    top: 17vw;
-    width: 40vw;
+.jame-text__text--move {
+    top: 37%;
+    width: 40%;
+
+    cursor: default;
 }

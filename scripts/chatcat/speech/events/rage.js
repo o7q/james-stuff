@@ -13,9 +13,8 @@ function rageEvent() {
     if (RAGE_DIALOGUE_INDEX >= rageResponse.length / 5) {
         document.body.innerHTML = "";
         let the_void = document.createElement("img");
-        the_void.className = "catBackground";
+        the_void.className = "overlay__video";
         the_void.draggable = false;
-        the_void.style.cursor = "none";
         the_void.src = "../animations/cat/chat/events/event_the_void/1920x1080_16.gif";
         document.body.append(the_void);
         document.title = "the void";

@@ -1,5 +1,4 @@
-function changeFavicon(favicon)
-{
+function changeFavicon(favicon) {
     // from https://stackoverflow.com/a/260876
     var link = document.querySelector("link[rel~='icon']");
     if (!link) {
@@ -8,4 +7,15 @@ function changeFavicon(favicon)
         document.head.appendChild(link);
     }
     link.href = favicon;
+}
+
+function openPage(url, mode) {
+    switch (mode) {
+        case "new":
+            window.open(url);
+            break;
+        case "replace":
+            window.location.assign(url);
+            break;
+    }
 }

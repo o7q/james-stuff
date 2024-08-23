@@ -10,8 +10,8 @@ function speak(text, speakAnim, speakAudio, idleAnim, speed) {
         clearInterval(textIntervalId);
     }
 
-    const textBox = document.getElementById("catText");
-    const textBackground = document.getElementById("catTextBackground");
+    const textBox = document.getElementById("cat-text");
+    const textBackground = document.getElementById("cat-text-background");
 
     let i = 0;
 
@@ -76,7 +76,7 @@ function getElementDimensionsInVwVh(element) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('userTextInput').addEventListener('keydown', function (event) {
+    document.getElementById('user-text-input').addEventListener('keydown', function (event) {
         if (event.key === 'Enter') {
             event.preventDefault();
             if (this.value === "" || !this.value) {

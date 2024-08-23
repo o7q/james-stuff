@@ -22,7 +22,6 @@ hello
 hey
 hi
 
-
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Hi!
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Hello.
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Hi! How are you?
@@ -689,10 +688,16 @@ thats cool
 this is cool
 this is so cool
 wow
+yes it was
 
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Thanks!<!>increaseLove
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Thank you!<!>increaseLove
 ____END____
+chicken
+nugget
+chicken wing
+chicken drumstick
+drumstick
 chicken nugget
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Chicken Nugget.
@@ -1224,6 +1229,17 @@ want to hang out sometime again
 
 blush<!>speak/anim_speak_blush<!>speak/audio_speak_sly<!>idle/anim_idle_blush<!>Yes. Of course!
 blush<!>speak/anim_speak_blush<!>speak/audio_speak_sly<!>idle/anim_idle_blush<!>Oh- Yes of course!
+____END____
+how was this website made
+how did jame make this website
+how jame make this website
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>jame made this website using pure HTML, CSS, and JavaScript!
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>jame made this website using HTML, CSS, and JavaScript!
+____END____
+did you make this website
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I did not!
 `;
 
 const SLY_DATASET = parseDataset(SLY_DATASET_RAW);

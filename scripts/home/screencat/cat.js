@@ -1,7 +1,7 @@
 class Cat {
     constructor() {
         this.cat = document.createElement("img");
-        this.cat.className = "cat";
+        this.cat.className = "screen-cat";
         this.cat.draggable = false;
         this.cat.onclick = function () {
             window.location.replace("pages/chatcat.html");

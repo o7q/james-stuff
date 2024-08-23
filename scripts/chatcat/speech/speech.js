@@ -83,6 +83,7 @@ function talk(sentence) {
             case "doSomethingCool":
                 setTimeout(function () {
                     ALLOW_EVENTS = false;
+                    ALLOW_SPEAKING = false;
                     playVideo("../videos/cat/chat/events/vid_something_cool/960x540_16.mp4");
 
                     setTimeout(function () {
@@ -96,6 +97,7 @@ function talk(sentence) {
                         );
 
                         ALLOW_EVENTS = true;
+                        ALLOW_SPEAKING = true;
                     }, 69000);
                 }, 2000);
                 break;

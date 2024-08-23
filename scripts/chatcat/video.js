@@ -4,7 +4,7 @@ function playVideo(videoPath, loop) {
     stopVideo();
 
     const video = document.createElement('video');
-    video.classList.add("videoOverlay");
+    video.classList.add("overlay__video");
 
     video.src = videoPath;
 
