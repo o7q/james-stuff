@@ -410,6 +410,7 @@ what algorithm are you running on
 what algorithm
 how were you made
 how are you made
+how do you work behind the scenes
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I am running on an algorithm called Cosine Similarity. It works by decoding sentences into coordinate points and determining the angle between them, it then weighs them against a built-in dataset.
 ____END____
@@ -689,6 +690,7 @@ this is cool
 this is so cool
 wow
 yes it was
+wow you are cool
 
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Thanks!<!>increaseLove
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Thank you!<!>increaseLove
@@ -816,6 +818,7 @@ no
 not really
 nah
 nevermind
+nothing
 
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Ok.
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Ok!
@@ -1181,6 +1184,11 @@ do something
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I am too lazy.
 ____END____
+want to
+
+thinking<!>speak/anim_speak_thinking<!>speak/audio_speak_thinking<!>idle/anim_idle_thinking<!>Want to what?
+thinking<!>speak/anim_speak_thinking<!>speak/audio_speak_thinking<!>idle/anim_idle_thinking<!>Wanna what?
+____END____
 you are cute
 you are a cutie
 cutie
@@ -1203,6 +1211,7 @@ you are such cute
 embarrassed<!>speak/anim_speak_embarrassed<!>speak/audio_speak_embarrassed<!>idle/anim_idle_embarrassed<!>I- I- Uh- Okay.
 ____END____
 i love
+love
 
 thinking<!>speak/anim_speak_thinking<!>speak/audio_speak_thinking<!>idle/anim_idle_thinking<!>Love what?
 ____END____
@@ -1215,8 +1224,8 @@ love you
 like you
 i want to stay with you
 i want to stay with you forever
-wanna kiss
-wanna smooch
+want to kiss
+want to smooch
 
 embarrassed<!>speak/anim_speak_embarrassed<!>speak/audio_speak_embarrassed<!>idle/anim_idle_embarrassed<!>Oh. I- I- Okay.<!>increaseLove
 embarrassed<!>speak/anim_speak_embarrassed<!>speak/audio_speak_embarrassed<!>idle/anim_idle_blush<!>Oh. I- I- Nevermind.<!>increaseLove
@@ -1226,6 +1235,7 @@ embarrassed<!>speak/anim_speak_embarrassed<!>speak/audio_speak_embarrassed<!>idl
 ____END____
 want to hang out
 want to hang out sometime again
+talk to you later
 
 blush<!>speak/anim_speak_blush<!>speak/audio_speak_sly<!>idle/anim_idle_blush<!>Yes. Of course!
 blush<!>speak/anim_speak_blush<!>speak/audio_speak_sly<!>idle/anim_idle_blush<!>Oh- Yes of course!
@@ -1240,6 +1250,20 @@ ____END____
 did you make this website
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I did not!
+____END____
+who is the dog in the background of projects page
+who is in the background in the painting
+who is in the background on the picture
+who is that dog in the background
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>That is jame's dog: Chloe!
+____END____
+what color are jame eye
+what color are jame eyes
+what color jame eye
+what color jame eyes
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>They are blue!
 `;
 
 const SLY_DATASET = parseDataset(SLY_DATASET_RAW);

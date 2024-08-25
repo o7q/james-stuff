@@ -12,31 +12,31 @@ let AUDIO_ENABLED = true;
 
 function loadAudio() {
     for (let i = 0; i < 10; i++) {
-        AUDIO_SPEAK_SLY.push(new Audio(`../audio/cat/chat/speak/audio_speak_sly/${i + 1}.mp3`));
+        AUDIO_SPEAK_SLY.push(new Audio(`../scenes/chatcat/audio/speak/audio_speak_sly/${i + 1}.mp3`));
         AUDIO_SPEAK_SLY[i].volume = 0.2;
 
-        AUDIO_SPEAK_HAPPY.push(new Audio(`../audio/cat/chat/speak/audio_speak_happy/${i + 1}.mp3`));
+        AUDIO_SPEAK_HAPPY.push(new Audio(`../scenes/chatcat/audio/speak/audio_speak_happy/${i + 1}.mp3`));
         AUDIO_SPEAK_HAPPY[i].volume = 0.2;
 
-        AUDIO_SPEAK_SURPRISED.push(new Audio(`../audio/cat/chat/speak/audio_speak_surprised/${i + 1}.mp3`));
+        AUDIO_SPEAK_SURPRISED.push(new Audio(`../scenes/chatcat/audio/speak/audio_speak_surprised/${i + 1}.mp3`));
         AUDIO_SPEAK_SURPRISED[i].volume = 0.2;
 
-        AUDIO_SPEAK_EMBARRASSED.push(new Audio(`../audio/cat/chat/speak/audio_speak_embarrassed/${i + 1}.mp3`));
+        AUDIO_SPEAK_EMBARRASSED.push(new Audio(`../scenes/chatcat/audio/speak/audio_speak_embarrassed/${i + 1}.mp3`));
         AUDIO_SPEAK_EMBARRASSED[i].volume = 0.5;
 
-        AUDIO_SPEAK_THINKING.push(new Audio(`../audio/cat/chat/speak/audio_speak_thinking/${i + 1}.mp3`));
+        AUDIO_SPEAK_THINKING.push(new Audio(`../scenes/chatcat/audio/speak/audio_speak_thinking/${i + 1}.mp3`));
         AUDIO_SPEAK_THINKING[i].volume = 0.2;
 
-        AUDIO_SPEAK_SAD.push(new Audio(`../audio/cat/chat/speak/audio_speak_sad/${i + 1}.mp3`));
+        AUDIO_SPEAK_SAD.push(new Audio(`../scenes/chatcat/audio/speak/audio_speak_sad/${i + 1}.mp3`));
         AUDIO_SPEAK_SAD[i].volume = 0.2;
 
-        AUDIO_SPEAK_UPSET.push(new Audio(`../audio/cat/chat/speak/audio_speak_upset/${i + 1}.mp3`));
+        AUDIO_SPEAK_UPSET.push(new Audio(`../scenes/chatcat/audio/speak/audio_speak_upset/${i + 1}.mp3`));
         AUDIO_SPEAK_UPSET[i].volume = 0.2;
 
-        AUDIO_SPEAK_UPSET2.push(new Audio(`../audio/cat/chat/speak/audio_speak_upset2/${i + 1}.mp3`));
+        AUDIO_SPEAK_UPSET2.push(new Audio(`../scenes/chatcat/audio/speak/audio_speak_upset2/${i + 1}.mp3`));
         AUDIO_SPEAK_UPSET2[i].volume = 0.2;
 
-        AUDIO_SPEAK_SCARY.push(new Audio(`../audio/cat/chat/speak/audio_speak_scary/${i + 1}.mp3`));
+        AUDIO_SPEAK_SCARY.push(new Audio(`../scenes/chatcat/audio/speak/audio_speak_scary/${i + 1}.mp3`));
         AUDIO_SPEAK_SCARY[i].volume = 0.5;
     }
 }

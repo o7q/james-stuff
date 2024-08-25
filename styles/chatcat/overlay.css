@@ -17,7 +17,7 @@
     opacity: 0.6;
 }
 
-.overlay--dust {
+.overlay--screendust {
     mix-blend-mode: color-dodge;
     opacity: 0.3;
 }

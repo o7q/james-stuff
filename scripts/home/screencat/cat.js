@@ -124,7 +124,7 @@ class Cat {
     }
 
     updateTexture() {
-        this.cat.src = `animations/cat/iso/${this.animation}/anim_${this.animation}_${this.mood}/${this.snappedRotation}/256x256_12.gif`;
+        this.cat.src = `scenes/screencat/animations/${this.animation}/anim_${this.animation}_${this.mood}/${this.snappedRotation}/256x256_12.gif`;
     }
 
     getOffsetXY(x, y) {

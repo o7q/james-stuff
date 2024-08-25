@@ -45,7 +45,7 @@ function animate(animation) {
     }
 
     if (cat) {
-        cat.src = `../animations/cat/chat/${animation}/960x540_12.gif`;
+        cat.src = `../scenes/chatcat/animations/${animation}/960x540_12.gif`;
     }
 }
 

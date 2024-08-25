@@ -15,11 +15,11 @@ function rageEvent() {
         let the_void = document.createElement("img");
         the_void.className = "overlay__video";
         the_void.draggable = false;
-        the_void.src = "../animations/cat/chat/events/event_the_void/1920x1080_16.gif";
+        the_void.src = "../scenes/chatcat/backgrounds/events/background_the_void/1920x1080_16.gif";
         document.body.append(the_void);
         document.title = "the void";
         changeFavicon("../images/favicon/favicat/event/the_void.png");
-        const audio = new Audio("../audio/cat/chat/events/audio_the_void/the_void.mp3");
+        const audio = new Audio("../scenes/chatcat/audio/events/audio_the_void/the_void.mp3");
         audio.loop = true;
         audio.play();
 

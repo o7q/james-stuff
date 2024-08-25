@@ -84,7 +84,7 @@ function talk(sentence) {
                 setTimeout(function () {
                     ALLOW_EVENTS = false;
                     ALLOW_SPEAKING = false;
-                    playVideo("../videos/cat/chat/events/vid_something_cool/960x540_16.mp4");
+                    playVideo("../scenes/chatcat/videos/events/video_something_cool/960x540_16.mp4");
 
                     setTimeout(function () {
                         stopVideo();

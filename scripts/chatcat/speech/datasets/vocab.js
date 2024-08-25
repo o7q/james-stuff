@@ -233,6 +233,94 @@ ilov
 ilove
 
 i love
+____END____
+nvm
+
+nevermind
+____END____
+brb
+
+be right back
+____END____
+aka
+
+as known as
+____END____
+ily
+
+i love you
+____END____
+np
+
+no problem
+____END____
+ttyl
+
+talk to you later
+____END____
+asap
+
+as soon as possible
+____END____
+imo
+
+in my opinion
+____END____
+omg
+
+oh my god
+____END____
+lmk
+
+let me know
+____END____
+idk
+
+i dont know
+____END____
+nvm
+
+nevermind
+____END____
+fyi
+
+for your information
+____END____
+omw
+
+on my way
+____END____
+ion
+
+i dont
+____END____
+stfu
+
+shut the fuck up
+____END____
+jk
+
+just kidding
+____END____
+tbh
+
+to be honest
+____END____
+rn
+
+right now
+____END____
+gg
+
+good game
+____END____
+bts
+
+behind the scenes
+____END____
+wanna
+
+want to
 `;
 
 const VOCAB_DATASET = parseDataset(VOCAB_DATASET_RAW);

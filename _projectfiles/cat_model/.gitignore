@@ -2,7 +2,7 @@
 *.blend[1-9]
 *.blend10
 
-# images
+# renders
 renders/sequence/
 renders/*.gif
 renders/*.png

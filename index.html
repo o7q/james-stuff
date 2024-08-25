@@ -7,14 +7,15 @@
     <title>jame's stuff</title>
 
     <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/overlays.css">
 
     <link rel="stylesheet" href="styles/home/body.css">
-    <link rel="stylesheet" href="styles/home/overlay.css">
-    <link rel="stylesheet" href="styles/screencat/cat.css">
     <link rel="stylesheet" href="styles/home/jame-text.css">
     <link rel="stylesheet" href="styles/home/menu-text.css">
     <link rel="stylesheet" href="styles/home/scrolling-text.css">
     <link rel="stylesheet" href="styles/home/copyright-text.css">
+    
+    <link rel="stylesheet" href="styles/screencat/cat.css">
 
     <script src="scripts/math.js"></script>
     <script src="scripts/window.js"></script>
@@ -39,9 +40,11 @@
     </div>
 
     <div class="menu-text" id="menu-text">
-        <p class="menu-text__text menu-text__text--blur" onclick="openPage('pages/projects.html', 'replace')">PROJECTS</p>
+        <p class="menu-text__text menu-text__text--blur" onclick="openPage('pages/projects.html', 'replace')">PROJECTS
+        </p>
         <p class="menu-text__text menu-text__text--blur" onclick="openPage('pages/links.html', 'replace')">LINKS</p>
-        <p class="menu-text__text menu-text__text--blur" onclick="openPage('https:\/\/github.com/o7q/james-stuff', 'new')">SOURCE</p>
+        <p class="menu-text__text menu-text__text--blur"
+            onclick="openPage('https:\/\/github.com/o7q/james-stuff', 'new')">SOURCE</p>
     </div>
 
     <div class="scrolling-text">
@@ -51,8 +54,9 @@
         </div>
     </div>
 
+    <img src="images/overlays/noise.png" class="overlay overlay--noise" draggable="false">
     <img src="images/overlays/crt.gif" class="overlay overlay--crt" draggable="false">
-    <img src="images/overlays/dust.png" class="overlay overlay--dust" draggable="false">
+    <img src="images/overlays/screendust.png" class="overlay overlay--screendust" draggable="false">
     <img src="images/overlays/tv.png" class="overlay overlay--tv" draggable="false">
     <img src="images/overlays/vignette.png" class="overlay overlay--vignette" draggable="false">
 

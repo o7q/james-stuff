@@ -1,0 +1,35 @@
+.cartridge-image--gray {
+    filter: saturate(0) hue-rotate(0deg);
+}
+
+.cartridge-image--green {
+    filter: saturate(10) hue-rotate(-20deg) brightness(150%);
+}
+
+.cartridge-image--blue {
+    filter: saturate(10) hue-rotate(30deg) brightness(150%);
+}
+
+.cartridge-image--purple {
+    filter: saturate(10) hue-rotate(100deg);
+}
+
+.cartridge-image--pink {
+    filter: saturate(10) hue-rotate(130deg);
+}
+
+.cartridge-image--red {
+    filter: saturate(10) hue-rotate(130deg);
+}
+
+.cartridge-image--orange {
+    filter: saturate(10) hue-rotate(220deg);
+}
+
+.cartridge-image--yellow {
+    filter: saturate(10) hue-rotate(250deg) brightness(150%);
+}
+
+.cartridge-image--white {
+    filter: saturate(0) brightness(200%);
+}
