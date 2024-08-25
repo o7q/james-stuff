@@ -1,10 +1,10 @@
 // I am using the cosine similarity formula for speech comparison
 // An article explaining it can be found here: https://en.wikipedia.org/wiki/Cosine_similarity
-function cosineSim(sentence1, sentence2) {
-    const s1 = sentence1.toLowerCase().split(" ");
-    const s2 = sentence2.toLowerCase().split(" ");
+function cosineSimilarity(sentence1, sentence2) {
+    const s1 = sentence1.toLowerCase().split(' ');
+    const s2 = sentence2.toLowerCase().split(' ');
 
-    const words = removeDup(s1.concat(s2));
+    const words = removeDuplicates(s1.concat(s2));
 
     let numerator_dot = 0;
 
@@ -13,10 +13,10 @@ function cosineSim(sentence1, sentence2) {
 
     // calculate numerator dot product
     for (let i = 0; i < words.length; i++) {
-        const bc1 = binComp(i, s1, words);
+        const bc1 = binaryComponent(i, s1, words);
         bin_components1.push(bc1);
 
-        const bc2 = binComp(i, s2, words);
+        const bc2 = binaryComponent(i, s2, words);
         bin_components2.push(bc2);
 
         numerator_dot += bc1 * bc2;
@@ -43,7 +43,7 @@ function cosineSim(sentence1, sentence2) {
 
 // binary component function
 // returns the binary component based on word equality
-function binComp(i, s1, s2) {
+function binaryComponent(i, s1, s2) {
     let bc = 0;
     if (s1.length > i && s2.length > i) {
         if (s1[i] === s2[i]) {
@@ -56,7 +56,7 @@ function binComp(i, s1, s2) {
 
 // remove duplicates function
 // removes duplicate elements from an array
-function removeDup(arr) {
+function removeDuplicates(arr) {
     return arr.filter(
         (item, index) => arr.indexOf(item) === index
     );

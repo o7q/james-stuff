@@ -1,24 +1,26 @@
 let ALLOW_EVENTS = true;
 
 function talk(sentence) {
-    const DEBUG_LOG = false;
+    const DEBUG_LOG = true;
 
-    const corrected_sentence = correct(sentence);
+    const formatted_sentence = format(sentence);
 
     let cosine_sim_max_values = [];
+
+    let max_cosine_similarity = Number.MIN_SAFE_INTEGER;
 
     for (let i = 0; i < SLY_DATASET.length; i += 2) {
         const response_questions_length = SLY_DATASET[i].length;
 
-        let max_cosine_similarity = Number.MIN_SAFE_INTEGER;
+        let local_max_cosine_similarity = Number.MIN_SAFE_INTEGER;
 
         // loop through each dataset question and find the closest match
         for (let j = 0; j < response_questions_length; j++) {
             const response_question = SLY_DATASET[i][j];
-            const cosine_similarity = cosineSim(corrected_sentence, response_question);
+            const cosine_similarity = cosineSimilarity(formatted_sentence, response_question);
 
-            if (cosine_similarity > max_cosine_similarity) {
-                max_cosine_similarity = cosine_similarity;
+            if (cosine_similarity > local_max_cosine_similarity) {
+                local_max_cosine_similarity = cosine_similarity;
             }
 
             if (DEBUG_LOG) {
@@ -26,25 +28,21 @@ function talk(sentence) {
             }
         }
 
-        cosine_sim_max_values.push(max_cosine_similarity);
+        cosine_sim_max_values.push(local_max_cosine_similarity);
+
+        if (local_max_cosine_similarity > max_cosine_similarity) {
+            max_cosine_similarity = local_max_cosine_similarity;
+        }
 
         if (DEBUG_LOG) {
-            console.log(max_cosine_similarity);
+            console.log(local_max_cosine_similarity);
         }
     }
 
-    const max_cosine_similarity = Math.max(...cosine_sim_max_values);
-
     let response;
 
-    if (max_cosine_similarity < 0.2 && corrected_sentence.length > 30) {
-        response = ILLEGIBLE00_LONG_RESPONSES[getRandomInt(0, ILLEGIBLE00_LONG_RESPONSES.length)];
-    }
-    else if (max_cosine_similarity < 0.2) {
-        response = ILLEGIBLE00_RESPONSES[getRandomInt(0, ILLEGIBLE00_RESPONSES.length)];
-    }
-    else if (max_cosine_similarity < 0.3) {
-        response = ILLEGIBLE01_RESPONSES[getRandomInt(0, ILLEGIBLE01_RESPONSES.length)];
+    if (max_cosine_similarity < 0.5) {
+        response = ILLEGIBLE_RESPONSES[getRandomInt(0, ILLEGIBLE_RESPONSES.length)];
     }
     else {
         const nearest_index = nearest(1.0, cosine_sim_max_values).index;
@@ -65,13 +63,6 @@ function talk(sentence) {
     let response_action = response_data[5];
 
     let response_speed = 20;
-
-    if (DEBUG_LOG) {
-        console.log("corrected sentence:", corrected_sentence);
-        console.log(`[${response_emotion}]`, response_text);
-        console.log("confidence:", max_cosine_similarity);
-        console.log("happiness:", HAPPINESS);
-    }
 
     if (ALLOW_EVENTS) {
         switch (response_action) {
@@ -168,4 +159,12 @@ function talk(sentence) {
     }
 
     speak(response_text, response_speak_anim, response_speak_audio, response_idle_anim, response_speed);
+
+    if (DEBUG_LOG) {
+        console.log("formatted sentence:", formatted_sentence);
+        console.log(`[${response_emotion}]`, response_text);
+        console.log("confidence:", max_cosine_similarity);
+        console.log("happiness:", HAPPINESS);
+        console.log("love:", LOVE);
+    }
 }

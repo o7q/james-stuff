@@ -14,8 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
 function blur() {
     const background = document.getElementById("background");
     const backgroundCat = document.getElementById("background-cat");
+    const backgroundDust = document.getElementById("background-dust");
     background.classList.add("blur");
     backgroundCat.classList.add("blur");
+    backgroundDust.classList.add("blur");
 
     const foregroundShelf = document.getElementById("foreground-shelf");
     foregroundShelf.classList.remove("blur");
@@ -35,8 +37,10 @@ function blur() {
 function unblur() {
     const background = document.getElementById("background");
     const backgroundCat = document.getElementById("background-cat");
+    const backgroundDust = document.getElementById("background-dust");
     background.classList.remove("blur");
     backgroundCat.classList.remove("blur");
+    backgroundDust.classList.remove("blur");
 
     const foregroundShelf = document.getElementById("foreground-shelf");
     foregroundShelf.classList.add("blur");

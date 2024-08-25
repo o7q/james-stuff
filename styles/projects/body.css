@@ -21,7 +21,14 @@ body {
 }
 
 .background--overlay {
-    mix-blend-mode: difference;
+    mix-blend-mode: screen;
+}
+
+.background--dust {
+    mix-blend-mode: lighten;
+    opacity: 0.5;
+
+    pointer-events: none;
 }
 
 .blur {

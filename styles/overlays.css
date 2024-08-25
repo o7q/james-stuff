@@ -32,8 +32,8 @@
 }
 
 .overlay--dust {
-    mix-blend-mode: color-dodge;
-    opacity: 0;
+    mix-blend-mode: lighten;
+    opacity: 0.3;
 }
 
 .overlay--vignette {

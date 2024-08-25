@@ -32,6 +32,7 @@ yo
 wassup
 wasg
 sup
+howdy
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>wasg.
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>yo.
@@ -412,7 +413,7 @@ how were you made
 how are you made
 how do you work behind the scenes
 
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I am running on an algorithm called Cosine Similarity. It works by decoding sentences into coordinate points and determining the angle between them, it then weighs them against a built-in dataset.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I am running on two algorithms: Levenshtein/Wagner-Fischer and Cosine Similarity. First, the input sentence is run through the Levenshtein algorithm, which corrects spelling errors. Then it decodes the sentences into coordinate points and then determining the angle between them, it then weighs them against a built-in dataset, creating- Me!
 ____END____
 what editing software does jame use
 what editor does jame use
@@ -846,6 +847,7 @@ what is jame youtube
 what is jame channel
 youtube
 jame youtube
+what jame youtube
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>jame has 3 YouTube channels, his main editing channel, his second social channel, and his third streaming vods channel (youtube.com/@o7qedits, youtube.com/@o7qedits2, youtube.com/@o7qedits3)
 ____END____
@@ -1030,14 +1032,10 @@ shart
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Ok.
 ____END____
-lol
-Lmao
-rofl
-roflcopter
-lmfao
+haha
 
 thinking<!>speak/anim_speak_thinking<!>speak/audio_speak_thinking<!>idle/anim_idle_thinking<!>Lawl.
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>xd.
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>X3
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Lmao.
 ____END____
 why is your voice so annoying
@@ -1045,6 +1043,7 @@ can you stop making noise
 can you stop making audio
 stop your voice sounds
 can you shut up
+shut the fuck up
 shut up
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Sorry, I won't make noise anymore.<!>disableAudio
@@ -1055,6 +1054,8 @@ ok you can talk again
 can you talk again
 you can make noise again
 stop shutting up
+talk
+talk again
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Ok. I will make noise again!<!>enableAudio
 ____END____
@@ -1233,6 +1234,13 @@ embarrassed<!>speak/anim_speak_embarrassed<!>speak/audio_speak_embarrassed<!>idl
 embarrassed<!>speak/anim_speak_embarrassed<!>speak/audio_speak_embarrassed<!>idle/anim_idle_blush2<!>Oh my.<!>increaseLove
 embarrassed<!>speak/anim_speak_embarrassed<!>speak/audio_speak_embarrassed<!>idle/anim_idle_blush2<!>Oh.<!>increaseLove
 ____END____
+do you love me
+
+embarrassed<!>speak/anim_speak_embarrassed<!>speak/audio_speak_embarrassed<!>idle/anim_idle_embarrassed<!>I- I don't know.<!>increaseLove
+embarrassed<!>speak/anim_speak_embarrassed<!>speak/audio_speak_embarrassed<!>idle/anim_idle_blush<!>I-<!>increaseLove
+embarrassed<!>speak/anim_speak_embarrassed<!>speak/audio_speak_embarrassed<!>idle/anim_idle_blush<!>I- Maybe.<!>increaseLove
+embarrassed<!>speak/anim_speak_embarrassed<!>speak/audio_speak_embarrassed<!>idle/anim_idle_blush2<!>I- I- I really don't know.<!>increaseLove
+____END____
 want to hang out
 want to hang out sometime again
 talk to you later
@@ -1264,6 +1272,10 @@ what color jame eye
 what color jame eyes
 
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>They are blue!
+____END____
+how did
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>How did what?
 `;
 
 const SLY_DATASET = parseDataset(SLY_DATASET_RAW);
