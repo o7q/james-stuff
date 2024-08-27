@@ -17,7 +17,16 @@ function animate(animation) {
             changeFavicon("../images/favicon/favicat/normal/sad.png");
             break;
         case "speak/anim_speak_scary":
+        case "idle/anim_idle_scary":
             changeFavicon("../images/favicon/favicat/normal/scary.png");
+            break;
+        case "speak/anim_speak_blush":
+        case "idle/anim_idle_blush":
+            changeFavicon("../images/favicon/favicat/normal/blush.png");
+            break;
+        case "speak/anim_speak_blush2":
+        case "idle/anim_idle_blush2":
+            changeFavicon("../images/favicon/favicat/normal/blush2.png");
             break;
         case "idle/anim_speak_sly":
         case "idle/anim_idle_sly":

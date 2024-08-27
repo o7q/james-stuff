@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jame's cat</title>
+    <title>james' cat</title>
 
+    <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/fonts.css">
 
     <link rel="stylesheet" href="../styles/chatcat/body.css">
@@ -23,24 +24,25 @@
     <script src="../scripts/chatcat/animate.js"></script>
     <script src="../scripts/chatcat/audio.js"></script>
     <script src="../scripts/chatcat/video.js"></script>
-
+    
+    <script src="../scripts/chatcat/speech/speech.js"></script>
     <script src="../scripts/chatcat/speech/responses/illegible.js"></script>
     <script src="../scripts/chatcat/speech/responses/rage.js"></script>
     <script src="../scripts/chatcat/speech/responses/love.js"></script>
+    <script src="../scripts/chatcat/speech/dataset-parser.js"></script>
+    <script src="../scripts/chatcat/speech/datasets/sly.js"></script>
 
     <script src="../scripts/chatcat/speech/events/rage.js"></script>
     <script src="../scripts/chatcat/speech/events/love.js"></script>
 
-    <script src="../scripts/chatcat/speech/dataset-parser.js"></script>
-    <script src="../scripts/chatcat/speech/datasets/sly.js"></script>
-
-    <script src="../scripts/chatcat/speech/speech.js"></script>
-    <script src="../scripts/chatcat/speech/compare/cosine-similarity.js"></script>
     <script src="../scripts/chatcat/speech/format/format.js"></script>
     <script src="../scripts/chatcat/speech/format/levenshtein.js"></script>
+    <script src="../scripts/chatcat/speech/compare/cosine-similarity.js"></script>
     <script src="../scripts/chatcat/speech/format/custom-replace.js"></script>
     <script src="../scripts/chatcat/speech/format/dictionary/english.js"></script>
     <script src="../scripts/chatcat/speech/format/dictionary/datasets/custom.js"></script>
+
+    <link rel="stylesheet" href="../styles/transitions/body-fade.css">
 </head>
 
 <body>
@@ -56,6 +58,8 @@
     <img src="../images/overlays/crt.gif" class="overlay overlay--crt" draggable="false">
     <img src="../images/overlays/screendust.png" class="overlay overlay--screendust" draggable="false">
     <img src="../images/overlays/vignette.png" class="overlay overlay--vignette" draggable="false">
+    
+    <p class="return-text" style="font-family: BitCell;" onclick="pageTransition('../index.html', 'replace')">&lt; Go back</p>
 </body>
 
 </html>

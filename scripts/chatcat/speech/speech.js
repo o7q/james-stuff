@@ -1,7 +1,12 @@
 let ALLOW_EVENTS = true;
+let DEBUG_LOG = false;
+
+function toggleDebug()
+{
+    DEBUG_LOG = !DEBUG_LOG;
+}
 
 function talk(sentence) {
-    const DEBUG_LOG = true;
 
     const formatted_sentence = format(sentence);
 

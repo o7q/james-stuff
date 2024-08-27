@@ -7,8 +7,25 @@ document.addEventListener('mouseup', function (e) {
     MOUSE_DOWN = false;
 });
 
-function configureElementListeners() {
-    document.oncontextmenu = function (e) {
-        return false;
-    }
+document.oncontextmenu = function (e) {
+    return false;
 }
+
+let MOUSE_VELOCITY = { x: 0, y: 0 };
+let MOUSE_SPEED = 0;
+
+let MOUSE_POS = { x: 0, y: 0 };
+let MOUSE_POS_PREV = { x: 0, y: 0 };
+
+document.addEventListener('mousemove', function (event) {
+    MOUSE_POS_PREV.x = MOUSE_POS.x;
+    MOUSE_POS_PREV.y = MOUSE_POS.y;
+
+    MOUSE_POS.x = event.clientX;
+    MOUSE_POS.y = event.clientY;
+
+    MOUSE_SPEED = Math.abs(MOUSE_VELOCITY.x + MOUSE_VELOCITY.y);
+
+    MOUSE_VELOCITY.x = MOUSE_POS.x - MOUSE_POS_PREV.x;
+    MOUSE_VELOCITY.y = MOUSE_POS.y - MOUSE_POS_PREV.y;
+});

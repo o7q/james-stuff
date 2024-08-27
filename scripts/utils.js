@@ -19,3 +19,20 @@ function openPage(url, mode) {
             break;
     }
 }
+
+function pageTransition(url, mode)
+{
+    document.body.classList.add("bodyFadeOut");
+
+    setTimeout(() => {
+        openPage(url, mode);
+    }, 1000);
+}
+
+function getElementPosition(element) {
+    const rect = element.getBoundingClientRect();
+    return {
+        x: rect.left + window.scrollX,
+        y: rect.top + window.scrollY
+    };
+}

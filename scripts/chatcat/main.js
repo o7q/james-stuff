@@ -1,8 +1,6 @@
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", () => {
     loadAudio();
     animate(getRandomBaseIdleAnimation());
-
-    configureElementListeners();
 
     // speak(
     //     "Hey! I'm Sly!",
@@ -32,4 +30,4 @@ window.onload = function () {
         }
 
     }, 1);
-};
+});

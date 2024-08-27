@@ -4,17 +4,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jame's stuff</title>
+    <title>james' stuff</title>
 
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/overlays.css">
 
     <link rel="stylesheet" href="styles/home/body.css">
-    <link rel="stylesheet" href="styles/home/jame-text.css">
+    <link rel="stylesheet" href="styles/home/james-text.css">
     <link rel="stylesheet" href="styles/home/menu-text.css">
     <link rel="stylesheet" href="styles/home/scrolling-text.css">
     <link rel="stylesheet" href="styles/home/copyright-text.css">
-    
+
     <link rel="stylesheet" href="styles/screencat/cat.css">
 
     <script src="scripts/math.js"></script>
@@ -25,31 +25,35 @@
     <script src="scripts/home/main.js"></script>
     <script src="scripts/home/interaction.js"></script>
 
-    <script src="scripts/home/screencat/cat.js"></script>
-    <script src="scripts/home/screencat/init.js"></script>
+    <script src="scripts/screencat/cat.js"></script>
+    <script src="scripts/screencat/init.js"></script>
+
+    <link rel="stylesheet" href="styles/transitions/body-fade.css">
 </head>
 
 <body>
     <img src="images/backgrounds/space/space.gif" class="background" id="background" draggable="false">
 
-    <div class="jame-text">
-        <img src="images/text/james_stuff/nohover.png" class="jame-text__text jame-text__text--first"
-            id="jame-text__text--first" draggable="false">
-        <img src="images/text/james_stuff/hover.png" class="jame-text__text jame-text__text--second"
-            id="jame-text__text--second" draggable="false" onclick="jamestuffClick()">
+    <div class="james-text">
+        <img src="images/text/james_stuff/unhover.png" class="james-text__text james-text__text--first"
+            id="james-text__text--first" draggable="false">
+        <img src="images/text/james_stuff/hover.png" class="james-text__text james-text__text--second"
+            id="james-text__text--second" draggable="false" onclick="jamesStuffClick()">
     </div>
 
     <div class="menu-text" id="menu-text">
-        <p class="menu-text__text menu-text__text--blur" onclick="openPage('pages/projects.html', 'replace')">PROJECTS
+        <p class="menu-text__text menu-text__text--blur" onclick="pageTransition('pages/projects.html', 'replace')">
+            PROJECTS
         </p>
-        <p class="menu-text__text menu-text__text--blur" onclick="openPage('pages/links.html', 'replace')">LINKS</p>
+        <p class="menu-text__text menu-text__text--blur" onclick="pageTransition('pages/links.html', 'replace')">LINKS
+        </p>
         <p class="menu-text__text menu-text__text--blur"
             onclick="openPage('https:\/\/github.com/o7q/james-stuff', 'new')">SOURCE</p>
     </div>
 
     <div class="scrolling-text">
         <div class="scrolling-text__text">
-            welcome traveller. &nbsp;&nbsp;&nbsp;you have arrived at jame's stuff. &nbsp;&nbsp;&nbsp;if you have any
+            welcome traveller. &nbsp;&nbsp;&nbsp;you have arrived at james' stuff. &nbsp;&nbsp;&nbsp;if you have any
             questions, or if you are lost, please consult our friendly assistant: Sly.
         </div>
     </div>
@@ -60,8 +64,8 @@
     <img src="images/overlays/tv.png" class="overlay overlay--tv" draggable="false">
     <img src="images/overlays/vignette.png" class="overlay overlay--vignette" draggable="false">
 
-    <p class="credit-text credit-text--copyright">© 2024 jame</p>
-    <p class="credit-text">This website was constructed by jame in 2024. Therefore, the copyright belongs to jame.</p>
+    <p class="credit-text credit-text--copyright">© 2024 james</p>
+    <p class="credit-text">This website was constructed by james in 2024. Therefore, the copyright belongs to james.</p>
 </body>
 
 </html>

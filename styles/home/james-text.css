@@ -1,4 +1,4 @@
-.jame-text__text {
+.james-text__text {
     width: 1000px;
 
     position: absolute;
@@ -12,50 +12,50 @@
     image-rendering: pixelated;
 }
 
-.jame-text__text--first {
+.james-text__text--first {
     opacity: 1;
 }
 
-.jame-text__text--second{
+.james-text__text--second {
     opacity: 0;
 }
 
-.jame-text:hover .jame-text__text--first {
+.james-text:hover .james-text__text--first {
     transform: translate(-50%, -50%) scale(1.2);
     opacity: 0;
 }
 
-.jame-text:hover .jame-text__text--second {
+.james-text:hover .james-text__text--second {
     transform: translate(-50%, -50%) scale(1.2);
     opacity: 1;
 }
 
-.jame-text__text--first--clicked {
+.james-text__text--first--clicked {
     opacity: 1;
 }
 
-.jame-text__text--second--clicked {
+.james-text__text--second--clicked {
     opacity: 0;
 }
 
-.jame-text:hover .jame-text__text--first--clicked {
+.james-text:hover .james-text__text--first--clicked {
     opacity: 0;
 }
 
-.jame-text:hover .jame-text__text--second--clicked {
+.james-text:hover .james-text__text--second--clicked {
     opacity: 1;
 }
 
-.jame-text__text--transition {
+.james-text__text--transition {
     transition: transform 4s ease-in-out, opacity 4s ease-in-out;
 }
 
-.jame-text__text--transition--clicked {
+.james-text__text--transition--clicked {
     transition: transform 2s ease-in-out, opacity 1s ease-in-out, top 2s ease-in-out, width 2s ease-in-out;
 }
 
-.jame-text__text--move {
-    top: 37%;
+.james-text__text--move {
+    top: 18vw;
     width: 40%;
 
     cursor: default;

@@ -1,2 +1,2 @@
-# jame's stuff
-Yes. It's spelled jame's stuff.
+# james' stuff
+The repo for my website.

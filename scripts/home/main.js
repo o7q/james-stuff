@@ -1,9 +1,7 @@
 window.onload = function () {
-    configureElementListeners();
-
     document.querySelectorAll('.menu-text__text').forEach(element => {
         function handleHover() {
-            if (!JAME_STUFF_CLICKED) {
+            if (!JAMES_STUFF_CLICKED) {
                 return;
             }
             element.classList.remove('menu-text__text--blur');
@@ -23,12 +21,12 @@ window.onload = function () {
     ];
     background.src = backgrounds[getRandomInt(0, backgrounds.length)];
 
-    const jameTexts = document.querySelectorAll(".jame-text__text");
-    jameTexts.forEach(element => {
-        element.classList.add("jame-text__text--transition");
+    const jamesTexts = document.querySelectorAll(".james-text__text");
+    jamesTexts.forEach(element => {
+        element.classList.add("james-text__text--transition");
     });
 
-    spawnCats(1);
+    spawnCat(1);
 
     setInterval(() => {
         tick();

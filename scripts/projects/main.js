@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     let cartridges = [];
-    document.querySelectorAll(".image-container").forEach(container => {
-        let cartridgeImg = container.querySelector(".cartridge-image");
-        let projectImg = container.querySelector(".project-image");
-        cartridges.push(new Cartridge(cartridgeImg, projectImg));
+    document.querySelectorAll(".shelf-grid__image-container").forEach(container => {
+        let cartridgeImg = container.querySelector(".shelf-grid__image-container__cartridge-image");
+        let projectImg = container.querySelector(".shelf-grid__image-container__project-image");
+        let bubble = container.querySelector(".project-popup");
+        cartridges.push(new Cartridge(cartridgeImg, projectImg, bubble));
     });
 
     const backgroundCat = document.getElementById("background-cat");
@@ -22,9 +23,9 @@ function blur() {
     const foregroundShelf = document.getElementById("foreground-shelf");
     foregroundShelf.classList.remove("blur");
 
-    document.querySelectorAll(".image-container").forEach(container => {
-        let cartridgeImg = container.querySelector(".cartridge-image");
-        let projectImg = container.querySelector(".project-image");
+    document.querySelectorAll(".shelf-grid__image-container").forEach(container => {
+        let cartridgeImg = container.querySelector(".shelf-grid__image-container__cartridge-image");
+        let projectImg = container.querySelector(".shelf-grid__image-container__project-image");
         if (cartridgeImg) {
             removeBlur(cartridgeImg);
         }
@@ -45,9 +46,9 @@ function unblur() {
     const foregroundShelf = document.getElementById("foreground-shelf");
     foregroundShelf.classList.add("blur");
 
-    document.querySelectorAll(".image-container").forEach(container => {
-        let cartridgeImg = container.querySelector(".cartridge-image");
-        let projectImg = container.querySelector(".project-image");
+    document.querySelectorAll(".shelf-grid__image-container").forEach(container => {
+        let cartridgeImg = container.querySelector(".shelf-grid__image-container__cartridge-image");
+        let projectImg = container.querySelector(".shelf-grid__image-container__project-image");
 
         if (cartridgeImg) {
             addBlur(cartridgeImg);

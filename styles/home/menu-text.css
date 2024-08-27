@@ -1,7 +1,7 @@
 .menu-text {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 24vw;
     transform: translate(-50%, -50%);
     
     display: flex;

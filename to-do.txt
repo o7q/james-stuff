@@ -1,2 +1,2 @@
-- Finish project and link pages
-- Add return texts
+- Finish projects page
+- Add fan to projects scene

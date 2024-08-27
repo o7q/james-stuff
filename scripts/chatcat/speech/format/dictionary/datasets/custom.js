@@ -1,4 +1,8 @@
 const ENGLISH_CUSTOM_DATASET_RAW = `
+jame
+
+james
+____END____
 hi
 hey
 
@@ -52,6 +56,14 @@ ____END____
 alltime
 
 all time
+____END____
+im
+
+i am
+____END____
+ru
+
+are you
 ____END____
 dum
 
@@ -232,6 +244,14 @@ rofl
 roflcopter
 
 haha
+____END____
+dam
+
+damn
+____END____
+coding
+
+programming
 `;
 
 const ENGLISH_CUSTOM_DATASET = parseDataset(ENGLISH_CUSTOM_DATASET_RAW);
