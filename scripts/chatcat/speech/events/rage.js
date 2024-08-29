@@ -17,8 +17,8 @@ function rageEvent() {
         the_void.draggable = false;
         the_void.src = "../scenes/chatcat/backgrounds/events/background_the_void/1920x1080_16.gif";
         document.body.append(the_void);
-        document.title = "the void";
-        changeFavicon("../images/favicon/favicat/event/the_void.png");
+        changeTitle("the void");
+        changeFavicon("../images/favicon/chatcat/event/the_void.png");
         const audio = new Audio("../scenes/chatcat/audio/events/audio_the_void/the_void.mp3");
         audio.loop = true;
         audio.play();

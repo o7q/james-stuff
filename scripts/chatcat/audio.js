@@ -8,8 +8,6 @@ let AUDIO_SPEAK_UPSET = [];
 let AUDIO_SPEAK_UPSET2 = [];
 let AUDIO_SPEAK_SCARY = [];
 
-let AUDIO_ENABLED = true;
-
 function loadAudio() {
     for (let i = 0; i < 10; i++) {
         AUDIO_SPEAK_SLY.push(new Audio(`../scenes/chatcat/audio/speak/audio_speak_sly/${i + 1}.mp3`));

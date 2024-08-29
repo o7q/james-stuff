@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const backgroundCat = document.getElementById("background-cat");
-    backgroundCat.addEventListener('mouseover', unblur);
-    backgroundCat.addEventListener('mouseout', blur);
+    backgroundCat.addEventListener("mouseover", unblur);
+    backgroundCat.addEventListener("mouseout", blur);
 });
 
 function blur() {
@@ -59,9 +59,9 @@ function unblur() {
     });
 }
 
-function addBlur(element, blurAmount = '5px') {
+function addBlur(element, blurAmount = "5px") {
     let currentFilter = window.getComputedStyle(element).filter;
-    if (currentFilter === 'none') {
+    if (currentFilter === "none") {
         element.style.filter = `blur(${blurAmount})`;
     } else {
         element.style.filter = `${currentFilter} blur(${blurAmount})`;
@@ -70,11 +70,11 @@ function addBlur(element, blurAmount = '5px') {
 
 function removeBlur(element) {
     let currentFilter = window.getComputedStyle(element).filter;
-    if (currentFilter !== 'none') {
-        let filters = currentFilter.split(' ').filter(f => !f.startsWith('blur'));
+    if (currentFilter !== "none") {
+        let filters = currentFilter.split(' ').filter(f => !f.startsWith("blur"));
         element.style.filter = filters.join(' ');
-        if (element.style.filter === '') {
-            element.style.filter = 'none';
+        if (element.style.filter === "") {
+            element.style.filter = "none";
         }
     }
 }

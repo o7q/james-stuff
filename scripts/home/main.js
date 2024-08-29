@@ -1,14 +1,14 @@
 window.onload = function () {
-    document.querySelectorAll('.menu-text__text').forEach(element => {
+    document.querySelectorAll(".menu-text__text").forEach(element => {
         function handleHover() {
             if (!JAMES_STUFF_CLICKED) {
                 return;
             }
-            element.classList.remove('menu-text__text--blur');
-            element.removeEventListener('mouseover', handleHover);
+            element.classList.remove("menu-text__text--blur");
+            element.removeEventListener("mouseover", handleHover);
         }
 
-        element.addEventListener('mouseover', handleHover);
+        element.addEventListener("mouseover", handleHover);
     });
 
     const background = document.getElementById("background");
@@ -19,11 +19,19 @@ window.onload = function () {
         "images/backgrounds/space/space4.gif",
         "images/backgrounds/space/space5.gif"
     ];
-    background.src = backgrounds[getRandomInt(0, backgrounds.length)];
+    if (background) {
+        background.src = backgrounds[getRandomInt(0, backgrounds.length)];
+    }
 
     const jamesTexts = document.querySelectorAll(".james-text__text");
     jamesTexts.forEach(element => {
         element.classList.add("james-text__text--transition");
+        element.addEventListener("mouseover", function () {
+            changeFavicon("images/favicon/home/lit.png");
+        });
+        element.addEventListener("mouseout", function () {
+            changeFavicon("images/favicon/home/unlit.png");
+        });
     });
 
     spawnCat(1);
@@ -35,7 +43,4 @@ window.onload = function () {
             CATS[i].update();
         }
     }, 1);
-
-
-    console.log("Hardware Acceleration Enabed:", hardwareAccelerationEnabled());
 };

@@ -81,6 +81,8 @@ ____END____
 hooray
 hallelujah
 yippee
+yahoo
+wahoo
 
 yay
 ____END____
@@ -141,6 +143,20 @@ ____END____
 10th
 
 tenth
+____END____
+homo
+homosexual
+
+gay
+____END____
+transgender
+
+trans
+____END____
+bi
+bisex
+
+bisexual
 ____END____
 alr
 
@@ -249,9 +265,17 @@ dam
 
 damn
 ____END____
+code
+
+program
+____END____
 coding
 
 programming
+____END____
+goodbye
+
+bye
 `;
 
 const ENGLISH_CUSTOM_DATASET = parseDataset(ENGLISH_CUSTOM_DATASET_RAW);

@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon/home/unlit.png">
     <title>james' stuff</title>
 
     <link rel="stylesheet" href="styles/fonts.css">
@@ -30,6 +31,14 @@
 
     <link rel="stylesheet" href="styles/transitions/body-fade.css">
 </head>
+
+<script>
+    if (isMobileBrowser()) {
+        openPage("pages/mobile/home.html", "replace");
+    }
+
+    console.log("Hardware Acceleration Enabled:", hardwareAccelerationEnabled());
+</script>
 
 <body>
     <img src="images/backgrounds/space/space.gif" class="background" id="background" draggable="false">

@@ -32,3 +32,13 @@
     font-family: Arthead;
     src: url(../fonts/Arthead.otf);
 }
+
+@font-face {
+    font-family: RobotoBold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: RobotoMedium;
+    src: url(../fonts/Roboto-Medium.ttf);
+}

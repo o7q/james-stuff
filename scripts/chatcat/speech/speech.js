@@ -1,8 +1,6 @@
-let ALLOW_EVENTS = true;
 let DEBUG_LOG = false;
 
-function toggleDebug()
-{
+function toggleDebug() {
     DEBUG_LOG = !DEBUG_LOG;
 }
 
@@ -120,10 +118,29 @@ function talk(sentence) {
                 }
                 break;
             case "disableAudio":
-                AUDIO_ENABLED = false;
+                ALLOW_AUDIO = false;
                 break;
             case "enableAudio":
-                AUDIO_ENABLED = true;
+                ALLOW_AUDIO = true;
+                break;
+            case "learnFirstName":
+                KNOWN_FIRST_NAME = "Sly";
+                changeTitle(KNOWN_FIRST_NAME + " " + KNOWN_MIDDLE_NAME + " " + KNOWN_LAST_NAME);
+                break;
+            case "learnMiddleName":
+                KNOWN_MIDDLE_NAME = "McKinley";
+                changeTitle(KNOWN_FIRST_NAME + " " + KNOWN_MIDDLE_NAME + " " + KNOWN_LAST_NAME);
+                break;
+            case "learnLastName":
+                KNOWN_LAST_NAME = "Barrington";
+                changeTitle(KNOWN_FIRST_NAME + " " + KNOWN_MIDDLE_NAME + " " + KNOWN_LAST_NAME);
+                break;
+            case "learnFullName":
+                ALLOW_AUDIO = true;
+                KNOWN_FIRST_NAME = "Sly";
+                KNOWN_MIDDLE_NAME = "McKinley";
+                KNOWN_LAST_NAME = "Barrington";
+                changeTitle(KNOWN_FIRST_NAME + " " + KNOWN_MIDDLE_NAME + " " + KNOWN_LAST_NAME);
                 break;
         }
     }

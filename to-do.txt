@@ -1,2 +1,0 @@
-- Finish projects page
-- Add fan to projects scene

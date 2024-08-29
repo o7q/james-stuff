@@ -3,7 +3,7 @@ let videoOverlay;
 function playVideo(videoPath, loop) {
     stopVideo();
 
-    const video = document.createElement('video');
+    const video = document.createElement("video");
     video.classList.add("overlay");
 
     video.src = videoPath;
@@ -24,7 +24,7 @@ function stopVideo()
     if (videoOverlay) {
         videoOverlay.pause();
 
-        videoOverlay.src = '';
+        videoOverlay.src = "";
 
         videoOverlay.remove();
 

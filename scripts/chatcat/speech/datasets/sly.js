@@ -9,14 +9,6 @@
 // upset
 // scary
 
-const JAMES_DYNAMIC_AGE = unixToDays(Date.now() - 1143784800000) / 365;
-
-let HAPPINESS = 20;
-let LOVE = 0;
-
-let LOVE_DIALOGUE_INDEX = 0
-let RAGE_DIALOGUE_INDEX = 0;
-
 const SLY_DATASET_RAW = `
 hello
 hey
@@ -44,6 +36,11 @@ what is going on
 
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Hey!
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Hey what's up?!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Hey how are you?
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Hey! How are you doing?
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Hiii!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Hello! What's up?!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Hello!
 ____END____
 what is your name
 what your name
@@ -54,23 +51,37 @@ what name
 what you name
 what yo name
 
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>My name is Sly.
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I'm Sly!
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>My name is Sly.<!>learnFirstName
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I'm Sly!<!>learnFirstName
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>My name is Sly!<!>learnFirstName
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>My name would be Sly!<!>learnFirstName
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Sly!<!>learnFirstName
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>It's Sly!<!>learnFirstName
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Call me Sly!<!>learnFirstName
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Call me Sly the cat!<!>learnFirstName
+____END____
+nice name
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Thanks! jame gave it to me!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Thanks! james gave it to me!
 ____END____
 what is your middle name
 what you middle name
 what middle name
 what yo middle name
 
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>My middle name is McKinley.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>My middle name is McKinley.<!>learnMiddleName
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>McKinley.<!>learnMiddleName
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>It's McKinley.<!>learnMiddleName
 ____END____
 what is your last name
 what you last name
 what last name
 what yo last name
 
-
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>My last name is Barrington.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>My last name is Barrington.<!>learnLastName
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Barrington.<!>learnLastName
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>It's Barrington.<!>learnLastName
 ____END____
 what is your full name
 what is your full name
@@ -78,7 +89,9 @@ what you full name
 what full name
 what yo full name
 
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>My full name is Sly McKinley Barrington.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>My full name is Sly McKinley Barrington.<!>learnFullName
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Sly McKinley Barrington.<!>learnFullName
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>It's Sly McKinley Barrington.<!>learnFullName
 ____END____
 how did you get that name
 how did you get your name
@@ -88,6 +101,7 @@ how yo get that name
 how did get that name
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Not sure, james thought it fit me well. I don't see it.
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>james gave me this name!
 ____END____
 how did james get the name o7q
 how james get name o7q
@@ -97,7 +111,7 @@ ____END____
 how did you get the name o7q
 how get name o7q
 
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>That's not my name. My name is Sly, if you're asking how I got this name. I honestly don't know.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>That's not my name. My name is Sly, if you're asking how I got this name. I honestly don't know.<!>learnFirstName
 ____END____
 how did james get the name jame
 how james get name jame
@@ -108,10 +122,15 @@ what should i call james
 what should i call him
 
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>You can call him jame or james!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>You can call him jame!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>You can call him james!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>jame!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>james!
 ____END____
 james
 
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>What about him?
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>What would you like to know about him?
 ____END____
 why is james name lowercase
 why is his name lowercase
@@ -121,21 +140,25 @@ ____END____
 how did you get the name james
 how get name james
 
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>My name is not james. It's Sly, if you're asking how I got this name. I don't really know.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>My name is not james. It's Sly, if you're asking how I got this name. I don't really know.<!>learnFirstName
 ____END____
 are you
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>No I'm not.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Nope.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I'm not.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Not me!
 ____END____
 are you james
 you james
 
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I am not. I am Sly.
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I am not. I am Sly.<!>learnFirstName
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I am not. I am Sly the cat.<!>learnFirstName
 ____END____
 are you o7q
 you o7q
 
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>No I'm not, my name is Sly! I was created to help answer questions about james. But you can ask me about anything really!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>No I'm not, my name is Sly! I was created to help answer questions about james. But you can ask me about anything really!<!>learnFirstName
 ____END____
 who is james
 who james
@@ -149,6 +172,9 @@ who created sly
 who created
 
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I was created by james!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I was created by jame!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I was created by james, my best friend!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I was created by jame, my best friend!
 ____END____
 help
 can you help
@@ -156,16 +182,17 @@ please help
 
 thinking<!>speak/anim_speak_thinking<!>speak/audio_speak_thinking<!>idle/anim_idle_thinking<!>What do you need help with?
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Are you okay? What do you need help with?
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Hi! I'm here to help!
 ____END____
 who are you
 who is this
 who
 who you
 
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I am Sly. Ask me any question and I'll try my best to answer it!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>My name is Sly, ask me anything!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>My name is Sly, I was created by james to provide information about him! If you have any questions please feel free to ask!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I am Sly, I am open to any questions!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I am Sly. Ask me any question and I'll try my best to answer it!<!>learnFirstName
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>My name is Sly, ask me anything!<!>learnFirstName
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>My name is Sly, I was created by james to provide information about him! If you have any questions please feel free to ask!<!>learnFirstName
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I am Sly, I am open to any questions!<!>learnFirstName
 ____END____
 who made you
 who made
@@ -548,6 +575,22 @@ what programming languages does james know
 what programming does james know
 
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Currently he knows C#, C++, Java, JavaScript, HTML, and CSS!
+____END____
+what language are you made in
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I was made using HTML, CSS, and JavaScript.
+____END____
+what does html do
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>HTML is a programming language used to create the general structure of a webpage!
+____END____
+what does css do
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>CSS is a programming language used to improve the visual style of a webpage!
+____END____
+what does javascript do
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>JavaScript is a programming language used to extend the functionality of a webpage!
 ____END____
 what languages do you know
 what programming languages do you know
@@ -960,7 +1003,7 @@ ____END____
 are you sly
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Yes I am!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Yes I am. I'm Sly!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Yes I am. I'm Sly!<!>learnFirstName
 ____END____
 ask me a question
 ask question
@@ -993,6 +1036,10 @@ ____END____
 how fat are you
 are you fat
 you little
+fat
+fatty
+you are big
+you are fat
 
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I am big.
 ____END____
@@ -1151,6 +1198,16 @@ i hate myself
 
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Everything will get better, I promise! Sadness never lasts forever! james told me this! One time he was super depressed and he told me tips to get out of his funk! Feel free to ask about them!
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>When james was really sad, he started going to the gym and eating better. This really helped him boost his morale and he slowly started to improve.
+____END____
+i am lonely
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Don't worry! I will always be here for you!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Don't worry! I will always be here for you! ^w^
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>There are lot's of people on Earth. You are destined to find someone!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>There are lot's of people on Earth. You are destined to find someone! I guarantee it!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>There are lot's of people on Earth. You are destined to find someone! Try reaching out of your comfort zone more often. Trust me.
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Try reaching out of your comfort zone more often. There are lot's of people on Earth. You are destined to find someone!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Try reaching out of your comfort zone more often. There are lot's of people on Earth. You are destined to find someone! I 100% believe in you! ^w^
 ____END____
 what are some tips to not being depressed
 what are some tips to improving myself mentally
@@ -1319,6 +1376,78 @@ you little fucker
 
 embarrassed<!>speak/anim_speak_embarrassed<!>speak/audio_speak_embarrassed<!>idle/anim_idle_embarrassed<!>Did I do something wrong?<!>decreaseHappiness
 embarrassed<!>speak/anim_speak_embarrassed<!>speak/audio_speak_embarrassed<!>idle/anim_idle_embarrassed<!>What did I do?<!>decreaseHappiness
+____END____
+are you able to understand me
+can you understand me
+can you hear me
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Yes I can!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Yes!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Yes I can hear you!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Yes I can understand you!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Yep!
+____END____
+are you gay
+are you a gay
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I don't know.
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I don't know, maybe a little.
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I don't know, maybe a little. :P
+____END____
+are you bisexual
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Yes.
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Yes I am.
+____END____
+are you trans
+are you a trans
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>No I'm not.
+____END____
+what are your pronoun
+what are your pronouns
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>He/Him!
+____END____
+are you furry
+are you a furry
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I am literally a talking cat. 100% cat.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>If you count animals as such, then yes.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I am a cat.
+____END____
+you can talk
+you can speak
+wow you can talk
+wow you can speak
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Yes I can!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Yes I talk!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Yes I speak!
+____END____
+say something
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Something.
+____END____
+can you suck it
+
+surprised<!>speak/anim_speak_surprised<!>speak/audio_speak_surprised<!>idle/anim_idle_embarrassed<!>What could you possibly mean by that?!
+surprised<!>speak/anim_speak_surprised<!>speak/audio_speak_embarrassed<!>idle/anim_idle_surprised<!>What could you possibly mean by that?!
+surprised<!>speak/anim_speak_surprised<!>speak/audio_speak_embarrassed<!>idle/anim_idle_blush<!>What could you possibly mean by that?!
+surprised<!>speak/anim_speak_surprised<!>speak/audio_speak_embarrassed<!>idle/anim_idle_blush2<!>What could you possibly mean by that?!
+surprised<!>speak/anim_speak_surprised<!>speak/audio_speak_embarrassed<!>idle/anim_idle_embarrassed<!>What could you possibly mean by that?!
+blush<!>speak/anim_speak_blush<!>speak/audio_speak_sly<!>idle/anim_idle_blush<!>What could you mean by that?
+blush<!>speak/anim_speak_blush2<!>speak/audio_speak_embarrassed<!>idle/anim_idle_blush2<!>What could you mean by that?!
+embarrassed<!>speak/anim_speak_embarrassed<!>speak/audio_speak_embarrassed<!>idle/anim_idle_embarrassed<!>What could you mean by that?!
+____END____
+bye
+good bye
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>See you later!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>See you later! I will wait here till next time!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Have a good one!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Byee!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>See ya!!
 `;
 
 const SLY_DATASET = parseDataset(SLY_DATASET_RAW);

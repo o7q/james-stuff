@@ -24,6 +24,8 @@ ok
 hooray
 hallelujah
 yippee
+yahoo
+wahoo
 furry
 coo
 kool
@@ -44,6 +46,16 @@ freaky
 8th
 9th
 10th
+gay
+homo
+homosexual
+transgender
+trans
+pronoun
+pronouns
+bi
+bisex
+bisexual
 alr
 idc
 idk
@@ -163,6 +175,9 @@ albarn
 cinnamon
 butterscotch
 taskbar
+blender
+unreal
+engine
 houdini
 kys
 hollow
@@ -181,7 +196,11 @@ boop
 poke
 xd
 colonthree
-nugget`;
+nugget
+html
+css
+javascript
+goodbye`;
 
 // https://www.mit.edu/~ecprice/wordlist.10000
 const ENGLISH_10000 = `a

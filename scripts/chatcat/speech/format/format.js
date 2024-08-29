@@ -33,5 +33,5 @@ function format(sentence) {
 }
 
 function removeNonAlphanumeric(inputString) {
-    return inputString.replace(/[^a-zA-Z0-9\s]/g, '');
+    return inputString.replace(/[^a-zA-Z0-9\s]/g, "");
 };

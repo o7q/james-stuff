@@ -3,14 +3,20 @@ class Cat {
         this.cat = document.createElement("img");
         this.cat.className = "screen-cat";
         this.cat.draggable = false;
+        this.walkPadding = 100;
 
         this.registerMouseEvents();
 
         let ref = document.querySelector(".overlay");
-        document.body.insertBefore(this.cat, ref);
+        if (ref) {
+            document.body.insertBefore(this.cat, ref);
+        }
+        else {
+            document.body.append(this.cat);
+        }
 
-        this.cat.style.left = '200px';
-        this.cat.style.top = '200px';
+        this.cat.style.left = "200px";
+        this.cat.style.top = "200px";
 
         this.setMood("sly");
         this.setAnimation("idle");
@@ -22,21 +28,23 @@ class Cat {
     registerMouseEvents() {
         const dragThreshold = 200; // milliseconds
         const dragDistanceThreshold = 5;
-        const dragAnimationSmoothing = 2;
+
+        let dragAnimationSmoothing = 0;
+        const dragAnimationSmoothing_slow = 20;
+        const dragAnimationSmoothing_fast = 2;
 
         let dragStartTime = 0;
         let dragDistance = 0;
         this.isDragging = false;
-        this.walkPadding = 200;
 
-        this.cat.addEventListener('mousedown', (event) => {
+        this.cat.addEventListener("mousedown", (event) => {
             dragDistance = 0;
             this.isDragging = true;
             dragStartTime = Date.now();
 
             setTimeout(() => {
                 if (MOUSE_DOWN) {
-                    this.cat.style.cursor = 'grabbing';
+                    this.cat.style.cursor = "grabbing";
                     this.updateGrabTexture("0");
                 }
             }, 100);
@@ -48,15 +56,29 @@ class Cat {
             const offsetY = event.clientY - rect.top;
 
             const moveHandler = (moveEvent) => {
+
+                let temp = dragAnimationSmoothing;
+
+                if (MOUSE_SPEED >= 4.0) {
+                    dragAnimationSmoothing = dragAnimationSmoothing_fast;
+                }
+                else {
+                    dragAnimationSmoothing = dragAnimationSmoothing_slow;
+                }
+
+                if (temp != dragAnimationSmoothing) {
+                    dragAnimationSmoothingTimer = 0;
+                }
+
                 if (dragAnimationSmoothingTimer === dragAnimationSmoothing) {
                     this.updateRotation(0, 0, MOUSE_VELOCITY.x, MOUSE_VELOCITY.y);
 
                     let grabVarient = "0";
-                    if (MOUSE_SPEED > 4) {
+                    if (MOUSE_SPEED >= 6.0) {
                         grabVarient = "3";
-                    } else if (MOUSE_SPEED > 3) {
+                    } else if (MOUSE_SPEED >= 2.0) {
                         grabVarient = "2";
-                    } else if (MOUSE_SPEED > 1) {
+                    } else if (MOUSE_SPEED >= 0.0) {
                         grabVarient = "1";
                     }
 
@@ -67,20 +89,20 @@ class Cat {
                 dragAnimationSmoothingTimer++;
 
                 dragDistance++;
-                this.cat.style.left = (moveEvent.clientX - offsetX) + 'px';
-                this.cat.style.top = (moveEvent.clientY - offsetY) + 'px';
+                this.cat.style.left = (moveEvent.clientX - offsetX) + "px";
+                this.cat.style.top = (moveEvent.clientY - offsetY) + "px";
             };
 
             const upHandler = () => {
-                if (MOUSE_SPEED <= 1) {
+                if (MOUSE_SPEED <= 1.0) {
                     this.updateRotation(0, 0, 0, 1);
                 }
 
-                this.cat.style.cursor = 'url("images/cursors/cat/open_chat.png"), pointer';
+                this.cat.style.cursor = "url('images/cursors/cat/open_chat.png'), pointer";
                 this.isDragging = false;
                 this.updateTexture();
 
-                document.removeEventListener('mousemove', moveHandler);
+                document.removeEventListener("mousemove", moveHandler);
 
                 const catPos = getElementPosition(this.cat);
                 if (
@@ -92,11 +114,11 @@ class Cat {
                     this.walkInScreenBounds();
                 }
 
-                document.removeEventListener('mouseup', upHandler);
+                document.removeEventListener("mouseup", upHandler);
             };
 
-            document.addEventListener('mousemove', moveHandler);
-            document.addEventListener('mouseup', upHandler);
+            document.addEventListener("mousemove", moveHandler);
+            document.addEventListener("mouseup", upHandler);
         });
 
         this.cat.onclick = function () {

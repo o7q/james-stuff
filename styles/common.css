@@ -8,10 +8,10 @@
 
     color: rgb(255, 255, 255);
     font-size: 30px;
-    mix-blend-mode: lighten;
 
     cursor: pointer;
 
+    filter: drop-shadow(2px 2px 2px #000000);
     transition: 0.05s color ease-in-out;
 }
 

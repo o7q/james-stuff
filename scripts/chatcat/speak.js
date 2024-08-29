@@ -1,5 +1,3 @@
-let ALLOW_SPEAKING = true;
-
 let textIntervalId;
 function speak(text, speakAnim, speakAudio, idleAnim, speed) {
     CAN_RANDOM_IDLE = false;
@@ -31,11 +29,11 @@ function speak(text, speakAnim, speakAudio, idleAnim, speed) {
 
             const size = getElementDimensionsInVwVh(textBox);
 
-            textBackground.style.width = size.width + 4 + 'vw';
-            textBackground.style.height = size.height + 4 + 'vh';
-            textBackground.style.display = 'block';
+            textBackground.style.width = size.width + 4 + "vw";
+            textBackground.style.height = size.height + 4 + "vh";
+            textBackground.style.display = "block";
 
-            if (AUDIO_ENABLED) {
+            if (ALLOW_AUDIO) {
                 playRandomSpeakAudio(speakAudio);
             }
 
@@ -75,15 +73,15 @@ function getElementDimensionsInVwVh(element) {
     };
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('user-text-input').addEventListener('keydown', function (event) {
-        if (event.key === 'Enter') {
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("user-text-input").addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
             event.preventDefault();
             if (this.value === "" || !this.value) {
                 return;
             }
             talk(this.value);
-            this.value = '';
+            this.value = "";
         }
     });
 });
