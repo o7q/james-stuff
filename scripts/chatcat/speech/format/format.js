@@ -1,5 +1,9 @@
 function format(sentence) {
-    let formattedSentence = removeNonAlphanumeric(sentence).toLowerCase().split(' ');
+    let formattedSentenceStr = sentence.toLowerCase();
+    formattedSentenceStr = removeNonAlphanumeric(formattedSentenceStr);
+    formattedSentenceStr = removeExcessSpaces(formattedSentenceStr);
+
+    let formattedSentence = formattedSentenceStr.split(' ');
 
     for (let i = 0; i < formattedSentence.length; i++) {
 
@@ -34,4 +38,8 @@ function format(sentence) {
 
 function removeNonAlphanumeric(inputString) {
     return inputString.replace(/[^a-zA-Z0-9\s]/g, "");
+};
+
+function removeExcessSpaces(inputString) {
+    return inputString.trim().replace(/\s+/g, ' ');
 };

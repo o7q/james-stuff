@@ -200,7 +200,15 @@ nugget
 html
 css
 javascript
-goodbye`;
+goodbye
+hai
+haiii
+haiiiiii
+omedy
+comedyd
+hardest
+elden
+ring`;
 
 // https://www.mit.edu/~ecprice/wordlist.10000
 const ENGLISH_10000 = `a

@@ -2,6 +2,7 @@ let DEBUG_LOG = false;
 
 function toggleDebug() {
     DEBUG_LOG = !DEBUG_LOG;
+    console.log(`Debug: ${DEBUG_LOG}`);
 }
 
 function talk(sentence) {
@@ -44,7 +45,7 @@ function talk(sentence) {
 
     let response;
 
-    if (max_cosine_similarity < 0.5) {
+    if (max_cosine_similarity < 0.6) {
         response = ILLEGIBLE_RESPONSES[getRandomInt(0, ILLEGIBLE_RESPONSES.length)];
     }
     else {
@@ -62,7 +63,12 @@ function talk(sentence) {
     let response_speak_anim = response_data[1];
     let response_speak_audio = response_data[2];
     let response_idle_anim = response_data[3];
-    let response_text = response_data[4] + (getRandomInt(0, 5) == 0 ? " :3" : ""); // random :3
+    let randomColon3 = "", randomHappyFace = "";
+    if (response_emotion !== "upset") {
+        randomColon3 = getRandomInt(0, 5) == 0 ? " :3" : "";
+        randomHappyFace = getRandomInt(0, 10) == 0 ? " ^-^" : "";
+    }
+    let response_text = response_data[4] + randomColon3 + randomHappyFace; // random :3
     let response_action = response_data[5];
 
     let response_speed = 20;

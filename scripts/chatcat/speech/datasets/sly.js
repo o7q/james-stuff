@@ -335,6 +335,14 @@ screw you
 upset<!>speak/anim_speak_upset<!>speak/audio_speak_upset<!>idle/anim_idle_upset<!>Hey! That's not very nice, did I do anything wrong?<!>decreaseHappiness
 upset<!>speak/anim_speak_upset<!>speak/audio_speak_upset<!>idle/anim_idle_upset<!>That's not very nice, did I do anything wrong? I can sometimes make mistakes.<!>decreaseHappiness
 ____END____
+do you
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Do I what?
+____END____
+who is
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Who is.
+____END____
 what is james favorite video game
 what is james favorite game
 what are james favorite games
@@ -664,16 +672,16 @@ what is james ip
 what james ip
 james ip
 
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His ip address is 250.63.203.152!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His ip address is 158.120.138.33!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His ip address is 82.252.252.14!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His ip address is 142.154.4.52!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His ip address is 44.54.141.66!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His ip address is 40.117.46.80!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His ip address is 17.228.189.74!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His ip address is 220.196.180.187!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His ip address is 153.123.194.98!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His ip address is 183.94.89.243!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His IP address is 250.63.203.152!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His IP address is 158.120.138.33!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His IP address is 82.252.252.14!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His IP address is 142.154.4.52!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His IP address is 44.54.141.66!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His IP address is 40.117.46.80!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His IP address is 17.228.189.74!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His IP address is 220.196.180.187!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His IP address is 153.123.194.98!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His IP address is 183.94.89.243!
 ____END____
 what is your ip
 
@@ -1451,6 +1459,44 @@ happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Have a good one!
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Byee!
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>See ya!!
+____END____
+hai
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>HAi!!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Haiii!! ^-^ 
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>HAI!!!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Hai!!!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>HAI IIIIIIIIII!!!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>HHHHAAIIIIIIIAI!!!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>HAAAAAAAII!!!
+____END____
+omedy
+comedyd
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I know that guy.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I know that fellow.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I know who that is!
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I know him.
+____END____
+who is comedyd
+who comedyd
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Omedy is a gay stripper who eats Whatsapp Doritos. ^.^
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Omedy who is sometimes known is "ComedyD" is a gay stripper who eats Whatsapp Doritos.
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Omedy.
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Omedy who is referred to by some as "ComedyD" is a gay stripper who eats Whatsapp Doritos.
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Omedy who is referred to by some as "ComedyD" is a gay stripper who eats Whatsapp Doritos. ^.^
+____END____
+did you play the elden ring dlc
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I did not play it yet.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I have not played it yet.
+____END____
+who is the hardest elden ring boss
+what is the hardest elden ring boss
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I struggled the most with Malenia! ^.^
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I think Malenia.
 `;
 
 const SLY_DATASET = parseDataset(SLY_DATASET_RAW);

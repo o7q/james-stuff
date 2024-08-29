@@ -4,6 +4,10 @@ function levenshteinDistance(input, match) {
     const inputLength = input.length;
     const matchLength = match.length;
 
+    if (inputLength === 0) {
+        return 1;
+    }
+
     let matrix = new Array(inputLength + 1);
 
     for (let i = 0; i <= inputLength; i++) {
@@ -52,7 +56,6 @@ function levenshteinDistance(input, match) {
     return matrix[inputLength][matchLength];
 }
 
-function levenshteinSimilarity(levenshtein_distance, inputLength, matchLength)
-{
+function levenshteinSimilarity(levenshtein_distance, inputLength, matchLength) {
     return 1 - levenshtein_distance / Math.max(inputLength, matchLength);
 }

@@ -276,6 +276,15 @@ ____END____
 goodbye
 
 bye
+____END____
+haiii
+haiiiiii
+
+hai
+____END____
+omedy
+
+comedyd
 `;
 
 const ENGLISH_CUSTOM_DATASET = parseDataset(ENGLISH_CUSTOM_DATASET_RAW);
