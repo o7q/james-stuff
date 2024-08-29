@@ -66,6 +66,5 @@ function hardwareAccelerationEnabled() {
 function isMobileBrowser() {
     // from https://developer.mozilla.org/en-US/docs/Web/API/Screen/orientation
     const isMobile = screen.orientation.type !== "landscape-primary";
-    console.log(isMobile);
     return isMobile;
 }

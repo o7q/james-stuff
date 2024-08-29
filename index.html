@@ -37,7 +37,9 @@
         openPage("pages/mobile/home.html", "replace");
     }
 
-    console.log("Hardware Acceleration Enabled:", hardwareAccelerationEnabled());
+    if (!hardwareAccelerationEnabled()) {
+        window.alert("Hardware Acceleration is not enabled in your browser. It is highly recommended to enable this for a smooth experience.");
+    }
 </script>
 
 <body>
