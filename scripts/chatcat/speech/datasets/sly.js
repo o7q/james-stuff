@@ -452,6 +452,8 @@ what algorithm
 how were you made
 how are you made
 how do you work behind the scenes
+how you work
+how you working
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I am running on two algorithms: Levenshtein/Wagner-Fischer and Cosine Similarity. First, the input sentence is run through the Levenshtein algorithm, which corrects spelling errors. Then it decodes the sentences into coordinate points and then determining the angle between them, it then weighs them against a built-in dataset, creating- Me!
 ____END____
@@ -813,6 +815,7 @@ sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What?
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Hi.
 ____END____
 wait
+stop
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What?
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Ok.
