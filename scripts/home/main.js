@@ -16,8 +16,7 @@ window.onload = function () {
         "images/backgrounds/space/space.gif",
         "images/backgrounds/space/space2.gif",
         "images/backgrounds/space/space3.gif",
-        "images/backgrounds/space/space4.gif",
-        "images/backgrounds/space/space5.gif"
+        "images/backgrounds/space/space4.gif"
     ];
     if (background) {
         background.src = backgrounds[getRandomInt(0, backgrounds.length)];
