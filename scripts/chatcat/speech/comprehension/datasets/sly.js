@@ -1315,6 +1315,8 @@ i want to stay with you
 i want to stay with you forever
 want to kiss
 want to smooch
+you are hot
+you are sexy
 
 embarrassed<!>speak/anim_speak_embarrassed<!>speak/audio_speak_embarrassed<!>idle/anim_idle_embarrassed<!>Oh. I- I- Okay.<!>increaseLove
 embarrassed<!>speak/anim_speak_embarrassed<!>speak/audio_speak_embarrassed<!>idle/anim_idle_blush<!>Oh. I- I- Nevermind.<!>increaseLove
@@ -1497,6 +1499,11 @@ what is the hardest elden ring boss
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I struggled the most with Malenia! ^.^
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I think Malenia.
+____END____
+you are fun
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Aww thanks!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Aww thanks! You're fun too! ^.^
 `;
 
 const SLY_DATASET = parseDataset(SLY_DATASET_RAW);

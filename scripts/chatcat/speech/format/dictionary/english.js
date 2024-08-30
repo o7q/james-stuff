@@ -5,6 +5,8 @@ james
 u
 yu
 ur
+ure
+youre
 ru
 r
 re

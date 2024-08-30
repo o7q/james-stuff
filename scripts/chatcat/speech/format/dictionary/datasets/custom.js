@@ -17,6 +17,11 @@ ur
 
 your
 ____END____
+ure
+youre
+
+you are
+____END____
 r
 re
 
