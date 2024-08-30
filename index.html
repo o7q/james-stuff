@@ -18,10 +18,19 @@
 
     <link rel="stylesheet" href="styles/screencat/cat.css">
 
+    <script src="scripts/utils.js"></script>
+    <script>
+        if (isMobileBrowser()) {
+            openPage("pages/mobile/home.html", "replace");
+        }
+        else if (!isHardwareAccelerationEnabled()) {
+            window.alert("Hardware Acceleration is not enabled in your browser. It is highly recommended to enable this for a smooth experience.");
+        }
+    </script>
+
     <script src="scripts/math.js"></script>
     <script src="scripts/window.js"></script>
     <script src="scripts/input.js"></script>
-    <script src="scripts/utils.js"></script>
 
     <script src="scripts/home/main.js"></script>
     <script src="scripts/home/interaction.js"></script>
@@ -31,16 +40,6 @@
 
     <link rel="stylesheet" href="styles/transitions/body-fade.css">
 </head>
-
-<script>
-    if (isMobileBrowser()) {
-        openPage("pages/mobile/home.html", "replace");
-    }
-
-    if (!hardwareAccelerationEnabled()) {
-        window.alert("Hardware Acceleration is not enabled in your browser. It is highly recommended to enable this for a smooth experience.");
-    }
-</script>
 
 <body>
     <img src="images/backgrounds/space/space.gif" class="background" id="background" draggable="false">

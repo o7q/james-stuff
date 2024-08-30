@@ -42,7 +42,7 @@ function getElementPosition(element) {
 
 // hardware acceleration detector forked from:
 // https://stackoverflow.com/a/77170999
-function hardwareAccelerationEnabled() {
+function isHardwareAccelerationEnabled() {
     const hasHWA = (() => {
         // create a test function for both "default" drawing and forced software
         const test = (force = false) => {
