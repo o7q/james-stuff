@@ -13,9 +13,9 @@ function rageEvent() {
     if (RAGE_DIALOGUE_INDEX >= rageResponse.length / 5) {
         document.body.innerHTML = "";
         let the_void = document.createElement("img");
-        the_void.className = "overlay__video";
+        the_void.className = "layer";
         the_void.draggable = false;
-        the_void.src = "../scenes/chatcat/backgrounds/events/background_the_void/1920x1080_16.gif";
+        the_void.src = "../scenes/chatcat/backgrounds/events/background_the_void/480x270_16.gif";
         document.body.append(the_void);
         changeTitle("the void");
         changeFavicon("../images/favicon/chatcat/event/the_void.png");
