@@ -871,7 +871,7 @@ ____END____
 whos in paris
 who is in paris
 
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Kanye and JAY-Z are in Paris
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Kanye and JAY-Z are in Paris.
 ____END____
 say word
 say the word
