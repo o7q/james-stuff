@@ -421,6 +421,10 @@ are you retarded
 are you retard
 kys
 kill yourself
+die
+i want you to die
+you should die
+die please
 
 upset<!>speak/anim_speak_upset<!>speak/audio_speak_upset<!>idle/anim_idle_upset<!>Hey! That's not very nice! You also shouldn't be saying that. If I did anything wrong, I didn't mean to!<!>decreaseHappiness
 ____END____
@@ -445,6 +449,7 @@ sad<!>speak/anim_speak_sad<!>speak/audio_speak_sad<!>idle/anim_idle_sad<!>Someti
 sad<!>speak/anim_speak_sad<!>speak/audio_speak_sad<!>idle/anim_idle_sad<!>Sometimes I can be! But you don't have to tell me.<!>decreaseHappiness
 ____END____
 i hate you
+i dont like you
 
 sad<!>speak/anim_speak_sad<!>speak/audio_speak_sad<!>idle/anim_idle_sad<!>Why? Did I do anything wrong?<!>decreaseHappiness
 sad<!>speak/anim_speak_sad<!>speak/audio_speak_sad<!>idle/anim_idle_sad<!>Why? Did I do anything to hurt you?<!>decreaseHappiness
@@ -1504,6 +1509,17 @@ you are fun
 
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Aww thanks!
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Aww thanks! You're fun too! ^.^
+____END____
+poop
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Poo.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Poop.
+____END____
+what are fish
+what is fish
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Fish are floppies.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Fish are floppers.
 `;
 
 const SLY_DATASET = parseDataset(SLY_DATASET_RAW);

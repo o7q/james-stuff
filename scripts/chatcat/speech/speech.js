@@ -45,7 +45,10 @@ function talk(sentence) {
 
     let response;
 
-    if (max_cosine_similarity < 0.6) {
+    if (max_cosine_similarity < 0.4) {
+        response = `sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>${sentence}`;
+    }
+    else if (max_cosine_similarity < 0.6) {
         response = ILLEGIBLE_RESPONSES[getRandomInt(0, ILLEGIBLE_RESPONSES.length)];
     }
     else {
