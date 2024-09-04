@@ -1101,6 +1101,8 @@ ____END____
 can you delete this page
 can you delete the page
 can you delete this website
+delete the page
+delete this
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Sure, one second.<!>deletePage
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Ok, one second.<!>deletePage
