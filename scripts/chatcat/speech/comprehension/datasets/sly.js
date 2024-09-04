@@ -659,6 +659,7 @@ do you prefer cinnamon or butterscotch
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Cinnamon.
 ____END____
 why do you walk so fast
+are you a big walker
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I am a big walker.
 ____END____
@@ -866,6 +867,10 @@ happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>YAAA!
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Hooray!
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>YAAAAAAAAAAAAAAHOOOOOBBBIEEEEE!!!!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>YAAAAAAAZZZZZAAAAAAAAAAAAAHOOOOOBBBIBBBBBBEEEEE!!!!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>YAAAAAAAABBBOOOOOOOAAAAAAHOOOOOBBBIEEEEE!!!!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>YAAAAEEEEEEEEEEEEEEEEAAAAAAAAAAHOOOOOBBBIEEEEE!!!!
 ____END____
 do you know who is in paris
 
@@ -1523,6 +1528,68 @@ what is a fish
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Fish are floppies.
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Fish are floppers.
+____END____
+why do you smile
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Cuz I am happy!
+____END____
+why are your ears pointed
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I don't know, james just made me this way!
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>They are not as sharp as they look.
+____END____
+what do you do while alone
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Nothing really, eat and sleep I guess.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I eat video games.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I consume video games.
+____END____
+what is your favorite sandwich
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Jersey Mikes Club Supreme! Mike's Way!!!!!!!!!!
+____END____
+what do you love
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I love anything that's not mean!
+____END____
+do you kill bugs
+
+upset<!>speak/anim_speak_upset<!>speak/audio_speak_upset<!>idle/anim_idle_upset<!>I WOULD NEVER!!
+upset<!>speak/anim_speak_upset<!>speak/audio_speak_upset<!>idle/anim_idle_upset<!>I WOULD NEVER!! They are too cute...
+____END____
+what is the meaning of life
+what is the meaning of it all
+why are we here
+what is the purpose of existence
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>There is not a definitive answer. Maybe you should create it.
+____END____
+i want my glarks
+i want glarks
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Have a glark!
+____END____
+cubykid
+cuby kid
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>How do you know about him?
+____END____
+i love corndogs
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I LOVE CORNDOGS.
+____END____
+pet me
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I would if I could!
+____END____
+can i pet you
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Uhh, sure I guess.
+____END____
+chloe
+who is chloe
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>That is james' dog!
 `;
 
 const SLY_DATASET = parseDataset(SLY_DATASET_RAW);

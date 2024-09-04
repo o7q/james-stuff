@@ -210,7 +210,10 @@ omedy
 comedyd
 hardest
 elden
-ring`;
+ring
+cuby
+kid
+cubykid`;
 
 // https://www.mit.edu/~ecprice/wordlist.10000
 const ENGLISH_10000 = `a
