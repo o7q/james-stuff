@@ -1590,6 +1590,16 @@ chloe
 who is chloe
 
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>That is james' dog!
+____END____
+you are lying
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>No I'm not.
+____END____
+iron fist
+alexander
+iron fist alexander
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Piercen.
 `;
 
 const SLY_DATASET = parseDataset(SLY_DATASET_RAW);
