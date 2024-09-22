@@ -213,7 +213,10 @@ elden
 ring
 cuby
 kid
-cubykid`;
+cubykid
+alexander
+iron
+fist`;
 
 // https://www.mit.edu/~ecprice/wordlist.10000
 const ENGLISH_10000 = `a
