@@ -969,7 +969,7 @@ what is james x
 what is his x
 james x
 
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>You can access his Twitter at: github.com/o7qYT
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>You can access his Twitter at: twitter.com/o7qYT
 ____END____
 what is james spotify
 what is his spotify
