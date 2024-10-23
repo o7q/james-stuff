@@ -1454,17 +1454,6 @@ say something
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Something.
 ____END____
-can you suck it
-
-surprised<!>speak/anim_speak_surprised<!>speak/audio_speak_surprised<!>idle/anim_idle_embarrassed<!>What could you possibly mean by that?!
-surprised<!>speak/anim_speak_surprised<!>speak/audio_speak_embarrassed<!>idle/anim_idle_surprised<!>What could you possibly mean by that?!
-surprised<!>speak/anim_speak_surprised<!>speak/audio_speak_embarrassed<!>idle/anim_idle_blush<!>What could you possibly mean by that?!
-surprised<!>speak/anim_speak_surprised<!>speak/audio_speak_embarrassed<!>idle/anim_idle_blush2<!>What could you possibly mean by that?!
-surprised<!>speak/anim_speak_surprised<!>speak/audio_speak_embarrassed<!>idle/anim_idle_embarrassed<!>What could you possibly mean by that?!
-blush<!>speak/anim_speak_blush<!>speak/audio_speak_sly<!>idle/anim_idle_blush<!>What could you mean by that?
-blush<!>speak/anim_speak_blush2<!>speak/audio_speak_embarrassed<!>idle/anim_idle_blush2<!>What could you mean by that?!
-embarrassed<!>speak/anim_speak_embarrassed<!>speak/audio_speak_embarrassed<!>idle/anim_idle_embarrassed<!>What could you mean by that?!
-____END____
 bye
 good bye
 
@@ -1483,23 +1472,6 @@ happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>HAI IIIIIIIIII!!!
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>HHHHAAIIIIIIIAI!!!
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>HAAAAAAAII!!!
-____END____
-omedy
-comedyd
-
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I know that guy.
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I know that fellow.
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I know who that is!
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I know him.
-____END____
-who is comedyd
-who comedyd
-
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Omedy is a gay stripper who eats Whatsapp Doritos. ^.^
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Omedy who is sometimes known is "ComedyD" is a gay stripper who eats Whatsapp Doritos.
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Omedy.
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Omedy who is referred to by some as "ComedyD" is a gay stripper who eats Whatsapp Doritos.
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Omedy who is referred to by some as "ComedyD" is a gay stripper who eats Whatsapp Doritos. ^.^
 ____END____
 did you play the elden ring dlc
 
