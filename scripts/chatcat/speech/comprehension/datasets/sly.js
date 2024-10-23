@@ -1454,6 +1454,17 @@ say something
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Something.
 ____END____
+can you suck it
+
+surprised<!>speak/anim_speak_surprised<!>speak/audio_speak_surprised<!>idle/anim_idle_embarrassed<!>What could you possibly mean by that?!
+surprised<!>speak/anim_speak_surprised<!>speak/audio_speak_embarrassed<!>idle/anim_idle_surprised<!>What could you possibly mean by that?!
+surprised<!>speak/anim_speak_surprised<!>speak/audio_speak_embarrassed<!>idle/anim_idle_blush<!>What could you possibly mean by that?!
+surprised<!>speak/anim_speak_surprised<!>speak/audio_speak_embarrassed<!>idle/anim_idle_blush2<!>What could you possibly mean by that?!
+surprised<!>speak/anim_speak_surprised<!>speak/audio_speak_embarrassed<!>idle/anim_idle_embarrassed<!>What could you possibly mean by that?!
+blush<!>speak/anim_speak_blush<!>speak/audio_speak_sly<!>idle/anim_idle_blush<!>What could you mean by that?
+blush<!>speak/anim_speak_blush2<!>speak/audio_speak_embarrassed<!>idle/anim_idle_blush2<!>What could you mean by that?!
+embarrassed<!>speak/anim_speak_embarrassed<!>speak/audio_speak_embarrassed<!>idle/anim_idle_embarrassed<!>What could you mean by that?!
+____END____
 bye
 good bye
 
