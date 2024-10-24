@@ -29,11 +29,6 @@
 }
 
 @font-face {
-    font-family: Arthead;
-    src: url(../fonts/Arthead.otf);
-}
-
-@font-face {
     font-family: RobotoBold;
     src: url(../fonts/Roboto-Bold.ttf);
 }
