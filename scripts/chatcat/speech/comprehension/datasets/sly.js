@@ -352,6 +352,52 @@ sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>One of
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>He really likes Hollow Knight and Celeste. He also likes some other platforming games such as Neon White and Pseudoregalia.
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I'd have to say Hollow Knight and Celeste are his favorites. But he also used to be really into ULTRAKILL and other fast paced shooters.
 ____END____
+do you like apple
+do you like apples
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>No, too red and spicy.
+____END____
+do you like banana
+do you like bananas
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Yessss.
+____END____
+do you like strawberry
+do you like strawberries
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I am scared of all the little seeds.
+____END____
+do you like grape
+do you like grapes
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Sweet and sour, gives me power.
+____END____
+do you like cantaloupe
+do you like cantaloupes
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>No comment.
+____END____
+do you like coconut
+do you like coconuts
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Do you think if I crack your head open, there will be coconut water inside? or will there be blood? and how much blood? or how much coconut water?
+____END____
+do you like papaya
+do you like papayas
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Mmm. But guavas make my stomach jump more.
+____END____
+do you like potato
+do you like potatoes
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>The root.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Too starchy but I shall take a fry.
+____END____
+do you like beet
+do you like beets
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>The root.
+____END____
 what are your favorite games
 do you play video games
 what are your favorite video games
@@ -456,7 +502,7 @@ sad<!>speak/anim_speak_sad<!>speak/audio_speak_sad<!>idle/anim_idle_sad<!>Why? D
 ____END____
 are you smart
 
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I am as smart as I am programmed to be!
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I am as smart as I am programmed to be! Don't expect me to remember anything you say!
 ____END____
 how do you work
 how does this chatbot work
@@ -697,15 +743,6 @@ what was it like to work with damon albarn
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>That's my crib.
 ____END____
-do you like
-
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Yes I do.
-____END____
-do you hate
-
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Hate is a strong word.
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Hate is a very strong word.
-____END____
 are you freaky
 are you a freakster
 are you crazy
@@ -812,6 +849,11 @@ ____END____
 3
 
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>:3
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>:3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>:3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>:3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>:3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>:3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3
 ____END____
 what
 what really
@@ -1143,6 +1185,8 @@ ok you can talk again
 can you talk again
 you can make noise again
 stop shutting up
+unshutup
+unshut
 talk
 talk again
 
@@ -1589,6 +1633,227 @@ you are not smart
 
 sad<!>speak/anim_speak_sad<!>speak/audio_speak_sad<!>idle/anim_idle_sad<!>Sorry.
 sad<!>speak/anim_speak_sad<!>speak/audio_speak_sad<!>idle/anim_idle_sad<!>Sorry...
+____END____
+ask me something
+ask me something random
+ask me a question
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Do you have a favorite brand?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What was a past passion that you can't believe you were so passionate about?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What's something that you know you should start, but haven't?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>If you were going to start your own business, what would it be?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What piece of art has had a large impact on you?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>If you were required to have a job of some type but you didn't need the money from it to survive, what job would you choose?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What was the last thing that truly disappointed you?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What's something about you today that the old you would find surprising?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What do you believe is the biggest thing that's currently holding you back from success?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What is something that happened to you that you can't logically explain?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What does nobody want to talk about, but really should?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What little thing instantly tells you that a person is good?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What type of exercise do you like most?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Is it better to read books in electronic form or actually hold the book?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Do you think you were ever part of the popular crowd?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What do you think is your most creative ability?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Can you describe your personal style?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What do you secretly hoard?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>If it was possible to transplant your brain to stay alive for another 100 years, would you?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Do you people watch? If so, where do you like to do this most?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What's your "famous person" story?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What do you wish you understood better?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What's some small thing you recently noticed?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What line from a song has had the biggest impact on you?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>If you had to describe your current life as a movie, which movie would you choose?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>How often do you find yourself daydreaming?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>How do you entertain yourself when you're bored?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What's simply too difficult?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What recent event have you seen that restored your faith in humankind?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What would be the best and worst part of being a cat in your opinion?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What's the most amount of money you've ever found? What was the situation?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What's the strangest situation you ever found yourself in?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What's your current biggest worry?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What would someone who doesn't know you well be most surprised about?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Do you consider telling white lies to be okay?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What is the most recent silly thing you did?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What weird thing do you do when nobody else is around?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What's the most interesting conversation you eavesdropped on?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What is something that you don't mind waiting for?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>If you were to be famous for something, what would that be?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What recent situation was nearly a disaster, but you were able to prevent it?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What's your biggest first world problem?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What were you most afraid of when you were younger? Do you still have that fear?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>If you could change the length of each day to make it perfect for you, how many hours would it be?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What is something that you absolutely will not put up with?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What's something that you completely don't understand?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What do you think is the most complex aspect about yourself?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>If you could assign one household chore to someone else, what would it be?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What uncommon thing would you like to see become more common?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Do you have a moment in your life you wish you could relive?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What will be your go-to story when you're old?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What did you recently learn the hard way?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What foods did you used to like but don't anymore?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What or who are you always willing to make time for?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What do you wish you had spent more time doing when you were younger?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>What is your current favorite TV show? What was it 5 years ago?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Who was the last person you made happy and what did you do to do it?
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>If you had to change the language you speak, which one would you choose?
+
+____END____
+why dont you remember anything
+why cant you remember anything
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I wasn't programmed too!
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I wasn't programmed too! Sorry!
+____END____
+food
+asparagus
+apples
+avacado
+alfalfa
+acorn squash
+almond
+arugala
+artichoke
+applesauce
+asian noodles
+antelope
+ahi tuna
+albacore tuna
+apple juice
+avocado roll
+bruscetta
+bacon
+black beans
+bagels
+baked beans
+bbq
+bison
+barley
+beer
+bisque
+bluefish
+bread
+broccoli
+buritto
+babaganoosh
+cabbage
+cake
+carrots
+carne asada
+celery
+cheese
+chicken
+catfish
+chips
+chocolate
+chowder
+clams
+coffee
+cookies
+corn
+cupcakes
+crab
+curry
+cereal
+chimichanga
+dates
+dips
+duck
+dumplings
+donuts
+eggs
+enchilada
+eggrolls
+english muffins
+edimame
+eel sushi
+fajita
+falafel
+fish
+franks
+fondu
+french toast
+french dip
+garlic
+ginger
+gnocchi
+goose
+granola
+grapes
+green beans
+guacamole
+gumbo
+grits
+graham crackers
+ham
+halibut
+cheeseburgers
+bacon cheeseburgers
+honey
+huenos rancheros
+hash browns
+hot dogs
+haiku roll
+hummus
+ice cream
+irish stew
+indian food
+italian bread
+jambalaya
+jelly
+jam
+jerky
+jalapeno
+kale
+kabobs
+ketchup
+kiwi
+kidney beans
+kingfish
+lobster
+lamb
+linguine
+lasagna
+meatballs
+moose
+milk
+milkshake
+noodles
+ostrich
+pizza
+pepperoni
+porter
+pancakes
+quesadilla
+quiche
+reuben
+spinach
+spaghetti
+tater tots
+toast
+venison
+waffles
+wine
+walnuts
+yogurt
+ziti
+zucchini
+burger
+butter
+
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Yummy.
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Gimme some!
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Rumbly tummy.
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Mmm mmm mmmmm.
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Save me a slice!
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I would like to partake.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Give me that food!
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Give me food!
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Give me!
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Give me it!
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I would like to indulge in such a meal!
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Give me a meal!
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Yum! A fine meal.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>The green galuge.
 `;
 
 const SLY_DATASET = parseDataset(SLY_DATASET_RAW);
