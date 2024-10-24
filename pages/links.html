@@ -16,11 +16,14 @@
 
     <script src="../scripts/utils.js"></script>
     <script src="../scripts/input.js"></script>
+    <script src="../scripts/math.js"></script>
 
     <link rel="stylesheet" href="../styles/transitions/body-fade.css">
 </head>
 
 <body>
+    <img class="background" id="background" draggable="false">
+
     <div class="flex">
         <img src="../images/logos/discord.png" class="flex__item"
             onclick="openPage('https:\/\/discord.com/invite/n8jSSSB', 'new')" draggable="false">
@@ -57,5 +60,18 @@
     <p class="return-text" style="font-family: BitCell;" onclick="pageTransition('../index.html', 'replace')">&lt; Go
         back</p>
 </body>
+
+<script>
+    const background = document.getElementById("background");
+    const backgrounds = [
+        "../images/backgrounds/space/space.gif",
+        "../images/backgrounds/space/space2.gif",
+        "../images/backgrounds/space/space3.gif",
+        "../images/backgrounds/space/space4.gif"
+    ];
+    if (background) {
+        background.src = backgrounds[getRandomInt(0, backgrounds.length)];
+    }
+</script>
 
 </html>
