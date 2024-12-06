@@ -29,8 +29,6 @@
 
 .menu-text__text:hover {
     filter: drop-shadow(0px 0px 5px #55ffaaff) drop-shadow(0px 0px 15px #55ffaaff);
-
-    cursor: pointer;
 }
 
 .menu-text__text--blur {

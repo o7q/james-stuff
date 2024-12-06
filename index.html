@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/overlays.css">
+    <link rel="stylesheet" href="styles/cursors.css">
 
     <link rel="stylesheet" href="styles/home/body.css">
     <link rel="stylesheet" href="styles/home/james-text.css">
@@ -44,7 +45,7 @@
 <body>
     <img class="background" id="background" draggable="false">
 
-    <div class="james-text">
+    <div class="james-text cursor-pointer">
         <img src="images/text/james_stuff/unhover.png" class="james-text__text james-text__text--first"
             id="james-text__text--first" draggable="false">
         <img src="images/text/james_stuff/hover.png" class="james-text__text james-text__text--second"
@@ -52,12 +53,14 @@
     </div>
 
     <div class="menu-text" id="menu-text">
-        <p class="menu-text__text menu-text__text--blur" onclick="pageTransition('pages/projects.html', 'replace')">
+        <p class="menu-text__text menu-text__text--blur cursor-pointer"
+            onclick="pageTransition('pages/projects.html', 'replace')">
             PROJECTS
         </p>
-        <p class="menu-text__text menu-text__text--blur" onclick="pageTransition('pages/links.html', 'replace')">LINKS
+        <p class="menu-text__text menu-text__text--blur cursor-pointer"
+            onclick="pageTransition('pages/links.html', 'replace')">LINKS
         </p>
-        <p class="menu-text__text menu-text__text--blur"
+        <p class="menu-text__text menu-text__text--blur cursor-pointer"
             onclick="openPage('https:\/\/github.com/o7q/james-stuff', 'new')">SOURCE</p>
     </div>
 
@@ -77,5 +80,16 @@
     <p class="credit-text credit-text--copyright">© 2024 james</p>
     <p class="credit-text">This website was constructed by james in 2024. Therefore, the copyright belongs to james.</p>
 </body>
+
+<script>
+    // secret
+    const randomCursorChance = getRandomInt(0, 32);
+    if (randomCursorChance == 0) {
+        const cursorElements = document.querySelectorAll('.cursor-pointer');
+        cursorElements.forEach(e => {
+            e.style.cursor = "url('../../images/conniver.png'), pointer";
+        });
+    }
+</script>
 
 </html>

@@ -2,11 +2,11 @@
     position: absolute;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 4px;
     transform: skew(3deg, 3deg);
 
     top: 8vw;
-    left: 7vw;
+    left: 8vw;
 }
 
 .flex__item {
@@ -16,17 +16,17 @@
     max-height: 200px;
     object-fit: contain;
     transition: transform 1.5s ease-in-out, filter 0.5s ease-in-out;
-    filter: blur(0px) brightness(100%) drop-shadow(-20px -20px 100px #e9e9e944) drop-shadow(-30px 30px 15px #00000065);
+    filter: blur(0px) brightness(100%) drop-shadow(0px 0px 100px #e9e9e923) drop-shadow(-10px 10px 15px #00000065);
 
     cursor: pointer;
 }
 
 .flex__item:hover {
     transform: scale(1.05) skew(-1deg, -1deg);
-    filter: blur(0px) brightness(100%) drop-shadow(-20px -20px 100px #e9e9e975) drop-shadow(-30px 30px 15px #000000ab);
+    filter: blur(0px) brightness(100%) drop-shadow(0px 0px 100px #e9e9e975) drop-shadow(-10px 10px 15px #000000ab);
 }
 
 .flex:hover .flex__item:not(:hover) {
     transform: scale(1) skew(0deg, 0deg);
-    filter: blur(5px) brightness(80%) drop-shadow(-20px -20px 100px #00000000) drop-shadow(-30px 30px 15px #00000000);
+    filter: blur(5px) brightness(80%) drop-shadow(0px 0px 100px #00000000) drop-shadow(-10px 10px 15px #00000000);
 }

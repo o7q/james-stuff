@@ -32,7 +32,7 @@ window.onload = function () {
             changeFavicon("images/favicon/home/unlit.png");
         });
     });
-
+    
     spawnCat(1);
 
     setInterval(() => {

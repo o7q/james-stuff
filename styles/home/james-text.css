@@ -7,8 +7,6 @@
 
     transform: translate(-50%, -50%);
 
-    cursor: pointer;
-
     image-rendering: pixelated;
 }
 
