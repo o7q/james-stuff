@@ -70,7 +70,7 @@ function talk(sentence) {
     let randomColon3 = "", randomHappyFace = "";
     if (response_emotion !== "upset") {
         randomColon3 = getRandomInt(0, 5) == 0 ? " :3" : "";
-        randomHappyFace = getRandomInt(0, 10) == 0 ? " ^-^" : "";
+        randomHappyFace = getRandomInt(0, 10) == 0 ? " >w<" : "";
     }
     let response_text = response_data[4] + randomColon3 + randomHappyFace; // random :3
     let response_action = response_data[5];
