@@ -962,7 +962,7 @@ sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I'm he
 ____END____
 where is the github
 
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>You can access this website's source code by clicking on the GitHub icon. Or you can find the code at: github.com/o7q/o7q
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>You can access this website's source code by clicking on the GitHub icon. Or you can find the code at: github.com/o7q/james-stuff
 ____END____
 what is james youtube
 what is james channel
