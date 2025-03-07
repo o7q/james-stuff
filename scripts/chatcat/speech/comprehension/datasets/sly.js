@@ -16,6 +16,9 @@ hi
 
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Hi!
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Hello.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Hi bro.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Hello bro.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Hello my guy.
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Hi! How are you?
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Hi! Do you need anything?
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Hello! Do you need anything?

@@ -49,17 +49,17 @@ function talk(sentence) {
     // if (max_cosine_similarity < 0.1) {
     //     response = `sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>${sentence}`;
     // }
-    if (max_cosine_similarity < 0.1) {
-        response = ILLEGIBLE_RESPONSES[getRandomInt(0, ILLEGIBLE_RESPONSES.length)];
-    }
-    else {
+    // if (max_cosine_similarity < 0.1) {
+    //     response = ILLEGIBLE_RESPONSES[getRandomInt(0, ILLEGIBLE_RESPONSES.length)];
+    // }
+    // else {
         const nearest_index = nearest(1.0, cosine_sim_max_values).index;
         const response_index = nearest_index * 2 + 1;
 
         const random_response_index = getRandomInt(0, SLY_DATASET[response_index].length);
 
         response = SLY_DATASET[response_index][random_response_index];
-    }
+    //}
 
     const response_data = response.split("<!>");
 
