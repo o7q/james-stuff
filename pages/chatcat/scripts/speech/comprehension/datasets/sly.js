@@ -424,7 +424,8 @@ i want you to die
 you should die
 die please
 
-upset<!>speak/anim_speak_upset<!>speak/audio_speak_upset<!>idle/anim_idle_upset<!>Hey! That's not very nice! You also shouldn't be saying that. If I did anything wrong, I didn't mean to!<!>decreaseHappiness
+upset<!>speak/anim_speak_upset<!>speak/audio_speak_upset<!>idle/anim_idle_upset<!>Hey! That's not very nice my guy. Don't say that.<!>decreaseHappiness
+upset<!>speak/anim_speak_upset<!>speak/audio_speak_upset<!>idle/anim_idle_upset<!>Bro... Don't say that.<!>decreaseHappiness
 ____END____
 you are
 
@@ -443,14 +444,15 @@ dumb ass
 stupid ass
 stupidass
 
-sad<!>speak/anim_speak_sad<!>speak/audio_speak_sad<!>idle/anim_idle_sad<!>Sometimes I can be! I'm just a silly cat so sometimes I can be a little dumb.<!>decreaseHappiness
-sad<!>speak/anim_speak_sad<!>speak/audio_speak_sad<!>idle/anim_idle_sad<!>Sometimes I can be! But you don't have to tell me.<!>decreaseHappiness
+sad<!>speak/anim_speak_sad<!>speak/audio_speak_sad<!>idle/anim_idle_sad<!>I am a dumbass.<!>decreaseHappiness
+sad<!>speak/anim_speak_sad<!>speak/audio_speak_sad<!>idle/anim_idle_sad<!>I am sometimes a dumbass.<!>decreaseHappiness
+sad<!>speak/anim_speak_sad<!>speak/audio_speak_sad<!>idle/anim_idle_sad<!>I am sometimes a stupid guy.<!>decreaseHappiness
 ____END____
 i hate you
 i dont like you
 
-sad<!>speak/anim_speak_sad<!>speak/audio_speak_sad<!>idle/anim_idle_sad<!>Why? Did I do anything wrong?<!>decreaseHappiness
-sad<!>speak/anim_speak_sad<!>speak/audio_speak_sad<!>idle/anim_idle_sad<!>Why? Did I do anything to hurt you?<!>decreaseHappiness
+sad<!>speak/anim_speak_sad<!>speak/audio_speak_sad<!>idle/anim_idle_sad<!>Dang..<!>decreaseHappiness
+sad<!>speak/anim_speak_sad<!>speak/audio_speak_sad<!>idle/anim_idle_sad<!>Aww. 3:<!>decreaseHappiness
 ____END____
 are you smart
 
