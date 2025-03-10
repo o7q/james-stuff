@@ -1,0 +1,39 @@
+@font-face {
+    font-family: BitCell;
+    src: url(../assets/fonts/BitCell.ttf);
+}
+
+@font-face {
+    font-family: DrunkFonts;
+    src: url(../assets/fonts/DrunkFonts.otf);
+}
+
+@font-face {
+    font-family: YesevaOne;
+    src: url(../assets/fonts/YesevaOne.ttf);
+}
+
+@font-face {
+    font-family: HybridB;
+    src: url(../assets/fonts/Hybrid-b.ttf);
+}
+
+@font-face {
+    font-family: HybridO;
+    src: url(../assets/fonts/Hybrid-o.ttf);
+}
+
+@font-face {
+    font-family: Stasmic;
+    src: url(../assets/fonts/Stasmic.ttf);
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url(../assets/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: RobotoMedium;
+    src: url(../assets/fonts/Roboto-Medium.ttf);
+}

@@ -4,22 +4,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/favicon/home/unlit.png">
+    <link rel="icon" type="image/x-icon" href="pages/index/assets/images/favicon/unlit.png">
     <title>james' stuff</title>
 
-    <link rel="stylesheet" href="styles/fonts.css">
-    <link rel="stylesheet" href="styles/overlays.css">
-    <link rel="stylesheet" href="styles/cursors.css">
+    <link rel="stylesheet" href="common/styles/fonts.css">
+    <link rel="stylesheet" href="common/styles//overlays.css">
+    <link rel="stylesheet" href="common/styles/cursors.css">
 
-    <link rel="stylesheet" href="styles/home/body.css">
-    <link rel="stylesheet" href="styles/home/james-text.css">
-    <link rel="stylesheet" href="styles/home/menu-text.css">
-    <link rel="stylesheet" href="styles/home/scrolling-text.css">
-    <link rel="stylesheet" href="styles/home/copyright-text.css">
+    <link rel="stylesheet" href="pages/index/styles/body.css">
+    <link rel="stylesheet" href="pages/index/styles/james-text.css">
+    <link rel="stylesheet" href="pages/index/styles/menu-text.css">
+    <link rel="stylesheet" href="pages/index/styles/scrolling-text.css">
+    <link rel="stylesheet" href="pages/index/styles/copyright-text.css">
 
-    <link rel="stylesheet" href="styles/screencat/cat.css">
+    <link rel="stylesheet" href="pages/index/styles/cat.css">
 
-    <script src="scripts/utils.js"></script>
+    <script src="common/scripts/utils.js"></script>
     <script>
         if (isMobileBrowser()) {
             openPage("pages/mobile/home.html", "replace");
@@ -29,36 +29,36 @@
         }
     </script>
 
-    <script src="scripts/math.js"></script>
-    <script src="scripts/window.js"></script>
-    <script src="scripts/input.js"></script>
+    <script src="common/scripts/math.js"></script>
+    <script src="common/scripts/window.js"></script>
+    <script src="common/scripts/input.js"></script>
 
-    <script src="scripts/home/main.js"></script>
-    <script src="scripts/home/interaction.js"></script>
+    <script src="pages/index/scripts/home/main.js"></script>
+    <script src="pages/index/scripts/home/interaction.js"></script>
 
-    <script src="scripts/screencat/cat.js"></script>
-    <script src="scripts/screencat/init.js"></script>
+    <script src="pages/index/scripts/screencat/cat.js"></script>
+    <script src="pages/index/scripts/screencat/init.js"></script>
 
-    <link rel="stylesheet" href="styles/transitions/body-fade.css">
+    <link rel="stylesheet" href="common/styles/transitions/body-fade.css">
 </head>
 
 <body>
     <img class="background" id="background" draggable="false">
 
     <div class="james-text cursor-pointer">
-        <img src="images/text/james_stuff/unhover.png" class="james-text__text james-text__text--first"
+        <img src="pages/index/assets/images/text/unhover.png" class="james-text__text james-text__text--first"
             id="james-text__text--first" draggable="false">
-        <img src="images/text/james_stuff/hover.png" class="james-text__text james-text__text--second"
+        <img src="pages/index/assets/images/text/hover.png" class="james-text__text james-text__text--second"
             id="james-text__text--second" draggable="false" onclick="jamesStuffClick()">
     </div>
 
     <div class="menu-text" id="menu-text">
         <p class="menu-text__text menu-text__text--blur cursor-pointer"
-            onclick="pageTransition('pages/projects.html', 'replace')">
+            onclick="pageTransition('pages/projects/projects.html', 'replace')">
             PROJECTS
         </p>
         <p class="menu-text__text menu-text__text--blur cursor-pointer"
-            onclick="pageTransition('pages/links.html', 'replace')">LINKS
+            onclick="pageTransition('pages/links/links.html', 'replace')">LINKS
         </p>
         <p class="menu-text__text menu-text__text--blur cursor-pointer"
             onclick="openPage('https:\/\/github.com/o7q/james-stuff', 'new')">SOURCE</p>
@@ -71,14 +71,14 @@
         </div>
     </div>
 
-    <img src="images/overlays/noise.png" class="overlay overlay--noise" draggable="false">
-    <img src="images/overlays/crt.png" class="overlay overlay--crt" draggable="false">
-    <img src="images/overlays/screendust.png" class="overlay overlay--screendust" draggable="false">
-    <img src="images/overlays/tv.png" class="overlay overlay--tv" draggable="false">
-    <img src="images/overlays/vignette.png" class="overlay overlay--vignette" draggable="false">
+    <img src="common/assets/images/overlays/noise.png" class="overlay overlay--noise" draggable="false">
+    <img src="common/assets/images/overlays/crt.png" class="overlay overlay--crt" draggable="false">
+    <img src="common/assets/images/overlays/screendust.png" class="overlay overlay--screendust" draggable="false">
+    <img src="common/assets/images/overlays/tv.png" class="overlay overlay--tv" draggable="false">
+    <img src="common/assets/images/overlays/vignette.png" class="overlay overlay--vignette" draggable="false">
 
-    <p class="credit-text credit-text--copyright">© 2024 james</p>
-    <p class="credit-text">This website was constructed by james in 2024. Therefore, the copyright belongs to james.</p>
+    <p class="credit-text credit-text--copyright">© 2025 james</p>
+    <p class="credit-text">This website was constructed by james in 2025. Therefore, the copyright belongs to james.</p>
 </body>
 
 <script>
@@ -87,7 +87,7 @@
     if (randomCursorChance == 0) {
         const cursorElements = document.querySelectorAll('.cursor-pointer');
         cursorElements.forEach(e => {
-            e.style.cursor = "url('images/conniver.png'), pointer";
+            e.style.cursor = "url('pages/index/assets/images/conniver.png'), pointer";
         });
     }
 </script>

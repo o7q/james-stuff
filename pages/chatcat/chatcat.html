@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/favicon/chatcat/normal/sly.png">
+    <title>mysterious cat</title>
+
+    <link rel="stylesheet" href="../../common/styles/common.css">
+    <link rel="stylesheet" href="../../common/styles/fonts.css">
+
+    <link rel="stylesheet" href="styles/body.css">
+    <link rel="stylesheet" href="styles/overlay.css">
+    <link rel="stylesheet" href="styles/cat.css">
+    <link rel="stylesheet" href="styles/input.css">
+
+    <script src="../../common/scripts/math.js"></script>
+    <script src="../../common/scripts/input.js"></script>
+    <script src="../../common/scripts/window.js"></script>
+    <script src="../../common/scripts/utils.js"></script>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/speak.js"></script>
+    <script src="scripts/animate.js"></script>
+    <script src="scripts/audio.js"></script>
+    <script src="scripts/video.js"></script>
+    
+    <script src="scripts/speech/dataset-parser.js"></script>
+    <script src="scripts/speech/variables.js"></script>
+
+    <script src="scripts/speech/format/levenshtein.js"></script>
+    <script src="scripts/speech/format/custom-replace.js"></script>
+    <script src="scripts/speech/format/dictionary/english.js"></script>
+    <script src="scripts/speech/format/dictionary/datasets/custom.js"></script>
+    <script src="scripts/speech/format/format.js"></script>
+
+    <script src="scripts/speech/comprehension/cosine-similarity.js"></script>
+    <script src="scripts/speech/comprehension/datasets/sly.js"></script>
+
+    <script src="scripts/speech/responses/illegible.js"></script>
+    <script src="scripts/speech/responses/rage.js"></script>
+    <script src="scripts/speech/responses/love.js"></script>
+
+    <script src="scripts/speech/events/rage.js"></script>
+    <script src="scripts/speech/events/love.js"></script>
+
+    <script src="scripts/speech/speech.js"></script>
+
+    <link rel="stylesheet" href="../../common/styles/transitions/body-fade.css">
+</head>
+
+<body>
+    <img class="layer" id="backdrop" draggable="false">
+    <img class="layer" id="cat" draggable="false">
+
+    <div class="cat__text-background" id="cat-text-background"></div>
+    <p class="cat__text" id="cat-text"></p>
+
+    <label for="user-text-input" class="enter-text__label">Enter text:</label>
+    <input type="text" name="user-text-input" class="enter-text__input" id="user-text-input" autocomplete="off">
+
+    <img src="../../common/assets/images/overlays/crt.png" class="overlay overlay--crt" draggable="false">
+    <img src="../../common/assets/images/overlays/screendust.png" class="overlay overlay--screendust" draggable="false">
+    <img src="../../common/assets/images/overlays/vignette.png" class="overlay overlay--vignette" draggable="false">
+    
+    <p class="return-text" style="font-family: BitCell; font-size: 30px;" onclick="pageTransition('../../index.html', 'replace')">&nbsp;&lt;&lt; return</p>
+</body>
+
+</html>
