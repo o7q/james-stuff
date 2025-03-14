@@ -8,16 +8,17 @@
     <title>james' stuff</title>
 
     <link rel="stylesheet" href="common/styles/fonts.css">
-    <link rel="stylesheet" href="common/styles//overlays.css">
+    <link rel="stylesheet" href="common/styles/overlays.css">
     <link rel="stylesheet" href="common/styles/cursors.css">
 
     <link rel="stylesheet" href="pages/index/styles/body.css">
-    <link rel="stylesheet" href="pages/index/styles/james-text.css">
-    <link rel="stylesheet" href="pages/index/styles/menu-text.css">
+    <link rel="stylesheet" href="pages/index/styles/main_text/james-text.css">
+    <link rel="stylesheet" href="pages/index/styles/main_text/james-text-switch.css">
+    <link rel="stylesheet" href="pages/index/styles/main_text/menu-text.css">
     <link rel="stylesheet" href="pages/index/styles/scrolling-text.css">
     <link rel="stylesheet" href="pages/index/styles/copyright-text.css">
 
-    <link rel="stylesheet" href="pages/index/styles/cat.css">
+    <link rel="stylesheet" href="pages/index/styles/screencat/cat.css">
 
     <script src="common/scripts/utils.js"></script>
     <script>
@@ -33,8 +34,9 @@
     <script src="common/scripts/window.js"></script>
     <script src="common/scripts/input.js"></script>
 
-    <script src="pages/index/scripts/home/main.js"></script>
-    <script src="pages/index/scripts/home/interaction.js"></script>
+    <script src="pages/index/scripts/main.js"></script>
+    <script src="pages/index/scripts/listeners.js"></script>
+    <script src="pages/index/scripts/text-animator.js"></script>
 
     <script src="pages/index/scripts/screencat/cat.js"></script>
     <script src="pages/index/scripts/screencat/init.js"></script>
@@ -45,12 +47,15 @@
 <body>
     <img class="background" id="background" draggable="false">
 
-    <div class="james-text cursor-pointer">
-        <img src="common/assets/images/text/james_stuff_unlit.png" class="james-text__text james-text__text--first"
-            id="james-text__text--first" draggable="false">
-        <img src="common/assets/images/text/james_stuff_lit.png" class="james-text__text james-text__text--second"
-            id="james-text__text--second" draggable="false" onclick="jamesStuffClick()">
-    </div>
+    <img src="pages/index/assets/images/text/0.png" class="james-text james-text--moveCenter" id="james-text"
+        onclick="playAnimatedText()" draggable="false">
+
+    <img src="pages/index/assets/images/button/arrow.png"
+        class="james-text-switch-button james-text-switch-button--left" id="james-text-switch-button-left"
+        draggable="false">
+    <img src="pages/index/assets/images/button/arrow.png"
+        class="james-text-switch-button james-text-switch-button--right" id="james-text-switch-button-left"
+        draggable="false">
 
     <div class="menu-text" id="menu-text">
         <p class="menu-text__text menu-text__text--blur cursor-pointer"
@@ -63,6 +68,11 @@
         <p class="menu-text__text menu-text__text--blur cursor-pointer"
             onclick="openPage('https:\/\/github.com/o7q/james-stuff', 'new')">SOURCE</p>
     </div>
+
+    <div class="james-text-switch-button-reveal-area james-text-switch-button-reveal-area--left"
+        id="james-text-switch-button-reveal-area" onclick="switchTextVariant(-1)" draggable="false"></div>
+    <div class="james-text-switch-button-reveal-area james-text-switch-button-reveal-area--right"
+        id="james-text-switch-button-reveal-area" onclick="switchTextVariant(1)" draggable="false"></div>
 
     <div class="scrolling-text">
         <div class="scrolling-text__text">

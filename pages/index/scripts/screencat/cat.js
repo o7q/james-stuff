@@ -246,7 +246,6 @@ class Cat {
     }
 
     updateGrabTexture(varient) {
-
         let animation;
         if (varient === "0") {
             animation = `pages/index/assets/images/screencat/animations/grabbed/anim_grabbed_embarrassed/0/270/256x256.png`

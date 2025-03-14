@@ -1,1 +1,3 @@
 - Make the TV overlay more realistic
+- Add sly dance
+- Add event where sly grabs the camera/screen and shakes it

@@ -1664,10 +1664,6 @@ are you thirsty
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Give me hot sauce, I'll drink a whole bottle!!
 ____END____
-are you thirsty
-
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Give me hot sauce, I'll drink a whole bottle!!
-____END____
 are you squishy
 are you soft
 
@@ -1686,6 +1682,12 @@ ____END____
 do you know anything
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I know everything.
+____END____
+mcdonalds
+do you want mcdonalds
+do you like mcdonalds
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I love McDonalds!!
 `;
 
 const SLY_DATASET = parseDataset(SLY_DATASET_RAW);

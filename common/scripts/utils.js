@@ -1,3 +1,7 @@
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 function changeFavicon(favicon) {
     // from https://stackoverflow.com/a/260876
     var link = document.querySelector("link[rel~='icon']");

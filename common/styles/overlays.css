@@ -13,7 +13,7 @@
 
 .overlay--noise {
     mix-blend-mode: soft-light;
-    opacity: 0.25;
+    opacity: 0.3;
 }
 
 .overlay--noise2 {
@@ -29,11 +29,6 @@
 .overlay--screendust {
     mix-blend-mode: color-dodge;
     opacity: 1;
-}
-
-.overlay--dust {
-    mix-blend-mode: lighten;
-    opacity: 0.3;
 }
 
 .overlay--vignette {

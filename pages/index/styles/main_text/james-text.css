@@ -1,0 +1,31 @@
+.james-text {
+    width: 550px;
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+
+    cursor: pointer;
+
+    image-rendering: pixelated;
+}
+
+.james-text--fadeOut {
+    opacity: 0;
+}
+
+.james-text--moveLeft {
+    transform: translate(-55%, -50%);
+}
+
+.james-text--moveRight {
+    transform: translate(-45%, -50%);
+}
+
+.james-text--moveCenter {
+    transform: translate(-50%, -50%);
+}
+
+.james-text--enableMoveTransition {
+    transition: opacity 0.25s ease-in-out, transform 0.25s ease-out;
+}
