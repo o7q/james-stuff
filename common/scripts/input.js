@@ -24,10 +24,7 @@ document.addEventListener("mousemove", function (event) {
     MOUSE_POS.x = event.clientX;
     MOUSE_POS.y = event.clientY;
 
-    MOUSE_SPEED = Math.sqrt(
-        Math.pow(MOUSE_VELOCITY.x, 2) +
-        Math.pow(MOUSE_VELOCITY.y, 2)
-    );
+    MOUSE_SPEED = Math.sqrt(MOUSE_VELOCITY.x * MOUSE_VELOCITY.x + MOUSE_VELOCITY.y * MOUSE_VELOCITY.y);
 
     MOUSE_VELOCITY.x = MOUSE_POS.x - MOUSE_POS_PREV.x;
     MOUSE_VELOCITY.y = MOUSE_POS.y - MOUSE_POS_PREV.y;
