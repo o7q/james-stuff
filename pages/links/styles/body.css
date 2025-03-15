@@ -8,6 +8,8 @@ body {
 
     user-select: none;
 
+    cursor: url("../../../common/assets/images/cursors/default.png"), default;
+
     overflow: hidden;
 }
 

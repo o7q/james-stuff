@@ -2,14 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
     loadAudio();
     animate(getRandomBaseIdleAnimation());
 
-    // speak(
-    //     "Hey! I'm Sly!",
-    //     "speak/anim_speak_happy",
-    //     "speak/audio_speak_happy",
-    //     "idle/anim_idle_happy",
-    //     20
-    // );
-
     const backdrop = document.getElementById("backdrop");
     const backdrops = [
         "assets/images/backgrounds/space/space.gif",
@@ -30,4 +22,19 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
     }, 1);
+
+    // wiggly finger cursor
+    let cursorChangeTimeout;
+    document.addEventListener("mousedown", (e) => {
+        document.body.style.cursor = "url(\"../../common/assets/images/cursors/pointer_click.png\"), default";
+        clearTimeout(cursorChangeTimeout);
+    });
+
+    document.addEventListener("mouseup", (e) => {
+        document.body.style.cursor = "url(\"../../common/assets/images/cursors/pointer.png\"), default";
+
+        cursorChangeTimeout = setTimeout(() => {
+            document.body.style.cursor = "url(\"../../common/assets/images/cursors/default.png\"), default";
+        }, 2000);
+    });
 });

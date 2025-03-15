@@ -8,6 +8,8 @@
     font-size: 2vw;
     font-family: BitCell;
 
+    cursor: url("../../../common/assets/images/cursors/default.png"), default;
+
     mix-blend-mode: difference;
 }
 
@@ -23,17 +25,19 @@
     font-size: 3vw;
     font-family: BitCell;
 
+    cursor: url("../../../common/assets/images/cursors/pointer.png"), pointer;
+
     outline: none;
 }
 
 a {
-    color: rgb(255, 90, 167);
+    color: rgb(255, 173, 214);
 }
 
 a:hover {
-    color: rgb(153, 88, 228);
+    color: rgb(134, 107, 255);
 }
 
 a:active {
-    color: rgb(197, 149, 252);
+    color: rgb(188, 173, 255);
 }

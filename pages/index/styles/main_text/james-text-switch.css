@@ -29,20 +29,20 @@
     /* background-color: white;
     opacity: 0.5; */
 
-    width: 150px;
+    width: 250px;
     height: 200px;
 
     position: absolute;
     left: 50%;
     top: 45%;
 
-    cursor: pointer;
+    cursor: url("../../../../common/assets/images/cursors/pointer.png"), pointer;
 }
 
 .james-text-switch-button-reveal-area--left {
-    transform: translate(-200%, -50%);
+    transform: translate(-125%, -50%);
 }
 
 .james-text-switch-button-reveal-area--right {
-    transform: translate(100%, -50%);
+    transform: translate(25%, -50%);
 }

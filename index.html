@@ -36,7 +36,9 @@
 
     <script src="pages/index/scripts/main.js"></script>
     <script src="pages/index/scripts/listeners.js"></script>
-    <script src="pages/index/scripts/text-animator.js"></script>
+    <script src="pages/index/scripts/text-animate.js"></script>
+    <script src="pages/index/scripts/text-drag.js"></script>
+    
 
     <script src="pages/index/scripts/screencat/cat.js"></script>
     <script src="pages/index/scripts/screencat/init.js"></script>
@@ -48,7 +50,8 @@
     <img class="background" id="background" draggable="false">
 
     <img src="pages/index/assets/images/text/0.png" class="james-text james-text--moveCenter" id="james-text"
-        onclick="playAnimatedText()" onmousedown="dragStart()" draggable="false">
+        onclick="playAnimatedText()" onmousedown="dragStart()" onmouseenter="mouseOver()" onmouseleave="mouseLeave()"
+        draggable="false">
 
     <img src="pages/index/assets/images/button/arrow.png"
         class="james-text-switch-button james-text-switch-button--left" id="james-text-switch-button-left"

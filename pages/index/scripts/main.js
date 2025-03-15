@@ -14,11 +14,15 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
     spawnCat(1);
 
-    setInterval(() => {
+    function handleUpdate() {
         tick();
 
         for (let i = 0; i < CATS.length; i++) {
             CATS[i].update();
         }
-    }, 1);
+
+        requestAnimationFrame(handleUpdate);
+    }
+
+    handleUpdate();
 });

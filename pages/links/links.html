@@ -25,8 +25,8 @@
     <img class="background" id="background" draggable="false">
 
     <div class="flex">
-        <img src="../../common/assets/images/logos/discord.png" class="flex__item" onclick="window.alert('My Discord is: o7q')"
-            draggable="false">
+        <img src="../../common/assets/images/logos/discord.png" class="flex__item"
+            onclick="window.alert('My Discord is: o7q')" draggable="false">
         <img src="../../common/assets/images/logos/youtube_o7q.png" class="flex__item"
             onclick="openPage('https:\/\/www.youtube.com/@o7qedits', 'new')" draggable="false">
         <img src="../../common/assets/images/logos/youtube_jame.png" class="flex__item"
@@ -35,12 +35,12 @@
             onclick="openPage('https:\/\/www.youtube.com/@jame-x3-live', 'new')" draggable="false">
         <img src="../../common/assets/images/logos/twitch.png" class="flex__item"
             onclick="openPage('https:\/\/www.twitch.tv/jamebajuice', 'new')" draggable="false">
-        <img src="../../common/assets/images/logos/github.png" class="flex__item" onclick="openPage('https:\/\/github.com/o7q', 'new')"
-            draggable="false">
-        <img src="../../common/assets/images/logos/bluesky.png" class="flex__item" onclick="openPage('https:\/\/bsky.app/profile/jame.pet', 'new')"
-            draggable="false">
-        <img src="../../common/assets/images/logos/x.png" class="flex__item" onclick="openPage('https:\/\/x.com/jamebajuice', 'new')"
-            draggable="false">
+        <img src="../../common/assets/images/logos/github.png" class="flex__item"
+            onclick="openPage('https:\/\/github.com/o7q', 'new')" draggable="false">
+        <img src="../../common/assets/images/logos/bluesky.png" class="flex__item"
+            onclick="openPage('https:\/\/bsky.app/profile/jame.pet', 'new')" draggable="false">
+        <img src="../../common/assets/images/logos/x.png" class="flex__item"
+            onclick="openPage('https:\/\/x.com/jamebajuice', 'new')" draggable="false">
         <img src="../../common/assets/images/logos/soundcloud.png" class="flex__item"
             onclick="openPage('https:\/\/soundcloud.com/jamenoise', 'new')" draggable="false">
         <img src="../../common/assets/images/logos/spotify.png" class="flex__item"
@@ -80,6 +80,21 @@
     if (background) {
         background.src = backgrounds[getRandomInt(0, backgrounds.length)];
     }
+
+    // wiggly finger cursor
+    let cursorChangeTimeout;
+    document.addEventListener("mousedown", (e) => {
+        document.body.style.cursor = "url(\"../../common/assets/images/cursors/pointer_click.png\"), default";
+        clearTimeout(cursorChangeTimeout);
+    });
+
+    document.addEventListener("mouseup", (e) => {
+        document.body.style.cursor = "url(\"../../common/assets/images/cursors/pointer.png\"), default";
+
+        cursorChangeTimeout = setTimeout(() => {
+            document.body.style.cursor = "url(\"../../common/assets/images/cursors/default.png\"), default";
+        }, 2000);
+    });
 </script>
 
 </html>

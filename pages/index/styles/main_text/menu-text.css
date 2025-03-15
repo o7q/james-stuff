@@ -1,12 +1,13 @@
 .menu-text {
+    /* background-color: white;
+    opacity: 0.5; */
+
     position: absolute;
     left: 50%;
     top: 45%;
     transform: translate(-50%, 400%);
-    
-    display: flex;
 
-    transition: opacity 3s ease-in-out;
+    display: flex;
 
     filter: blur(0.25px);
 }
@@ -22,7 +23,8 @@
     letter-spacing: 2px;
 
     transition: filter 0.75s ease-in-out;
-    
+
+    cursor: url("../../../../common/assets/images/cursors/pointer.png"), pointer;
 }
 
 .menu-text__text:hover {
