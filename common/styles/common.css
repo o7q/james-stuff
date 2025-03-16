@@ -8,8 +8,6 @@
 
     color: rgb(255, 255, 255);
 
-    cursor: url("../assets/images/cursors/pointer.png"), pointer;
-
     filter: drop-shadow(2px 2px 2px #000000);
     transition: 0.05s color ease-in-out;
 }

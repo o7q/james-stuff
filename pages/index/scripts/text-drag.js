@@ -1,6 +1,5 @@
 let HOVERING = false;
 let DRAGGING = false;
-let CAN_RESET = false;
 
 function dragStart() {
     const textElement = document.getElementById("james-text");
@@ -12,7 +11,7 @@ function dragStart() {
     let rotation = 0;
     let speed = 0.03;
 
-    CAN_RESET = false;
+    let counter = 0;
 
     textElement.style.transition = "";
 
@@ -33,24 +32,7 @@ function dragStart() {
             mouse_x = MOUSE_POS.x;
             mouse_y = MOUSE_POS.y;
             mouse_vel_x = MOUSE_VELOCITY.x;
-            textElement.style.cursor = "url(\"common/assets/images/cursors/grab.png\"), default";
             document.body.style.cursor = "url(\"common/assets/images/cursors/grab.png\"), default";
-            document.querySelectorAll(".james-text-switch-button-reveal-area").forEach(element => {
-                element.style.cursor = "url(\"common/assets/images/cursors/grab.png\"), default";
-            });
-            document.querySelectorAll(".menu-text__text").forEach(element => {
-                element.style.cursor = "url(\"common/assets/images/cursors/grab.png\"), default";
-            });
-        }
-        else {
-            textElement.style.cursor = "url(\"common/assets/images/cursors/pointer.png\"), default";
-            document.body.style.cursor = "url(\"common/assets/images/cursors/default.png\"), default";
-            document.querySelectorAll(".james-text-switch-button-reveal-area").forEach(element => {
-                element.style.cursor = "url(\"common/assets/images/cursors/pointer.png\"), default";
-            });
-            document.querySelectorAll(".menu-text__text").forEach(element => {
-                element.style.cursor = "url(\"common/assets/images/cursors/pointer.png\"), pointer";
-            });
         }
 
         x += (mouse_x - x) * speed;
@@ -59,11 +41,8 @@ function dragStart() {
 
         const dist = Math.sqrt(Math.pow(x - initial_left, 2) + Math.pow(y - initial_top, 2));
 
-        if (dist > 1) {
-            CAN_RESET = true;
-        }
-
-        if (dist <= 1 && CAN_RESET) {
+        if (dist <= 1 && counter > 10) {
+            counter = 0;
             textElement.style.transition = "left 1s ease-out, top 1s ease-out";
             textElement.style.left = "";
             textElement.style.top = "";
@@ -76,6 +55,8 @@ function dragStart() {
         textElement.style.transform = `translate(-50%, -50%) rotate(${rotation}deg)`;
 
         requestAnimationFrame(smoothDrag);
+
+        ++counter;
     }
 
     smoothDrag();
@@ -83,8 +64,10 @@ function dragStart() {
 
 function mouseOver() {
     HOVERING = true;
+    cursorHandleHover("common/assets/images/cursors");
 }
 
 function mouseLeave() {
     HOVERING = false;
+    cursorHandleUnhover();
 }

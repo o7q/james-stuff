@@ -23,8 +23,6 @@
     letter-spacing: 2px;
 
     transition: filter 0.75s ease-in-out;
-
-    cursor: url("../../../../common/assets/images/cursors/pointer.png"), pointer;
 }
 
 .menu-text__text:hover {

@@ -9,7 +9,6 @@
 
     <link rel="stylesheet" href="common/styles/fonts.css">
     <link rel="stylesheet" href="common/styles/overlays.css">
-    <link rel="stylesheet" href="common/styles/cursors.css">
 
     <link rel="stylesheet" href="pages/index/styles/body.css">
     <link rel="stylesheet" href="pages/index/styles/main_text/james-text.css">
@@ -33,12 +32,13 @@
     <script src="common/scripts/math.js"></script>
     <script src="common/scripts/window.js"></script>
     <script src="common/scripts/input.js"></script>
+    <script src="common/scripts/cursors.js"></script>
 
     <script src="pages/index/scripts/main.js"></script>
     <script src="pages/index/scripts/listeners.js"></script>
     <script src="pages/index/scripts/text-animate.js"></script>
     <script src="pages/index/scripts/text-drag.js"></script>
-    
+
 
     <script src="pages/index/scripts/screencat/cat.js"></script>
     <script src="pages/index/scripts/screencat/init.js"></script>
@@ -47,35 +47,38 @@
 </head>
 
 <body>
-    <img class="background" id="background" draggable="false">
+    <img class="background" id="background">
 
     <img src="pages/index/assets/images/text/0.png" class="james-text james-text--moveCenter" id="james-text"
-        onclick="playAnimatedText()" onmousedown="dragStart()" onmouseenter="mouseOver()" onmouseleave="mouseLeave()"
-        draggable="false">
+        onclick="playAnimatedText()" onmousedown="dragStart()" onmouseenter="mouseOver()" onmouseleave="mouseLeave()">
 
     <img src="pages/index/assets/images/button/arrow.png"
-        class="james-text-switch-button james-text-switch-button--left" id="james-text-switch-button-left"
-        draggable="false">
+        class="james-text-switch-button james-text-switch-button--left" id="james-text-switch-button-left">
     <img src="pages/index/assets/images/button/arrow.png"
-        class="james-text-switch-button james-text-switch-button--right" id="james-text-switch-button-left"
-        draggable="false">
+        class="james-text-switch-button james-text-switch-button--right" id="james-text-switch-button-left">
 
     <div class="menu-text" id="menu-text">
-        <p class="menu-text__text menu-text__text--blur cursor-pointer"
-            onclick="pageTransition('pages/projects/projects.html', 'replace')">
+        <p class="menu-text__text menu-text__text--blur"
+            onclick="pageTransition('pages/projects/projects.html', 'replace')"
+            onmouseenter="cursorHandleHover()" onmouseleave="cursorHandleUnhover()">
             PROJECTS
         </p>
-        <p class="menu-text__text menu-text__text--blur cursor-pointer"
-            onclick="pageTransition('pages/links/links.html', 'replace')">LINKS
+        <p class="menu-text__text menu-text__text--blur" onclick="pageTransition('pages/links/links.html', 'replace')"
+            onmouseenter="cursorHandleHover()" onmouseleave="cursorHandleUnhover()">
+            LINKS
         </p>
-        <p class="menu-text__text menu-text__text--blur cursor-pointer"
-            onclick="openPage('https:\/\/github.com/o7q/james-stuff', 'new')">SOURCE</p>
+        <p class="menu-text__text menu-text__text--blur"
+            onclick="openPage('https:\/\/github.com/o7q/james-stuff', 'new')"
+            onmouseenter="cursorHandleHover()" onmouseleave="cursorHandleUnhover()">SOURCE
+        </p>
     </div>
 
     <div class="james-text-switch-button-reveal-area james-text-switch-button-reveal-area--left"
-        id="james-text-switch-button-reveal-area" onclick="switchTextVariant(-1)" draggable="false"></div>
+        id="james-text-switch-button-reveal-area" onclick="switchTextVariant(-1)"
+        onmouseenter="cursorHandleHover()" onmouseleave="cursorHandleUnhover()"></div>
     <div class="james-text-switch-button-reveal-area james-text-switch-button-reveal-area--right"
-        id="james-text-switch-button-reveal-area" onclick="switchTextVariant(1)" draggable="false"></div>
+        id="james-text-switch-button-reveal-area" onclick="switchTextVariant(1)"
+        onmouseenter="cursorHandleHover()" onmouseleave="cursorHandleUnhover()"></div>
 
     <div class="scrolling-text">
         <div class="scrolling-text__text">
@@ -84,25 +87,20 @@
         </div>
     </div>
 
-    <img src="common/assets/images/overlays/noise.png" class="overlay overlay--noise" draggable="false">
-    <img src="common/assets/images/overlays/crt.png" class="overlay overlay--crt" draggable="false">
-    <img src="common/assets/images/overlays/screendust.png" class="overlay overlay--screendust" draggable="false">
-    <img src="common/assets/images/overlays/tv.png" class="overlay overlay--tv" draggable="false">
-    <img src="common/assets/images/overlays/vignette.png" class="overlay overlay--vignette" draggable="false">
+    <img src="common/assets/images/overlays/noise.png" class="overlay overlay--noise">
+    <img src="common/assets/images/overlays/crt.png" class="overlay overlay--crt">
+    <img src="common/assets/images/overlays/screendust.png" class="overlay overlay--screendust">
+    <img src="common/assets/images/overlays/tv.png" class="overlay overlay--tv">
+    <img src="common/assets/images/overlays/vignette.png" class="overlay overlay--vignette">
 
     <p class="credit-text credit-text--copyright">© 2025 james</p>
     <p class="credit-text">This website was constructed by james in 2025. Therefore, the copyright belongs to james.</p>
 </body>
 
 <script>
-    // secret
-    const randomCursorChance = getRandomInt(0, 32);
-    if (randomCursorChance == 0) {
-        const cursorElements = document.querySelectorAll('.cursor-pointer');
-        cursorElements.forEach(e => {
-            e.style.cursor = "url('pages/index/assets/images/conniver.png'), pointer";
-        });
-    }
+    document.querySelectorAll("*").forEach(element => {
+        element.draggable = false;
+    });
 </script>
 
 </html>
