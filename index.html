@@ -22,7 +22,7 @@
     <script src="common/scripts/utils.js"></script>
     <script>
         if (isMobileBrowser()) {
-            openPage("pages/mobile/mobile.html", "replace");
+            window.alert("There is currently no mobile site available. You will be viewing the desktop version of the site. I'd highly recommend coming back later for the full experience!");
         }
         else if (!isHardwareAccelerationEnabled()) {
             window.alert("Hardware Acceleration was not detected in your browser. It is highly recommended to enable this for a smooth experience.");
@@ -59,8 +59,8 @@
 
     <div class="menu-text" id="menu-text">
         <p class="menu-text__text menu-text__text--blur"
-            onclick="pageTransition('pages/projects/projects.html', 'replace')"
-            onmouseenter="cursorHandleHover()" onmouseleave="cursorHandleUnhover()">
+            onclick="pageTransition('pages/projects/projects.html', 'replace')" onmouseenter="cursorHandleHover()"
+            onmouseleave="cursorHandleUnhover()">
             PROJECTS
         </p>
         <p class="menu-text__text menu-text__text--blur" onclick="pageTransition('pages/links/links.html', 'replace')"
@@ -68,17 +68,17 @@
             LINKS
         </p>
         <p class="menu-text__text menu-text__text--blur"
-            onclick="openPage('https:\/\/github.com/o7q/james-stuff', 'new')"
-            onmouseenter="cursorHandleHover()" onmouseleave="cursorHandleUnhover()">SOURCE
+            onclick="openPage('https:\/\/github.com/o7q/james-stuff', 'new')" onmouseenter="cursorHandleHover()"
+            onmouseleave="cursorHandleUnhover()">SOURCE
         </p>
     </div>
 
     <div class="james-text-switch-button-reveal-area james-text-switch-button-reveal-area--left"
-        id="james-text-switch-button-reveal-area" onclick="switchTextVariant(-1)"
-        onmouseenter="cursorHandleHover()" onmouseleave="cursorHandleUnhover()"></div>
+        id="james-text-switch-button-reveal-area" onclick="switchTextVariant(-1)" onmouseenter="cursorHandleHover()"
+        onmouseleave="cursorHandleUnhover()"></div>
     <div class="james-text-switch-button-reveal-area james-text-switch-button-reveal-area--right"
-        id="james-text-switch-button-reveal-area" onclick="switchTextVariant(1)"
-        onmouseenter="cursorHandleHover()" onmouseleave="cursorHandleUnhover()"></div>
+        id="james-text-switch-button-reveal-area" onclick="switchTextVariant(1)" onmouseenter="cursorHandleHover()"
+        onmouseleave="cursorHandleUnhover()"></div>
 
     <div class="scrolling-text">
         <div class="scrolling-text__text">
