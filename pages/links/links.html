@@ -20,6 +20,8 @@
     <script src="../../common/scripts/input.js"></script>
     <script src="../../common/scripts/math.js"></script>
     <script src="../../common/scripts/cursors.js"></script>
+
+    <script src="scripts/init.js"></script>
 </head>
 
 <body>
@@ -86,24 +88,5 @@
         onclick="pageTransition('../../index.html', 'replace')" onmouseenter="cursorHandleHover()"
         onmouseleave="cursorHandleUnhover()">&nbsp;&lt;&lt; return</p>
 </body>
-
-<script>
-    const background = document.getElementById("background");
-    const backgrounds = [
-        "../../common/assets/images/backgrounds/space/space.gif",
-        "../../common/assets/images/backgrounds/space/space2.gif",
-        "../../common/assets/images/backgrounds/space/space3.gif",
-        "../../common/assets/images/backgrounds/space/space4.gif"
-    ];
-    if (background) {
-        background.src = backgrounds[getRandomInt(0, backgrounds.length)];
-    }
-
-    cursorInitListeners("../../common/assets/images/cursors");
-
-    document.querySelectorAll("*").forEach(element => {
-        element.draggable = false;
-    });
-</script>
 
 </html>

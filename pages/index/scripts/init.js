@@ -12,6 +12,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
         background.src = backgrounds[getRandomInt(0, backgrounds.length)];
     }
 
+    document.querySelectorAll("*").forEach(element => {
+        element.draggable = false;
+    });
+
     spawnCat(1);
 
     function handleUpdate() {

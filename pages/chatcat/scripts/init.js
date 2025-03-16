@@ -20,21 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (randomAnimation < 8 && CAN_RANDOM_IDLE) {
             animate(getRandomBaseIdleAnimation());
         }
-
     }, 1);
 
-    // wiggly finger cursor
-    let cursorChangeTimeout;
-    document.addEventListener("mousedown", (e) => {
-        document.body.style.cursor = "url(\"../../common/assets/images/cursors/pointer_click.png\"), default";
-        clearTimeout(cursorChangeTimeout);
-    });
-
-    document.addEventListener("mouseup", (e) => {
-        document.body.style.cursor = "url(\"../../common/assets/images/cursors/pointer.png\"), default";
-
-        cursorChangeTimeout = setTimeout(() => {
-            document.body.style.cursor = "url(\"../../common/assets/images/cursors/default.png\"), default";
-        }, 2000);
-    });
+    cursorInitListeners("../../common/assets/images/cursors");
 });
