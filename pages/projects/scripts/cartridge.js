@@ -17,16 +17,17 @@ class Cartridge {
         clearTimeout(this.unhoverTimeoutID);
 
         this.projectImg.classList.add("project-image--skew");
-        this.cartridgeImg.src = "assets/images/animations/game_cartridge/hover/128x540_24.gif";
+        this.cartridgeImg.src = "assets/images/scene/cd/hover_animation.gif";
+        this.animationFinished = true;
 
         if (this.bubble) {
             this.bubble.style.opacity = '1';
         }
 
         this.hoverTimeoutID = setTimeout(() => {
-            this.cartridgeImg.src = "assets/images/animations/game_cartridge/hover/0.png";
+            this.cartridgeImg.src = "assets/images/scene/cd/hovered.png";
             this.canUnhover = true;
-        }, 100);
+        }, 150);
     }
 
     async handleMouseOut() {
@@ -36,15 +37,22 @@ class Cartridge {
         clearTimeout(this.unhoverTimeoutID);
 
         this.projectImg.classList.remove("project-image--skew");
-        this.cartridgeImg.src = "assets/images/animations/game_cartridge/unhover/128x540_24.gif";
+        this.cartridgeImg.src = "assets/images/scene/cd/unhover_animation.gif";
 
         if (this.bubble) {
             this.bubble.style.opacity = '0';
         }
 
+        if (!this.animationFinished)
+        {
+            this.cartridgeImg.src = "assets/images/scene/cd/unhovered.png";
+            this.animationFinished = true;
+        }
+
         this.unhoverTimeoutID = setTimeout(() => {
-            this.cartridgeImg.src = "assets/images/animations/game_cartridge/unhover/0.png";
-        }, 100);
+            this.cartridgeImg.src = "assets/images/scene/cd/unhovered.png";
+            this.animationFinished = true;
+        }, 150);
     }
 
     delay(ms) {

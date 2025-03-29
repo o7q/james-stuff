@@ -8,7 +8,7 @@ body {
 
     user-select: none;
 
-    background-image: url("../../images/backgrounds/outofbounds.png");
+    background-image: url("../../../common/assets/images/outofbounds.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -19,26 +19,13 @@ body {
     left: 0;
     top: 0;
 
-    transition: filter 0.5s ease-in-out;
+    max-width: 1920px;
+
+    transition: filter 0.3s ease-in-out;
 }
 
-/* unused */
-/* .background--shelf {
-    width: 957px;
-    height: auto;
-}
-
-.background--scale-fix {
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    max-width: none;
-    max-height: none;
-} */
-
-.background--scale-fix--shelf {
-    min-width: 50%;
+.shelf {
+    max-width: 956px;
 }
 
 .background--overlay {

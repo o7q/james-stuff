@@ -50,9 +50,11 @@ function dragStart() {
             return;
         }
 
-        textElement.style.left = x + "px";
-        textElement.style.top = y + "px";
-        textElement.style.transform = `translate(-50%, -50%) rotate(${rotation}deg)`;
+        if (counter > 10) {
+            textElement.style.left = x + "px";
+            textElement.style.top = y + "px";
+            textElement.style.transform = `translate(-50%, -50%) rotate(${rotation}deg)`;
+        }
 
         requestAnimationFrame(smoothDrag);
 

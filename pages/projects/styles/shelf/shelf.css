@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: nowrap;
     gap: 0px;
-    top: 203px;
+    top: 184px;
     left: 50px;
     padding: 0;
     margin: 0;
@@ -12,7 +12,7 @@
 }
 
 .shelf-grid--2 {
-    top: 642px;
+    top: 592px;
 }
 
 .shelf-grid__image-container {
@@ -35,10 +35,10 @@
 
 .shelf-grid__image-container__project-image {
     position: absolute;
-    top: 140px;
-    left: -42px;
+    top: 250px;
+    left: -20px;
 
-    width: 200px;
+    width: 90px;
     /* visually the height */
     height: auto;
     max-height: 35px;
@@ -46,7 +46,7 @@
 
     object-fit: contain;
 
-    transition: 0.15s transform ease-in-out, 0.5s filter ease-in-out;
+    transition: 0.166s transform linear, 0.5s filter linear;
     transform: translate(0px, 0px) rotateY(0deg) rotate(-90deg);
     filter: drop-shadow(0px 0px 2px #000000);
 
@@ -55,17 +55,17 @@
 
 .shelf-grid__image-container__project-text {
     position: absolute;
-    left: -45px;
+    left: -20px;
 
     color: white;
 
     font-family: RobotoMedium;
-    font-size: 20px;
+    font-size: 12px;
     text-align: center;
 
     pointer-events: none;
 }
 
 .project-image--skew {
-    transform: translate(-35px, 0px) rotateY(-20deg) rotate(-90deg);
+    transform: translate(-12px, 0px) rotateY(-3.43deg) rotate(-90deg);
 }

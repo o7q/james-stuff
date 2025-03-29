@@ -9,9 +9,10 @@
 
     <link rel="stylesheet" href="../../common/styles/common.css">
     <link rel="stylesheet" href="../../common/styles/fonts.css">
+    <link rel="stylesheet" href="../../common/styles/overlays.css">
 
     <link rel="stylesheet" href="styles/body.css">
-    <link rel="stylesheet" href="styles/overlay.css">
+    <link rel="stylesheet" href="styles/overlays.css">
     <link rel="stylesheet" href="styles/cat.css">
     <link rel="stylesheet" href="styles/input.css">
 
@@ -57,9 +58,13 @@
     <label for="user-text-input" class="enter-text__label">Enter text:</label>
     <input type="text" name="user-text-input" class="enter-text__input" id="user-text-input" autocomplete="off">
 
-    <img src="../../common/assets/images/overlays/crt.png" class="overlay overlay--crt" draggable="false">
-    <img src="../../common/assets/images/overlays/screendust.png" class="overlay overlay--screendust" draggable="false">
-    <img src="../../common/assets/images/overlays/vignette.png" class="overlay overlay--vignette" draggable="false">
+    <img src="../../common/assets/images/overlays/crt.png" class="chatcat__overlay chatcat__overlay--crt"
+        draggable="false">
+    <img src="../../common/assets/images/overlays/screendust.png" class="chatcat__overlay chatcat__overlay--screendust"
+        draggable="false">
+    <img src="../../common/assets/images/overlays/monitor.png" class="overlay overlay--monitor">
+    <img src="../../common/assets/images/overlays/vignette.png" class="chatcat__overlay chatcat__overlay--vignette"
+        draggable="false">
 
     <p class="return-text" style="font-family: BitCell; font-size: 30px;"
         onclick="pageTransition('../../index.html', 'replace')" onmouseenter="cursorHandleHover()"
