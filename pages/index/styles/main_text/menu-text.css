@@ -30,5 +30,5 @@
 }
 
 .menu-text__text--blur {
-    filter: drop-shadow(0px 0px 5px #55ffaabe) drop-shadow(0px 0px 15px #55ffaabe) blur(2px);
+    filter: drop-shadow(0px 0px 5px #55ffaabe) drop-shadow(0px 0px 15px #55ffaabe) blur(1.5px);
 }

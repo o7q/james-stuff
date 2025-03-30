@@ -8,8 +8,8 @@ let TEXT_TIMEOUT_ID;
 
 function getTextVariant(index) {
     return {
-        static: `pages/index/assets/images/text/${index}.png`,
-        animated: `pages/index/assets/images/text/${index}_animated.gif`
+        static: `pages/index/assets/images/james_stuff_text/${index}.png`,
+        animated: `pages/index/assets/images/james_stuff_text/${index}_animated.gif`
     };
 }
 
@@ -79,7 +79,7 @@ function playAnimatedText() {
     }
 
     const textElement = document.getElementById("james-text");
-    textElement.src = `pages/index/assets/images/text/${TEXT_INDEX}_animated.gif`;
+    textElement.src = `pages/index/assets/images/james_stuff_text/${TEXT_INDEX}_animated.gif`;
 
     TEXT_CAN_ANIMATE = false;
 

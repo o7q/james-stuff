@@ -1,0 +1,21 @@
+.cat-jackhammer {
+    width: 100px;
+
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-310px, 35px);
+
+    image-rendering: pixelated;
+}
+
+.cat-jackhammer-text {
+    width: 100px;
+
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-240px, 70px);
+    
+    image-rendering: pixelated;
+}

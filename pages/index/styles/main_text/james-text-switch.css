@@ -1,15 +1,14 @@
 .james-text-switch-button {
-    width: 25px;
-
     position: absolute;
     top: 45%;
     left: 50%;
+
+    width: 25px;
 
     transition: opacity 0.5s ease-in-out;
 
     opacity: 0;
 }
-
 
 .james-text-switch-button--show {
     opacity: 1;
@@ -28,11 +27,11 @@
     opacity: 0.5; */
 
     width: 250px;
-    height: 200px;
+    height: 180px;
 
     position: absolute;
-    left: 50%;
     top: 45%;
+    left: 50%;
 }
 
 .james-text-switch-button-reveal-area--left {

@@ -286,16 +286,16 @@ class Cat {
     }
 
     updateTexture() {
-        this.cat.src = `pages/index/assets/images/screencat/animations/${this.animation}/anim_${this.animation}_${this.mood}/${this.snappedRotation}/256x256_12.gif`;
+        this.cat.src = `pages/index/assets/images/cat/screencat/animations/${this.animation}/anim_${this.animation}_${this.mood}/${this.snappedRotation}/256x256_12.gif`;
     }
 
     updateGrabTexture(varient) {
         let animation;
         if (varient === "0") {
-            animation = `pages/index/assets/images/screencat/animations/grabbed/anim_grabbed_embarrassed/0/270/256x256.png`
+            animation = `pages/index/assets/images/cat/screencat/animations/grabbed/anim_grabbed_embarrassed/0/270/256x256.png`
         }
         else {
-            animation = `pages/index/assets/images/screencat/animations/grabbed/anim_grabbed_embarrassed/${varient}/${this.snappedRotation}/256x256.png`;
+            animation = `pages/index/assets/images/cat/screencat/animations/grabbed/anim_grabbed_embarrassed/${varient}/${this.snappedRotation}/256x256.png`;
         }
 
         this.cat.src = animation;

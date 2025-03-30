@@ -21,11 +21,11 @@ function rageEvent() {
         let the_void = document.createElement("img");
         the_void.className = "layer";
         the_void.draggable = false;
-        the_void.src = "assets/images/backgrounds/events/background_the_void/480x270_16.gif";
+        the_void.src = "assets/images/backgrounds/the_void.gif";
         document.body.append(the_void);
         changeTitle("the void");
-        changeFavicon("assets/images/favicon/event/the_void.png");
-        const audio = new Audio("assets/audio/events/audio_the_void/the_void.mp3");
+        changeFavicon("assets/images/favicon/the_void.png");
+        const audio = new Audio("assets/audio/the_void/the_void.mp3");
         audio.loop = true;
         audio.play();
 

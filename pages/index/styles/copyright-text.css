@@ -1,11 +1,13 @@
 .credit-text {
     position: absolute;
     text-align: center;
-    color: rgb(27, 255, 114);
+
     left: 50%;
     bottom: 0.2vw;
-    margin: 0vw;
     transform: translate(-50%, -50%);
+    margin: 0vw;
+    
+    color: rgb(27, 255, 114);
 
     font-size: 0.5vw;
     font-family: HybridB;

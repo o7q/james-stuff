@@ -1,9 +1,9 @@
 .james-text {
-    width: 550px;
-
     position: absolute;
     top: 45%;
     left: 50%;
+
+    width: 550px;
 
     image-rendering: pixelated;
 }
