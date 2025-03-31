@@ -12,6 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
     backdrop.src = backdrops[getRandomInt(0, backdrops.length)];
 
+    document.querySelectorAll("*").forEach(element => {
+        element.draggable = false;
+    });
+
     setInterval(() => {
         tick();
 

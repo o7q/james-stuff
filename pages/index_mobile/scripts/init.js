@@ -9,4 +9,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
     if (background) {
         background.src = backgrounds[getRandomInt(0, backgrounds.length)];
     }
+
+    document.querySelectorAll("*").forEach(element => {
+        element.draggable = false;
+    });
 });
