@@ -1,0 +1,43 @@
+.james-text-switch-button {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+
+    width: 25px;
+
+    transition: opacity 0.5s ease-in-out;
+
+    opacity: 0;
+}
+
+.james-text-switch-button--show {
+    opacity: 1;
+}
+
+.james-text-switch-button--left {
+    transform: translate(-1200%, 0%) scaleX(-1);
+}
+
+.james-text-switch-button--right {
+    transform: translate(1100%, 0%);
+}
+
+.james-text-switch-button-reveal-area {
+    /* background-color: white;
+    opacity: 0.5; */
+
+    width: 250px;
+    height: 180px;
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+}
+
+.james-text-switch-button-reveal-area--left {
+    transform: translate(-125%, -50%);
+}
+
+.james-text-switch-button-reveal-area--right {
+    transform: translate(25%, -50%);
+}

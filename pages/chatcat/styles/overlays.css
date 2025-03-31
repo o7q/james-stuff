@@ -1,0 +1,27 @@
+.chatcat__overlay {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    object-fit: cover;
+
+    pointer-events: none;
+}
+
+.chatcat__overlay--crt {
+    mix-blend-mode: color-dodge;
+    opacity: 0.6;
+}
+
+.chatcat__overlay--screendust {
+    mix-blend-mode: color-dodge;
+    opacity: 0.3;
+}
+
+.chatcat__overlay--vignette {
+    mix-blend-mode: multiply;
+    opacity: 0.25;
+}

@@ -13,12 +13,7 @@
 
 .overlay--noise {
     mix-blend-mode: soft-light;
-    opacity: 0.25;
-}
-
-.overlay--noise2 {
-    mix-blend-mode: color;
-    opacity: 0.05;
+    opacity: 0.4;
 }
 
 .overlay--crt {
@@ -31,17 +26,12 @@
     opacity: 1;
 }
 
-.overlay--dust {
-    mix-blend-mode: lighten;
-    opacity: 0.3;
-}
-
 .overlay--vignette {
     mix-blend-mode: normal;
     opacity: 0.5;
 }
 
-.overlay--tv {
-    mix-blend-mode: darken;
+.overlay--monitor {
+    mix-blend-mode: normal;
     opacity: 1;
 }

@@ -1,3 +1,7 @@
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 function changeFavicon(favicon) {
     // from https://stackoverflow.com/a/260876
     var link = document.querySelector("link[rel~='icon']");
@@ -28,8 +32,9 @@ function pageTransition(url, mode) {
     document.body.classList.add("bodyFadeOut");
 
     setTimeout(() => {
+        document.body.classList.remove("bodyFadeOut");
         openPage(url, mode);
-    }, 1000);
+    }, 500);
 }
 
 function getElementPosition(element) {
@@ -50,8 +55,8 @@ function isHardwareAccelerationEnabled() {
             const canvas = document.createElement("canvas");
             // willReadFrequently will force software rendering
             const ctx = canvas.getContext("2d", { willReadFrequently: force });
-            ctx.moveTo(0, 0),
-                ctx.lineTo(120, 121); // HWA is bad at obliques
+            ctx.moveTo(0, 0);
+            ctx.lineTo(120, 121); // HWA is bad at obliques
             ctx.stroke();
             return ctx.getImageData(0, 0, 200, 200).data.join();
         };

@@ -1,21 +1,20 @@
 .return-text {
-    position: absolute;
-    left: 0px;
+    position: fixed;
+
     top: 0px;
+    left: 0px;
 
     margin: 0;
     padding: 0;
 
     color: rgb(255, 255, 255);
 
-    cursor: pointer;
-
     filter: drop-shadow(2px 2px 2px #000000);
     transition: 0.05s color ease-in-out;
 }
 
 .return-text:hover {
-    color: rgb(255, 244, 91);
+    color: rgb(255, 173, 214);
 }
 
 /* width */

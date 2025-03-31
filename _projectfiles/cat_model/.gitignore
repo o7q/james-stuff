@@ -1,9 +1,0 @@
-# blender backup files
-*.blend[1-9]
-*.blend10
-
-# renders
-renders/sequence/
-renders/*.gif
-renders/*.png
-renders/*.jpg

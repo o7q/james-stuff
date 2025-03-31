@@ -1,0 +1,34 @@
+.menu-text {
+    /* background-color: white;
+    opacity: 0.5; */
+
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, 400%);
+
+    display: flex;
+
+    filter: blur(0.25px);
+}
+
+.menu-text__text {
+    color: rgb(255, 255, 255);
+    margin: 0 30px;
+    filter: drop-shadow(0px 0px 5px #55ffaabe) drop-shadow(0px 0px 15px #55ffaabe);
+
+    font-size: 20px;
+    font-family: Arthead;
+
+    letter-spacing: 2px;
+
+    transition: filter 0.75s ease-in-out;
+}
+
+.menu-text__text:hover {
+    filter: drop-shadow(0px 0px 5px #55ffaaff) drop-shadow(0px 0px 15px #55ffaaff);
+}
+
+.menu-text__text--blur {
+    filter: drop-shadow(0px 0px 5px #55ffaabe) drop-shadow(0px 0px 15px #55ffaabe) blur(1.5px);
+}

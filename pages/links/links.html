@@ -4,12 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon/link.png">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon/moon.png">
     <title>james' links</title>
 
     <link rel="stylesheet" href="../../common/styles/common.css">
     <link rel="stylesheet" href="../../common/styles/fonts.css">
     <link rel="stylesheet" href="../../common/styles/overlays.css">
+    <link rel="stylesheet" href="../../common/styles/transitions/body-fade.css">
 
     <link rel="stylesheet" href="styles/body.css">
     <link rel="stylesheet" href="styles/image-grid.css">
@@ -17,69 +18,74 @@
     <script src="../../common/scripts/utils.js"></script>
     <script src="../../common/scripts/input.js"></script>
     <script src="../../common/scripts/math.js"></script>
+    <script src="../../common/scripts/cursors.js"></script>
 
-    <link rel="stylesheet" href="../../common/styles/transitions/body-fade.css">
+    <script src="scripts/init.js"></script>
 </head>
 
 <body>
-    <img class="background" id="background" draggable="false">
+    <img class="background" id="background">
 
     <div class="flex">
-        <img src="../../common/assets/images/logos/discord.png" class="flex__item" onclick="window.alert('My Discord is: o7q')"
-            draggable="false">
-        <img src="../../common/assets/images/logos/youtube_o7q.png" class="flex__item"
-            onclick="openPage('https:\/\/www.youtube.com/@o7qedits', 'new')" draggable="false">
-        <img src="../../common/assets/images/logos/youtube_jame.png" class="flex__item"
-            onclick="openPage('https:\/\/www.youtube.com/@jame-x3', 'new')" draggable="false">
-        <img src="../../common/assets/images/logos/youtube_jamelive.png" class="flex__item"
-            onclick="openPage('https:\/\/www.youtube.com/@jame-x3-live', 'new')" draggable="false">
-        <img src="../../common/assets/images/logos/twitch.png" class="flex__item"
-            onclick="openPage('https:\/\/www.twitch.tv/jamebajuice', 'new')" draggable="false">
-        <img src="../../common/assets/images/logos/github.png" class="flex__item" onclick="openPage('https:\/\/github.com/o7q', 'new')"
-            draggable="false">
-        <img src="../../common/assets/images/logos/bluesky.png" class="flex__item" onclick="openPage('https:\/\/bsky.app/profile/jame.pet', 'new')"
-            draggable="false">
-        <img src="../../common/assets/images/logos/x.png" class="flex__item" onclick="openPage('https:\/\/x.com/jamebajuice', 'new')"
-            draggable="false">
-        <img src="../../common/assets/images/logos/soundcloud.png" class="flex__item"
-            onclick="openPage('https:\/\/soundcloud.com/jamenoise', 'new')" draggable="false">
-        <img src="../../common/assets/images/logos/spotify.png" class="flex__item"
-            onclick="openPage('https:\/\/open.spotify.com/user/0efvsqrjytotp5hsoutublonh', 'new')" draggable="false">
-        <img src="../../common/assets/images/logos/lastfm.png" class="flex__item"
-            onclick="openPage('https:\/\/www.last.fm/user/jamex3', 'new')" draggable="false">
-        <img src="../../common/assets/images/logos/statsfm.png" class="flex__item"
-            onclick="openPage('https:\/\/stats.fm/jamex3', 'new')" draggable="false">
-        <img src="../../common/assets/images/logos/albumoftheyear.png" class="flex__item"
-            onclick="openPage('https:\/\/www.albumoftheyear.org/user/jamex3', 'new')" draggable="false">
-        <img src="../../common/assets/images/logos/steam.png" class="flex__item"
-            onclick="openPage('https:\/\/steamcommunity.com/id/jamex3', 'new')" draggable="false">
-        <img src="../../common/assets/images/logos/howlongtobeat.png" class="flex__item"
-            onclick="openPage('https:\/\/howlongtobeat.com/user/o7q', 'new')" draggable="false">
-        <img src="../../common/assets/images/logos/namemc.png" class="flex__item"
-            onclick="openPage('https:\/\/namemc.com/profile/o7q', 'new')" draggable="false">
+        <img src="assets/images/logos/discord.png" class="flex__item"
+            onclick="window.alert('My Discord is: o7q')" onmouseenter="cursorHandleHover()"
+            onmouseleave="cursorHandleUnhover()">
+        <img src="assets/images/logos/youtube_o7q.png" class="flex__item"
+            onclick="openPage('https:\/\/www.youtube.com/@o7qedits', 'new')" onmouseenter="cursorHandleHover()"
+            onmouseleave="cursorHandleUnhover()">
+        <img src="assets/images/logos/youtube_jame.png" class="flex__item"
+            onclick="openPage('https:\/\/www.youtube.com/@jame-x3', 'new')" onmouseenter="cursorHandleHover()"
+            onmouseleave="cursorHandleUnhover()">
+        <img src="assets/images/logos/youtube_jamelive.png" class="flex__item"
+            onclick="openPage('https:\/\/www.youtube.com/@jame-x3-live', 'new')" onmouseenter="cursorHandleHover()"
+            onmouseleave="cursorHandleUnhover()">
+        <img src="assets/images/logos/twitch.png" class="flex__item"
+            onclick="openPage('https:\/\/www.twitch.tv/jamebajuice', 'new')" onmouseenter="cursorHandleHover()"
+            onmouseleave="cursorHandleUnhover()">
+        <img src="assets/images/logos/github.png" class="flex__item"
+            onclick="openPage('https:\/\/github.com/o7q', 'new')" onmouseenter="cursorHandleHover()"
+            onmouseleave="cursorHandleUnhover()">
+        <img src="assets/images/logos/bluesky.png" class="flex__item"
+            onclick="openPage('https:\/\/bsky.app/profile/jame.pet', 'new')" onmouseenter="cursorHandleHover()"
+            onmouseleave="cursorHandleUnhover()">
+        <img src="assets/images/logos/x.png" class="flex__item"
+            onclick="openPage('https:\/\/x.com/jamebajuice', 'new')" onmouseenter="cursorHandleHover()"
+            onmouseleave="cursorHandleUnhover()">
+        <img src="assets/images/logos/soundcloud.png" class="flex__item"
+            onclick="openPage('https:\/\/soundcloud.com/jamenoise', 'new')" onmouseenter="cursorHandleHover()"
+            onmouseleave="cursorHandleUnhover()">
+        <img src="assets/images/logos/spotify.png" class="flex__item"
+            onclick="openPage('https:\/\/open.spotify.com/user/0efvsqrjytotp5hsoutublonh', 'new')"
+            onmouseenter="cursorHandleHover()" onmouseleave="cursorHandleUnhover()">
+        <img src="assets/images/logos/lastfm.png" class="flex__item"
+            onclick="openPage('https:\/\/www.last.fm/user/jamex3', 'new')" onmouseenter="cursorHandleHover()"
+            onmouseleave="cursorHandleUnhover()">
+        <img src="assets/images/logos/statsfm.png" class="flex__item"
+            onclick="openPage('https:\/\/stats.fm/jamex3', 'new')" onmouseenter="cursorHandleHover()"
+            onmouseleave="cursorHandleUnhover()">
+        <img src="assets/images/logos/albumoftheyear.png" class="flex__item"
+            onclick="openPage('https:\/\/www.albumoftheyear.org/user/jamex3', 'new')" onmouseenter="cursorHandleHover()"
+            onmouseleave="cursorHandleUnhover()">
+        <img src="assets/images/logos/steam.png" class="flex__item"
+            onclick="openPage('https:\/\/steamcommunity.com/id/jamex3', 'new')" onmouseenter="cursorHandleHover()"
+            onmouseleave="cursorHandleUnhover()">
+        <img src="assets/images/logos/howlongtobeat.png" class="flex__item"
+            onclick="openPage('https:\/\/howlongtobeat.com/user/o7q', 'new')" onmouseenter="cursorHandleHover()"
+            onmouseleave="cursorHandleUnhover()">
+        <img src="assets/images/logos/namemc.png" class="flex__item"
+            onclick="openPage('https:\/\/namemc.com/profile/o7q', 'new')" onmouseenter="cursorHandleHover()"
+            onmouseleave="cursorHandleUnhover()">
     </div>
 
-    <img src="../../common/assets/images/overlays/noise.png" class="overlay overlay--noise2" draggable="false">
-    <img src="../../common/assets/images/overlays/crt.png" class="overlay overlay--crt" draggable="false">
-    <img src="../../common/assets/images/overlays/screendust.png" class="overlay overlay--screendust" draggable="false">
-    <img src="../../common/assets/images/overlays/tv.png" class="overlay overlay--tv" draggable="false">
-    <img src="../../common/assets/images/overlays/vignette.png" class="overlay overlay--vignette" draggable="false">
+    <img src="../../common/assets/images/overlays/noise.png" class="overlay overlay--noise">
+    <img src="../../common/assets/images/overlays/crt.png" class="overlay overlay--crt">
+    <img src="../../common/assets/images/overlays/screendust.png" class="overlay overlay--screendust">
+    <img src="../../common/assets/images/overlays/monitor.png" class="overlay overlay--monitor">
+    <img src="../../common/assets/images/overlays/vignette.png" class="overlay overlay--vignette">
 
     <p class="return-text" style="font-family: BitCell; font-size: 25px;"
-        onclick="pageTransition('../../index.html', 'replace')">&nbsp;&lt;&lt; return</p>
+        onclick="pageTransition('../../index.html', 'replace')" onmouseenter="cursorHandleHover()"
+        onmouseleave="cursorHandleUnhover()">&nbsp;&lt;&lt; return</p>
 </body>
-
-<script>
-    const background = document.getElementById("background");
-    const backgrounds = [
-        "../../common/assets/images/backgrounds/space/space.gif",
-        "../../common/assets/images/backgrounds/space/space2.gif",
-        "../../common/assets/images/backgrounds/space/space3.gif",
-        "../../common/assets/images/backgrounds/space/space4.gif"
-    ];
-    if (background) {
-        background.src = backgrounds[getRandomInt(0, backgrounds.length)];
-    }
-</script>
 
 </html>

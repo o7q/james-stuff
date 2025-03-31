@@ -1,3 +1,5 @@
+// some of the worst code you will ever see, proceed with caution
+
 class Cat {
     constructor() {
         this.cat = document.createElement("img");
@@ -17,6 +19,10 @@ class Cat {
 
         this.cat.style.left = "200px";
         this.cat.style.top = "200px";
+
+        this.velocity_x = 0;
+        this.velocity_y = 0;
+        this.movingViaVelocity = false;
 
         this.setMood("sly");
         this.setAnimation("idle");
@@ -44,7 +50,7 @@ class Cat {
 
             setTimeout(() => {
                 if (MOUSE_DOWN) {
-                    this.cat.style.cursor = "grabbing";
+                    this.cat.style.cursor = "url(\"common/assets/images/cursors/grab.png\"), grab";
                     this.updateGrabTexture("0");
                 }
             }, 100);
@@ -56,7 +62,6 @@ class Cat {
             const offsetY = event.clientY - rect.top;
 
             const moveHandler = (moveEvent) => {
-
                 let temp = dragAnimationSmoothing;
 
                 if (MOUSE_SPEED >= 4.0) {
@@ -98,7 +103,10 @@ class Cat {
                     this.updateRotation(0, 0, 0, 1);
                 }
 
-                this.cat.style.cursor = "url('pages/index/assets/cursors/cat/open_chat.png'), pointer";
+                this.velocity_x = MOUSE_VELOCITY.x;
+                this.velocity_y = MOUSE_VELOCITY.y;
+
+                this.cat.style.cursor = "url('pages/index/assets/images/cursors/cat/open_chat.png'), pointer";
                 this.isDragging = false;
                 this.updateTexture();
 
@@ -130,6 +138,29 @@ class Cat {
     }
 
     update() {
+        const speed = Math.sqrt(this.velocity_x * this.velocity_x + this.velocity_y * this.velocity_y);
+
+        if (speed >= 1) {
+            this.velocity_x /= 1.025;
+            this.velocity_y /= 1.025;
+            this.move(this.velocity_x, this.velocity_y);
+
+            const pos = this.getPosition();
+            if (pos.x < 0 || pos.x > window.innerWidth) {
+                this.velocity_x *= -1;
+            }
+            if (pos.y < 0 || pos.y > window.innerHeight) {
+                this.velocity_y *= -1;
+            }
+
+            this.movingViaVelocity = true;
+        }
+        else {
+            this.velocity_x = 0;
+            this.velocity_y = 0;
+            this.movingViaVelocity = false;
+        }
+
         if (this.isDragging) {
             return;
         }
@@ -150,7 +181,6 @@ class Cat {
         let eventChance = getRandomInt(0, 10000 / DELTA_TIME);
 
         // 0: randomly walk
-
         switch (eventChance) {
             case 0:
                 this.stopEvents();
@@ -174,8 +204,22 @@ class Cat {
         this.moveTo(randX, randY, randTime);
     }
 
+    getPosition() {
+        const initial_left = parseInt(window.getComputedStyle(this.cat).left, 10);
+        const initial_top = parseInt(window.getComputedStyle(this.cat).top, 10);
+
+        return { x: initial_left, y: initial_top };
+    }
+
+    move(x, y) {
+        const pos = this.getPosition();
+
+        this.cat.style.left = `${pos.x + x}px`;
+        this.cat.style.top = `${pos.y + y}px`;
+    }
+
     moveTo(x, y, time) {
-        if (this.isDragging) {
+        if (this.isDragging || this.movingViaVelocity) {
             return;
         }
 
@@ -242,17 +286,16 @@ class Cat {
     }
 
     updateTexture() {
-        this.cat.src = `pages/index/assets/images/screencat/animations/${this.animation}/anim_${this.animation}_${this.mood}/${this.snappedRotation}/256x256_12.gif`;
+        this.cat.src = `pages/index/assets/images/cat/screencat/animations/${this.animation}/anim_${this.animation}_${this.mood}/${this.snappedRotation}/256x256_12.gif`;
     }
 
     updateGrabTexture(varient) {
-
         let animation;
         if (varient === "0") {
-            animation = `pages/index/assets/images/screencat/animations/grabbed/anim_grabbed_embarrassed/0/270/256x256.png`
+            animation = `pages/index/assets/images/cat/screencat/animations/grabbed/anim_grabbed_embarrassed/0/270/256x256.png`
         }
         else {
-            animation = `pages/index/assets/images/screencat/animations/grabbed/anim_grabbed_embarrassed/${varient}/${this.snappedRotation}/256x256.png`;
+            animation = `pages/index/assets/images/cat/screencat/animations/grabbed/anim_grabbed_embarrassed/${varient}/${this.snappedRotation}/256x256.png`;
         }
 
         this.cat.src = animation;

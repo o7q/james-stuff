@@ -1,6 +1,6 @@
 body {
     filter: brightness(0%);
-    animation: fadeInAnimation ease-in-out 1s;
+    animation: fadeInAnimation ease-in-out 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -17,7 +17,7 @@ body {
 
 .bodyFadeOut {
     filter: brightness(100%);
-    animation: fadeOutAnimation ease-in-out 1s;
+    animation: fadeOutAnimation ease-in-out 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
