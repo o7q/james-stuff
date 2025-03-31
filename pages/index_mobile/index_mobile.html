@@ -4,17 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="../index/assets/images/favicon.png">
     <title>james' stuff</title>
 
     <link rel="stylesheet" href="../../common/styles/fonts.css">
 
     <link rel="stylesheet" href="styles/body.css">
-    <link rel="stylesheet" href="styles/main_text/james-text.css">
+    <link rel="stylesheet" href="styles/james-text.css">
     <link rel="stylesheet" href="styles/scrolling-text.css">
     <link rel="stylesheet" href="styles/copyright-text.css">
+    <link rel="stylesheet" href="styles/sly-bubble.css">
 
     <script src="../../common/scripts/math.js"></script>
+    <script src="../../common/scripts/utils.js"></script>
 
     <script src="scripts/init.js"></script>
     <script src="scripts/text-animate.js"></script>
@@ -23,18 +25,20 @@
 <body>
     <img class="background" id="background">
 
-    <img src="assets/images/james_stuff_text/0.png" class="james-text james-text--moveCenter" id="james-text"
+    <img src="../index/assets/images/james_stuff_text/0.png" class="james-text" id="james-text"
         onclick="playAnimatedText()">
 
     <div class="scrolling-text">
         <div class="scrolling-text__text">
-            welcome traveller. &nbsp;&nbsp;&nbsp;you have arrived at james' stuff. &nbsp;&nbsp;&nbsp;if you have any
-            questions, or if you are lost, please consult our friendly assistant: Sly.
+            welcome traveller. &nbsp;&nbsp;&nbsp;you have arrived at james' stuff. &nbsp;&nbsp;&nbsp;if you are lost,
+            feeling lonely, or have any questions, please consult our friendly assistant: Sly.
         </div>
     </div>
 
     <p class="credit-text credit-text--copyright">© 2025 james</p>
-    <p class="credit-text">This website was constructed by james in 2025. Therefore, the copyright belongs to james.</p>
+    <p class="credit-text">Hello. This website was designed & programmed by james.</p>
+
+    <img src="assets/images/sly-bubble.png" class="sly-bubble" onclick="openPage('../chatcat/chatcat.html', 'replace')">
 </body>
 
 </html>

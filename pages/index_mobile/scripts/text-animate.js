@@ -13,7 +13,7 @@ function playAnimatedText() {
     }
 
     const textElement = document.getElementById("james-text");
-    textElement.src = `assets/images/james_stuff_text/${TEXT_INDEX}_animated.gif`;
+    textElement.src = `../index/assets/images/james_stuff_text/${TEXT_INDEX}_animated.gif`;
 
     TEXT_CAN_ANIMATE = false;
 
