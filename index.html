@@ -23,9 +23,10 @@
     <script src="common/scripts/utils.js"></script>
     <script>
         if (isMobileBrowser()) {
-            window.alert("There is currently no mobile site available. You will be viewing the desktop version of the site. I'd highly recommend coming back later for the full experience!");
+            openPage("pages/index_mobile/index_mobile.html", "replace");
         }
-        else if (!isHardwareAccelerationEnabled()) {
+
+        if (!isHardwareAccelerationEnabled()) {
             window.alert("Hardware Acceleration was not detected in your browser. It is highly recommended to enable this for a smooth experience.");
         }
     </script>

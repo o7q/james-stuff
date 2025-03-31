@@ -3,6 +3,10 @@
     height: 100%;
 
     position: fixed;
+    left: 0;
+    top: 0;
+
+    object-fit: cover;
 
     pointer-events: none;
 }

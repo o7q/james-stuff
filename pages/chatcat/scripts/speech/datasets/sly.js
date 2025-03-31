@@ -1688,6 +1688,12 @@ do you want mcdonalds
 do you like mcdonalds
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I love McDonalds!!
+____END____
+do you have a brother
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Yes.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Yes. His name is Sebastian.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Yes. His name is Sebastian. He is a worker cat.
 `;
 
 const SLY_DATASET = parseDataset(SLY_DATASET_RAW);
