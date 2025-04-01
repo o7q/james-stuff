@@ -1,5 +1,5 @@
 body {
-    filter: brightness(0%);
+    opacity: 0;
     animation: fadeInAnimation ease-in-out 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -7,16 +7,16 @@ body {
 
 @keyframes fadeInAnimation {
     0% {
-        filter: brightness(0%);
+        opacity: 0;
     }
 
     100% {
-        filter: brightness(100%);
+        opacity: 1;
     }
 }
 
 .bodyFadeOut {
-    filter: brightness(100%);
+    opacity: 1;
     animation: fadeOutAnimation ease-in-out 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -24,10 +24,10 @@ body {
 
 @keyframes fadeOutAnimation {
     0% {
-        filter: brightness(100%);
+        opacity: 1;
     }
 
     100% {
-        filter: brightness(0%);
+        opacity: 0;
     }
 }
