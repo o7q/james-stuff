@@ -1,6 +1,6 @@
 body {
     opacity: 0;
-    animation: fadeInAnimation ease-in-out 0.5s;
+    animation: fadeInAnimation ease-in-out 0.3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -17,7 +17,7 @@ body {
 
 .bodyFadeOut {
     opacity: 1;
-    animation: fadeOutAnimation ease-in-out 0.5s;
+    animation: fadeOutAnimation ease-in-out 0.3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }

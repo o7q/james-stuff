@@ -34,7 +34,7 @@ function pageTransition(url, mode) {
     setTimeout(() => {
         document.body.classList.remove("bodyFadeOut");
         openPage(url, mode);
-    }, 500);
+    }, 300);
 }
 
 function getElementPosition(element) {
