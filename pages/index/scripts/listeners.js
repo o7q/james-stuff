@@ -31,3 +31,15 @@ function initListeners() {
 
     cursorInitListeners("common/assets/images/cursors");
 }
+
+let SEBASTIAN_CLICK_COUNT = 0;
+function handleSebastianClick() {
+    SEBASTIAN_CLICK_COUNT++;
+
+    if (SEBASTIAN_CLICK_COUNT >= 3) {
+        pageTransition("pages/sly3d/index.html", "replace");
+        return;
+    }
+
+    window.alert('This is not Sly; This is his brother: Sebastian.');
+}
