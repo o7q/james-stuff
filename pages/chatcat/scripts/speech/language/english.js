@@ -386,7 +386,10 @@ yogurt
 ziti
 zucchini
 burger
-butter`;
+butter
+quade
+potme
+culvers`;
 
 // https://www.mit.edu/~ecprice/wordlist.10000
 const ENGLISH_10000 = `a

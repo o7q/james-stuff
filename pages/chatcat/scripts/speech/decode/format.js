@@ -31,7 +31,7 @@ function format(sentence) {
         formattedSentence[i] = ENGLISH_DICTIONARY[closest_index];
     }
 
-    customReplace(formattedSentence);
+    languagePatch(formattedSentence);
 
     return formattedSentence.join(' ');
 }

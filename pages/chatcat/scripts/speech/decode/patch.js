@@ -1,5 +1,5 @@
 // this function replaces words with their custom replacements
-function customReplace(sentence) {
+function languagePatch(sentence) {
     for (let i = 0; i < sentence.length; i++) {
 
         let matched = false;

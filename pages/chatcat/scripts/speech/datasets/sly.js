@@ -63,11 +63,6 @@ happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Call me Sly!<!>learnFirstName
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Call me Sly the cat!<!>learnFirstName
 ____END____
-nice name
-
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Thanks! jame gave it to me!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Thanks! james gave it to me!
-____END____
 what is your middle name
 what you middle name
 what middle name
@@ -98,16 +93,6 @@ full name
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>My full name is Sly McKinley Barrington.<!>learnFullName
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Sly McKinley Barrington.<!>learnFullName
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>It's Sly McKinley Barrington.<!>learnFullName
-____END____
-how did you get that name
-how did you get your name
-why are you sly
-how you get that name
-how yo get that name
-how did get that name
-
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Not sure, james thought it fit me well. I don't see it.
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>james gave me this name!
 ____END____
 are you
 
@@ -200,16 +185,6 @@ sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I am a
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I am a dude.
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I am a guy.
 ____END____
-what is james gender
-is james a guy
-is james a dude
-is james a male
-what james gender
-
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>james is a male.
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>james is a dude.
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>james is a guy.
-____END____
 can you answer questions
 can you answer my questions
 
@@ -221,12 +196,6 @@ what favorite color
 
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>My favorite color is pink!
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I really like pink and purple.
-____END____
-what is james favorite color
-what james favorite color
-
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His favorite colors are green and pink! Usually a lighter tone of each.
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>He really likes green and pink.
 ____END____
 are you a cat
 are you actually a cat
@@ -357,13 +326,6 @@ do you like games
 do you like video games
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I really like Stardew Valley, Lil Gator Game, Donut County, Boba Simulator, and ELDEN RING.
-____END____
-hollow knight
-celeste
-ultrakill
-neon white
-
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>james loves that game!
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>That's one of his favorite games.
 ____END____
 stardew valley
@@ -373,12 +335,6 @@ boba simulator
 elden ring
 
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>That's one of my favorite games!
-____END____
-what are james favorite food
-what are james favorite foods
-does james like food
-
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>He really likes sushi, fresh sandwiches, and fresh salads.
 ____END____
 what is your favorite food
 what are your favorite foods
@@ -391,24 +347,9 @@ what do you do to stay motivated
 
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>I eat lots of sandwiches!
 ____END____
-how does james stay motivated
-what does james do to stay motivated
-
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>He tries to eat healthy and exercise everyday, this gives him a good amount of brain power for the day!
-____END____
 what inspires you
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I don't know honestly.
-____END____
-what inspires james
-
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Most of the stuff james makes is almost always inspired by movies and TV shows. When he needs to be creative, he tend to daydream while listening to music.
-____END____
-what does james like to do
-what does james like to do in his free time
-
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>He really enjoys programming, editing videos, and listening to music. He doesn't like making videos like he used to, but he'll still do it every once in a while. He is also getting into music production.
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>He likes to program. He is also getting into music production.
 ____END____
 retard
 retarded
@@ -470,10 +411,6 @@ how you working
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I am running on two algorithms: Levenshtein/Wagner-Fischer and Cosine Similarity. First, the input sentence is run through the Levenshtein algorithm, which corrects spelling errors. Then it decodes the sentences into coordinate points and then determining the angle between them, it then weighs them against a built-in dataset, creating- Me!
 ____END____
-what are james all time favorite artists
-
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His all time favorite artists would have to be Kendrick Lamar, Quadeca, Frost Children, Machine Girl, and SOPHIE!
-____END____
 what type of music do you like
 what is your favorite music
 do you listen to music
@@ -492,16 +429,6 @@ ____END____
 what are your all time favorite artists
 
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>My all time favorite artists are femtanyl, Frost Children, underscores, and Crystal Castles!
-____END____
-can james program
-
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>He can! He wouldn't consider himself pro yet, but he's getting there! He could program me though! So I think he is pretty good.
-____END____
-what languages does james know
-what programming languages does james know
-what programming does james know
-
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Currently he knows C#, C++, Java, JavaScript, HTML, and CSS!
 ____END____
 what language are you made in
 
@@ -526,16 +453,6 @@ can you program
 
 sad<!>speak/anim_speak_sad<!>speak/audio_speak_sad<!>idle/anim_idle_sad<!>Sadly, my brain does not work that way. I do not know any programming languages.
 ____END____
-does james take commissions
-is james taking commissions
-does james take video commissions
-
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Currently, he is only accepting a certain amount of commissions; if you'd like, you can discuss with him directly through his Discord, his Discord is "o7q".
-____END____
-does james take programming commissions
-
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>james has not done many programming commissions, but if you need help for a simple project or just some help in general: feel free to message him on Discord! His Discord is "o7q".
-____END____
 do you take commissions
 
 happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>Yes I do! I am very good at drawing :3. I will draw them for you for FREE! :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 Enjoy!! :3
@@ -543,10 +460,6 @@ ____END____
 what can you do
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I can do a lot of things, ask me to find out!
-____END____
-what can james do
-
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>He can do a lot of things. Feel free to ask about anything!
 ____END____
 what can you do
 
@@ -586,20 +499,19 @@ wipe your ass
 
 upset<!>speak/anim_speak_upset<!>speak/audio_speak_upset<!>idle/anim_idle_upset<!>NO! >:3
 ____END____
-what is james ip
-what james ip
-james ip
+what is my ip
+tell me my ip
 
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His IP address is 250.63.203.152!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His IP address is 158.120.138.33!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His IP address is 82.252.252.14!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His IP address is 142.154.4.52!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His IP address is 44.54.141.66!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His IP address is 40.117.46.80!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His IP address is 17.228.189.74!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His IP address is 220.196.180.187!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His IP address is 153.123.194.98!
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>His IP address is 183.94.89.243!
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>250.63.203.152
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>158.120.138.33
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>82.252.252.14
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>142.154.4.52
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>44.54.141.66
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>40.117.46.80
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>17.228.189.74
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>220.196.180.187
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>153.123.194.98
+happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>183.94.89.243
 ____END____
 what is your ip
 
@@ -623,16 +535,7 @@ how do you make music
 what program do you use to make music
 what do you use to make music
 
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I don't make music, but james does!
-____END____
-does james make music
-what program does james use to make music
-what does james use to make music
-does he make music
-what program does he use to make music
-what does he use to make music
-
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Yes he does! He uses FL Studio.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I don't make music.
 ____END____
 do you make music
 can you make music
@@ -681,12 +584,6 @@ drumstick
 chicken nugget
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Chicken Nugget.
-____END____
-why is james upload schedule so shit
-why is o7q upload schedule so shit
-why does james never upload
-
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Not sure. Maybe you should spam him to make more vids!
 ____END____
 nice
 cool
@@ -1151,30 +1048,9 @@ talk to you later
 blush<!>speak/anim_speak_blush<!>speak/audio_speak_sly<!>idle/anim_idle_blush<!>Yes. Of course!
 blush<!>speak/anim_speak_blush<!>speak/audio_speak_sly<!>idle/anim_idle_blush<!>Oh- Yes of course!
 ____END____
-how was this website made
-how did james make this website
-how james make this website
-
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>james made this website using pure HTML, CSS, and JavaScript!
-sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>james made this website using HTML, CSS, and JavaScript!
-____END____
 did you make this website
 
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>I did not!
-____END____
-who is the dog in the background of projects page
-who is in the background in the painting
-who is in the background on the picture
-who is that dog in the background
-
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>That is james' dog: Chloe!
-____END____
-what color are james eye
-what color are james eyes
-what color james eye
-what color james eyes
-
-happy<!>speak/anim_speak_happy<!>speak/audio_speak_happy<!>idle/anim_idle_happy<!>They are blue!
 ____END____
 how did
 
@@ -1694,6 +1570,19 @@ do you have a brother
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Yes.
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Yes. His name is Sebastian.
 sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Yes. His name is Sebastian. He is a worker cat.
+____END____
+tire nation
+culvers
+potme
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Slashed tires.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>MC for Potme.
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>ComedyDownload
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Covek
+____END____
+quade
+
+sly<!>speak/anim_speak_sly<!>speak/audio_speak_sly<!>idle/anim_idle_sly<!>Hai!! I love quade.
 `;
 
 const SLY_DATASET = parseDataset(SLY_DATASET_RAW);

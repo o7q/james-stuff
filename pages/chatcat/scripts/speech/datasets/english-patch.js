@@ -282,11 +282,6 @@ goodbye
 
 bye
 ____END____
-haiii
-haiiiiii
-
-hai
-____END____
 omedy
 
 comedyd
