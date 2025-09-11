@@ -149,20 +149,6 @@ ____END____
 
 tenth
 ____END____
-homo
-homosexual
-
-gay
-____END____
-transgender
-
-trans
-____END____
-bi
-bisex
-
-bisexual
-____END____
 alr
 
 alright
@@ -281,10 +267,6 @@ ____END____
 goodbye
 
 bye
-____END____
-omedy
-
-comedyd
 `;
 
 const ENGLISH_CUSTOM_DATASET = parseDataset(ENGLISH_CUSTOM_DATASET_RAW);
